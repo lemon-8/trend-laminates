@@ -1,0 +1,42 @@
+.slide1 {
+    background-image: url(../assets/1.png);
+    width: 434px;
+    height: 289px;
+    background-size: cover;
+}
+
+.slide2 {
+    background-image: url(../assets/2.png);
+    width: 434px;
+    height: 289px;
+    background-size: cover;
+}
+
+.slide3 {
+    background-image: url(../assets/3.png);
+    width: 434px;
+    height: 289px;
+    background-size: cover;
+}
+
+.slide4 {
+    background-image: url(../assets/4.png);
+    width: 434px;
+    height: 289px;
+    background-size: cover;
+}
+
+.slide5 {
+    background-image: url(../assets/5.png);
+    width: 434px;
+    height: 289px;
+    background-size: cover;
+}
+
+.feature-prod-img {
+    background-image: url('../assets/products/1/1.png');
+    width: 462px;
+    height: 333.3px;
+    background-size: cover;
+    background-position: right bottom, left top;
+}
