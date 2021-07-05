@@ -15,11 +15,13 @@
 
 .container {
     margin: auto;
+    width: 100%;
     max-width: 1000px;
 }
 
 .menu-icon, .close-icon {
     display: none;
+    cursor: pointer;
 }
 
 .home-header-bg {
@@ -28,4 +30,85 @@
 
 .footer {
     background-color: #f9f9f9;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.content {
+    padding: 16px;
+}
+
+.sticky + .content {
+    padding-top: 60px;
+}
+
+.sticky {
+    width: 100%;
+    max-width: 1000px;
+    background-color: #F9F9F9;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    z-index: 10;
+}
+
+/* .nav-sticky {
+    overflow: hidden;   
+    width: 100%;
+    z-index: 10;
+} */
+
+@media screen and (max-width: 1025px) {
+    /* .body {
+        padding-left: 10%;
+        padding-right: 10%;
+    } */
+
+    .container {
+        max-width: 768px;
+    }
+
+    .sticky {
+        max-width: 768px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-head {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+    /* .menu-icon {
+        display: block;
+        position: absolute;
+        top: 3%;
+        right: 4%;
+    } */
+
+    .nav {
+        flex-direction: column;
+    }
+
+    .sub-menu {
+        flex-direction: column;
+    }
+
+    .sub-menu-a {
+        padding-left: 0%;
+        padding-top: 20px;
+    }
+
+    .footer-div {
+        flex-direction: column;
+    }
 }
