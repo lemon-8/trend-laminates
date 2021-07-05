@@ -1,7 +1,7 @@
 .img1 {
     background-image: url('../assets/products/1/1.png');
-    width: 282px;
-    height: 282px;
+    min-width: 282px;
+    min-height: 282px;
     background-size: cover;
 }
 
@@ -120,8 +120,8 @@
 .bg-prod {
     background-color: #f7f7f7;
     margin-top: 5%;
-    max-height: 320px;
-    height: 99%;
+    height: 80%;
+    max-height: 325px;
 }
 .product-grid-1 {
     display: none;
@@ -135,4 +135,11 @@
     .product-grid-1 {
         display: flex;
     }
+
+    
+
+    .imgx {
+
+    }
+    
 }

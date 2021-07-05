@@ -1,0 +1,70 @@
+.catImg1 {
+    background-image: url('../assets/catalogues/cat1.png');
+    width: 293px;
+    height: 223px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.catImg2 {
+    background-image: url('../assets/catalogues/cat2.png');
+    width: 293px;
+    height: 223px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.catImg3 {
+    background-image: url('../assets/catalogues/cat3.png');
+    width: 293px;
+    height: 475px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.catImg4 {
+    background-image: url('../assets/catalogues/cat4.png');
+    width: 293px;
+    height: 475px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.catImg5 {
+    background-image: url('../assets/catalogues/cat5.png');
+    width: 293px;
+    height: 223px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.catImg6 {
+    background-image: url('../assets/catalogues/cat6.png');
+    width: 293px;
+    height: 223px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.catImg7 {
+    background-image: url('../assets/catalogues/cat7.png');
+    width: 293px;
+    height: 475px;
+    background-size: cover;
+    background-position: center center;
+
+}
+
+.catImg8 {
+    background-image: url('../assets/catalogues/cat8.png');
+    width: 293px;
+    height: 475px;
+    background-size: cover;
+    background-position: center center;
+
+}

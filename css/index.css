@@ -3,7 +3,8 @@
     width: 434px;
     height: 289px;
     background-size: cover;
-    background-position: right bottom, left top;
+    /* background-position: right bottom, left top; */
+    background-position: center center;
 }
 
 .slide2 {
@@ -11,7 +12,8 @@
     width: 434px;
     height: 289px;
     background-size: cover;
-    background-position: right bottom, left top;
+    /* background-position: right bottom, left top; */
+    background-position: center center;
 }
 
 .slide3 {
@@ -19,7 +21,8 @@
     width: 434px;
     height: 289px;
     background-size: cover;
-    background-position: right bottom, left top;
+    /* background-position: right bottom, left top; */
+    background-position: center center;
 }
 
 .slide4 {
@@ -27,7 +30,8 @@
     width: 434px;
     height: 289px;
     background-size: cover;
-    background-position: right bottom, left top;
+    /* background-position: right bottom, left top; */
+    background-position: center center;
 }
 
 .slide5 {
@@ -35,7 +39,8 @@
     width: 434px;
     height: 289px;
     background-size: cover;
-    background-position: right bottom, left top;
+    /* background-position: right bottom, left top; */
+    background-position: center center;
 }
 
 .feature-prod-img {
@@ -53,6 +58,7 @@
 
     .slide-img {
         height: 300px;
+        margin-bottom: 5%;
     }
 
     .slide1, .slide2, .slide3, .slide4, .slide5 {
