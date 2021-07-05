@@ -1,0 +1,62 @@
+.prod-img {
+    margin-left: -46%;
+    width: 100vw;
+    height: 90vh;
+    max-width: 950px;
+    background-size: cover;
+    background-position: center center, center center;
+}
+
+
+/* Hide the images by default */
+.prod-img {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+    margin: 10px 10px 10px 0px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.dot {
+    opacity: 0.6;
+}
+
+.activebtn,
+.dot:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 1025px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .prod-img {
+        margin: auto;
+        width: 100%;
+        max-width: 800px;
+        max-height: 800px;
+    }
+
+    .prod-info {
+        flex-direction: column-reverse;
+        margin: auto auto auto 0;
+        width: 100%;
+    }
+}

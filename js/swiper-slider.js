@@ -14,3 +14,18 @@ const swiper = new Swiper(".mySwiper", {
         clickable: true,
     }
 })
+
+// const swiper2 = new Swiper(".mySwiper2", {
+//     spaceBetween = 10,
+//     thumbs: {
+//         swiper: swiper,
+//     },
+// });
+
+// const swiper2 = new Swiper(".mySwiper3", {
+//     spaceBetween = 10,
+//     slidesPerView: 4,
+//     freeMode: true,
+//     watchSlidesVisibility: true,
+//     watchSlidesProgress: true,
+// });
