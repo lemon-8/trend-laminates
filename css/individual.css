@@ -4,7 +4,7 @@
     height: 90vh;
     max-width: 950px;
     background-size: cover;
-    background-position: center center, center center;
+    background-position: center center;
 }
 
 
@@ -28,7 +28,7 @@
 /* Six columns side by side */
 .column {
     float: left;
-    width: 16.66%;
+    width: 25%;
     margin: 10px 10px 10px 0px;
 }
 
@@ -51,12 +51,18 @@
         margin: auto;
         width: 100%;
         max-width: 800px;
-        max-height: 800px;
+        max-height: 600px;
     }
 
     .prod-info {
         flex-direction: column-reverse;
         margin: auto auto auto 0;
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .prod-img {
+        max-height: 300px;
     }
 }
