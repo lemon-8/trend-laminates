@@ -12,7 +12,6 @@
     height: 223px;
     background-size: cover;
     background-position: center center;
-
 }
 
 .catImg3 {
@@ -21,7 +20,6 @@
     height: 475px;
     background-size: cover;
     background-position: center center;
-
 }
 
 .catImg4 {
@@ -30,7 +28,6 @@
     height: 475px;
     background-size: cover;
     background-position: center center;
-
 }
 
 .catImg5 {
@@ -39,7 +36,6 @@
     height: 223px;
     background-size: cover;
     background-position: center center;
-
 }
 
 .catImg6 {
@@ -48,7 +44,6 @@
     height: 223px;
     background-size: cover;
     background-position: center center;
-
 }
 
 .catImg7 {
@@ -57,7 +52,6 @@
     height: 475px;
     background-size: cover;
     background-position: center center;
-
 }
 
 .catImg8 {
@@ -66,5 +60,33 @@
     height: 475px;
     background-size: cover;
     background-position: center center;
+}
 
+.grid-2 {
+    display: none;
+}
+
+@media screen and (max-width: 1025px) {
+    .grid-3 {
+        display: none;
+    }
+
+    .grid-2 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .catx {
+        margin: auto;
+        padding-top: 5%;
+    }
+
+    .catImg2, .catImg6 {
+        margin-top: 10%;
+    }
+
+    .grid-2 {
+        flex-direction: column;
+    }
 }
