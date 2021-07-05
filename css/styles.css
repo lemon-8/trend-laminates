@@ -11,6 +11,7 @@
 
 .body {
     margin: auto;
+    width: 100%;
 }
 
 .container {
@@ -36,10 +37,6 @@
     position: fixed;
     top: 0;
     width: 100%;
-}
-
-.content {
-    padding: 16px;
 }
 
 .sticky + .content {
@@ -68,13 +65,14 @@
     } */
 
     .container {
+        width: 90%;
         max-width: 768px;
     }
 
     .sticky {
         max-width: 768px;
     }
-    
+
     .menu {
         display: none;
     }
