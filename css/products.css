@@ -123,9 +123,16 @@
     max-height: 320px;
     height: 99%;
 }
+.product-grid-1 {
+    display: none;
+}
 
 @media screen and (max-width: 1025px) {
     .product-grid-3 {
-        flex-direction: column;
+        display: none;
+    }
+
+    .product-grid-1 {
+        display: flex;
     }
 }
