@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://kit.fontawesome.com/c1e61fbc1e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact Us</title>
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <div class="body" id="nav">
+        <div class="container">
+            <header class="header-nav flex items-center justify-center w-full py-6">
+                <nav class="nav flex flex-col md:flex-row justify-between w-full" id="site-menu">
+                    <div class="mobile-menu-head">
+                        <div>
+                            <a href="./index.html" class="heading uppercase font-bold">Trend Laminates</a>
+                        </div>
+                        <div>
+                            <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+                            <i class="fas fa-times close-icon" id="close-icon"></i>
+                        </div>
+                    </div>
+                    <div class="menu" id="menu">
+                        <div class="sub-menu flex flex-col md:flex-row">
+                            <a href="./index.html"
+                                class="sub-menu-a heading text-base font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Home</a>
+                            <a href="./about.html"
+                                class="sub-menu-a heading text-base font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">About
+                                Us</a>
+                            <a href="./products.html"
+                                class="sub-menu-a heading text-base font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Products</a>
+                            <a href="./catalogues.html"
+                                class="sub-menu-a heading text-base font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Catalogues</a>
+                            <a href="./clients.html"
+                                class="sub-menu-a heading text-base font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Clients</a>
+                            <a href="./contact.html"
+                                class="sub-menu-a heading text-base font-bold md:pl-6 transition-colors duration-300 transform hover:font-bold">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+        </div>
+    </div>
+    <main class="flex-auto content">
+        <div class="body contact-header">
+            <div class="container"></div>
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="header-text flex flex-col text-left w-full md:w-3/4 mt-8">
+                    <h1 class="heading text-5xl py-3 font-bold">Get In Touch</h1>
+                    <p class="py-5 text-xl">
+                        A range of avant-garde products, all created meticulously with the finest raw material available
+                        to the world.
+                        Open your arms to the smoothest textures and the most stunning designs, created with laser
+                        precision just for you.
+                    </p>
+                </div>
+                <div class="flex flex-row w-2/5">
+                    <div class="flex flex-col">
+                        <i class="fas fa-phone-alt py-3"></i>
+                        <a href="mailto:info@trendpvc.com"><i class="far fa-envelope py-3"></i></a>
+                        <i class="fas fa-map-marker-alt py-3"></i>
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="py-2 pl-3">+91-11 40396922</p>
+                        <p class="py-2 pl-3"><a href="mailto:info@trendpvc.com">info@trendpvc.com</a></p>
+                        <p class="py-2 pl-3">A-6, Mangolpuri Industrial Area, Phase 2 Delhi 110034, India</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            <div class="container">
+                <div class="flex flex-col my-8">
+                    <h1 class="heading text-5xl py-3 font-bold">Enquiries</h1>
+                </div>
+                <div class="flex flex-col">
+                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz06kPOVSYfGiro-L4T53-g47r1XzR3FgcO17wPDIgexAtbA/formResponse" target="_self" method="POST">
+                        <div class="flex flex-col mb-6">
+                            <label for="name" class="heading font-bold mb-2">Your Name</label>
+                            <input type="text" name="name" id="name" placeholder="First and Last Name" required class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
+                        </div>
+                        <div class="flex flex-col my-6">
+                            <label for="contact" class="heading font-bold mb-2">How should we contact you?</label>
+                            <input type="text" name="contact" id="contact" required
+                                placeholder="Leave your email address or phone number here" class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
+                        </div>
+                        <div class="flex flex-col my-6">
+                            <p class="heading font-bold mb-2">Any product specific query?</p>
+                            <select name="product" id="product" class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
+                                <option value="" class="text-gray-700">Select a product or just leave this blank</option>
+                                <option value="Acrylic High Gloss Laminates">Acrylic High Gloss Laminates</option>
+                                <option value="PVC Flex High Gloss Laminates">PVC Flex High Gloss Laminates</option>
+                                <option value="PVC Core Laminates">PVC Core Laminates</option>
+                                <option value="PVC Premium Laminates">PVC Premium Laminates</option>
+                                <option value="Charcoal Korean Laminates">Charcoal Korean Laminates</option>
+                                <option value="Alabaster Weiya Stone">Alabaster Weiya Stone</option>
+                                <option value="Designer MDF and PVC">Designer MDF and PVC</option>
+                                <option value="PVC 3D Panels">PVC 3D Panels</option>
+                                <option value="PVC Edgebanding Tape">PVC Edgebanding Tape</option>
+                                <option value="Digital HD Laminates">Digital HD Laminates</option>
+                                <option value="WPC/PVC Board">WPC/PVC Board</option>
+                                <option value="Plywood">Plywood</option>
+                                <option value="2D PVC Panels">2D PVC Panels</option>
+                                <option value="4 MM Faux Marble Sheet">4 MM Faux Marble Sheet</option>
+                                <option value="Glass Laminates">Glass Laminates</option>
+                                <option value="Decorative Laminates">Decorative Laminates</option>
+                                <option value="Premium Laminates">Premium Laminates</option>
+                            </select>
+                        </div>
+                        <div class="flex flex-col my-6">
+                            <label for="help" class="heading font-bold mb-2">How can we help you?</label>
+                            <textarea name="help" id="help" cols="30" rows="10"
+                                placeholder="Feel free to elaborate on your query here. We’ll get back to you with a great solution for you!"
+                                required class="border-2 border-gray-400 py-2 px-4 rounded"></textarea>
+                        </div>
+                        <div class="flex py-4 space-x-4">
+                            <button type="submit" class="px-6 py-2 rounded bg-black hover:bg-gray-600 text-white">
+                                Enquire <i class="fas fa-chevron-right ml-3"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="body footer">
+        <div class="container">
+            <footer class="w-full">
+                <div class="footer-div flex flex-col md:flex-row justify-between w-full pt-4">
+                    <div class="flex flex-col">
+                        <h2 class="heading text-2xl uppercase font-bold">Trend Laminates</h2>
+                        <span class="text-xs">A venture by TCS Marketing</span>
+                        <div class="flex flex-col md:flex-row my-4 md:w-full">
+                            <a href="./index.html"
+                                class="heading text-sm font-normal transition-colors duration-300 transform hover:font-bold">Home</a>
+                            <a href="./about.html"
+                                class="heading text-sm font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">About
+                                Us</a>
+                            <a href="./products.html"
+                                class="heading text-sm font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Products</a>
+                            <a href="./catalogues.html"
+                                class="heading text-sm font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Catalogues</a>
+                            <a href="./clients.html"
+                                class="heading text-sm font-normal md:pl-6 transition-colors duration-300 transform hover:font-bold">Clients</a>
+                            <a href="./contact.html"
+                                class="heading text-sm font-bold md:pl-6 transition-colors duration-300 transform hover:font-bold">Contact
+                                Us</a>
+                        </div>
+                        <div class="">
+                            <a href="https://www.pinterest.com/akhil_goel/trend-laminates-are-now-trendy/"
+                                target="_blank"><i class="fab fa-pinterest text-xl mr-2"></i></a>
+                            <a href="https://www.facebook.com/trendpvc" target="_blank"><i
+                                    class="fab fa-facebook text-xl mr-2"></i></a>
+                            <a href="https://www.instagram.com/trendlaminates17/" target="_blank"><i
+                                    class="fab fa-instagram text-xl mr-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="flex flex-row w-2/5">
+                        <div class="flex flex-col">
+                            <i class="fas fa-phone-alt py-3"></i>
+                            <a href="mailto:info@trendpvc.com"><i class="far fa-envelope py-3"></i></a>
+                            <i class="fas fa-map-marker-alt py-3"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="py-2 pl-3">+91-11 40396922</p>
+                            <p class="py-2 pl-3"><a href="mailto:info@trendpvc.com">info@trendpvc.com</a></p>
+                            <p class="py-2 pl-3">A-6, Mangolpuri Industrial Area, Phase 2 Delhi 110034, India</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-gray-400 pb-4">
+                    &copy; <script>
+                        document.write(new Date().getFullYear())
+                    </script> All Rights Reserved.
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
