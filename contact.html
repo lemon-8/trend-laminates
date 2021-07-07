@@ -8,6 +8,9 @@
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://kit.fontawesome.com/c1e61fbc1e.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script> -->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/contact.css">
     <title>Contact Us</title>
@@ -84,20 +87,24 @@
                     <h1 class="heading text-5xl py-3 font-bold">Enquiries</h1>
                 </div>
                 <div class="flex flex-col">
-                    <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdz06kPOVSYfGiro-L4T53-g47r1XzR3FgcO17wPDIgexAtbA/formResponse" target="_self" method="POST">
+                    <form name="submit-to-google-sheet">
                         <div class="flex flex-col mb-6">
                             <label for="name" class="heading font-bold mb-2">Your Name</label>
-                            <input type="text" name="name" id="name" placeholder="First and Last Name" required class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
+                            <input type="text" name="name" id="name" placeholder="First and Last Name" required
+                                class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
                         </div>
                         <div class="flex flex-col my-6">
                             <label for="contact" class="heading font-bold mb-2">How should we contact you?</label>
                             <input type="text" name="contact" id="contact" required
-                                placeholder="Leave your email address or phone number here" class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
+                                placeholder="Leave your email address or phone number here"
+                                class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
                         </div>
                         <div class="flex flex-col my-6">
                             <p class="heading font-bold mb-2">Any product specific query?</p>
-                            <select name="product" id="product" class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
-                                <option value="" class="text-gray-700">Select a product or just leave this blank</option>
+                            <select name="product" id="product"
+                                class="border-2 border-gray-400 py-2 px-4 rounded md:w-1/2">
+                                <option value="" class="text-gray-700">Select a product or just leave this blank
+                                </option>
                                 <option value="Acrylic High Gloss Laminates">Acrylic High Gloss Laminates</option>
                                 <option value="PVC Flex High Gloss Laminates">PVC Flex High Gloss Laminates</option>
                                 <option value="PVC Core Laminates">PVC Core Laminates</option>
@@ -187,6 +194,7 @@
         </div>
     </div>
     <script src="./js/index.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>
