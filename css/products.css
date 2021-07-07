@@ -1,117 +1,117 @@
 .img1 {
-    background-image: url('../assets/products/1/1.png');
+    background-image: url("../assets/products/1/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img2 {
-    background-image: url('../assets/products/2/1.png');
+    background-image: url("../assets/products/2/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img3 {
-    background-image: url('../assets/products/3/1.png');
+    background-image: url("../assets/products/3/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img4 {
-    background-image: url('../assets/products/4/1.png');
+    background-image: url("../assets/products/4/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img5 {
-    background-image: url('../assets/products/5/1.png');
+    background-image: url("../assets/products/5/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img6 {
-    background-image: url('../assets/products/6/1.png');
+    background-image: url("../assets/products/6/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img7 {
-    background-image: url('../assets/products/7/1.png');
+    background-image: url("../assets/products/7/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img8 {
-    background-image: url('../assets/products/8/1.png');
+    background-image: url("../assets/products/8/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img9 {
-    background-image: url('../assets/products/9/1.png');
+    background-image: url("../assets/products/9/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img10 {
-    background-image: url('../assets/products/10/1.png');
+    background-image: url("../assets/products/10/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img11 {
-    background-image: url('../assets/products/11/1.png');
+    background-image: url("../assets/products/11/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img12 {
-    background-image: url('../assets/products/12/1.png');
+    background-image: url("../assets/products/12/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img13 {
-    background-image: url('../assets/products/13/1.png');
+    background-image: url("../assets/products/13/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img14 {
-    background-image: url('../assets/products/14/1.png');
+    background-image: url("../assets/products/14/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img15 {
-    background-image: url('../assets/products/15/1.png');
+    background-image: url("../assets/products/15/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img16 {
-    background-image: url('../assets/products/16/1.png');
+    background-image: url("../assets/products/16/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
 }
 
 .img17 {
-    background-image: url('../assets/products/17/1.png');
+    background-image: url("../assets/products/17/1.png");
     width: 282px;
     height: 282px;
     background-size: cover;
@@ -121,7 +121,7 @@
     background-color: #f7f7f7;
     margin-top: 5%;
     height: 80%;
-    max-height: 325px;
+    max-height: 337px;
 }
 
 .bg-prod-1 {
@@ -135,122 +135,126 @@
     display: none;
 }
 
+.product-grid-2 {
+    display: none;
+}
+
 .img1-1 {
-    background-image: url('../assets/products/1/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/1/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img2-1 {
-    background-image: url('../assets/products/2/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/2/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img3-1 {
-    background-image: url('../assets/products/3/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/3/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img4-1 {
-    background-image: url('../assets/products/4/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/4/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img5-1 {
-    background-image: url('../assets/products/5/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/5/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img6-1 {
-    background-image: url('../assets/products/6/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/6/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img7-1 {
-    background-image: url('../assets/products/7/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/7/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img8-1 {
-    background-image: url('../assets/products/8/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/8/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img9-1 {
-    background-image: url('../assets/products/9/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/9/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img10-1 {
-    background-image: url('../assets/products/10/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/10/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img11-1 {
-    background-image: url('../assets/products/11/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/11/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img12-1 {
-    background-image: url('../assets/products/12/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/12/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img13-1 {
-    background-image: url('../assets/products/13/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/13/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img14-1 {
-    background-image: url('../assets/products/14/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/14/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img15-1 {
-    background-image: url('../assets/products/15/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/15/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img16-1 {
-    background-image: url('../assets/products/16/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/16/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
 .img17-1 {
-    background-image: url('../assets/products/17/1.png');
-    width: 360px;
-    height: 289px;
+    background-image: url("../assets/products/17/1.png");
+    width: 350px;
+    height: 300px;
     background-size: cover;
 }
 
@@ -259,10 +263,17 @@
         display: none;
     }
 
+    .product-grid-2 {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .product-grid-2 {
+        display: none;
+    }
+
     .product-grid-1 {
         display: flex;
     }
-
-    
-    
 }
