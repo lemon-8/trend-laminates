@@ -66,6 +66,10 @@
     display: none;
 }
 
+.cat-1, .cat-2, .cat-3 {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1025px) {
     .grid-3 {
         display: none;
