@@ -1,4 +1,160 @@
-*{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap");
+
+* {
   margin: 0;
   padding: 0;
+  font-family: "Rubik";
+}
+
+.slide-container {
+  width: 100%;
+  animation: slider 10s ease-out infinite;
+  background-image: url("./images/room3.png");
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  transition: all 0.5s ease-out;
+}
+
+.title:before {
+  content: "We are trend setters - ";
+  animation: slider1 10s ease-in-out infinite;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+
+.subtitle:before {
+  content: "Stunning designs that will give you a taste of the future.";
+  animation: slider2 10s ease-in-out infinite;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+}
+
+.rec.rec-arrow {
+  display: none;
+}
+
+.rec.rec-dot_active {
+  box-shadow: none;
+  background: #4678ee;
+}
+
+@media and (min-width: 769px) {
+  .rec.rec-pagination {
+    position: absolute;
+    bottom: 25%;
+    left: 40%;
+  }
+}
+
+.rec.rec-dot:active {
+  box-shadow: none;
+  border: 2px solid #4678ee;
+  background: #4678ee;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar {
+    background: rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+}
+
+@keyframes slider {
+  0% {
+    background-image: url("./images/room3.png");
+  }
+  33% {
+    background-image: url("./images/room1.png");
+  }
+  67% {
+    background-image: url("./images/room2.png");
+  }
+  100% {
+    background-image: url("./images/room3.png");
+  }
+}
+
+@keyframes slider1 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    content: "We are trend setters - ";
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+    content: "We are trend setters - ";
+  }
+  36% {
+    opacity: 0;
+    content: "Premium Quality - ";
+  }
+  55% {
+    content: "Premium Quality - ";
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    content: "Premium Quality - ";
+  }
+  71% {
+    opacity: 0;
+    content: "Customer Satisfaction - ";
+  }
+  85% {
+    content: "Customer Satisfaction - ";
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    content: "Customer Satisfaction - ";
+  }
+}
+
+@keyframes slider2 {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    content: "Stunning designs that will give you a taste of the future.";
+    opacity: 1;
+  }
+  35% {
+    opacity: 0;
+    content: "Stunning designs that will give you a taste of the future.";
+  }
+  36% {
+    opacity: 0;
+    content: "Unparalleled product quality made with the finest raw material available in the market.";
+  }
+  55% {
+    content: "Unparalleled product quality made with the finest raw material available in the market.";
+    opacity: 1;
+  }
+  70% {
+    opacity: 0;
+    content: "Unparalleled product quality made with the finest raw material available in the market.";
+  }
+  71% {
+    opacity: 0;
+    content: "Building trust and understanding with our clients, with our premier customer service.";
+  }
+  85% {
+    content: "Building trust and understanding with our clients, with our premier customer service.";
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    content: "Building trust and understanding with our clients, with our premier customer service.";
+  }
 }
