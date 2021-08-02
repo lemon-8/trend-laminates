@@ -16,8 +16,8 @@ function Footer() {
                 </div>
             </div>
             <footer className="px-10 text-black md:pr-16 md:pb-10 xl:px-32">
-                <div className="grid justify-center grid-cols-5 mt-10 mb-10 text-center md:mt-20 md:text-left">
-                    <a className="col-span-4 text-center md:col-span-2" href="#">
+                <div className="grid justify-center grid-cols-6 mt-10 mb-10 text-center md:mt-20 md:text-left">
+                    <a className="col-span-4 text-center md:text-left md:col-span-2" href="#">
                         <p className="w-full text-2xl font-bold uppercase font-garamond">Trend Laminates</p>
                         <p className="text-sm font-normal">A venture by TCS Marketing</p>
                     </a>
@@ -40,7 +40,7 @@ function Footer() {
                             <li className="mt-2">Contact Us</li>
                         </ul>
                     </div>
-                    <div className="col-span-4 mx-auto mt-6 md:mt-0 md:col-span-1">
+                    <div className="col-span-4 mx-auto mt-6 md:mt-0 md:col-span-2">
                         <p className="text-2xl font-bold flex-nowrap font-garamond">Contact Us</p>
                         <div className="flex justify-center mt-4 text-lg font-normal md:justify-start">
                             <MdCall size={24} />

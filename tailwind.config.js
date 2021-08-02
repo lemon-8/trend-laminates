@@ -8,12 +8,15 @@ module.exports = {
       },
       colors: {
         without: '#CACACA',
-        product: '#EC3339',
         textColor: '#363636',
         whiteSmoke: '#F5F5F5',
         carousel: '#DCECF1',
         hr: '#7BB8CB',
         testimonial: '#91C4D4',
+      },
+      boxShadow:{
+        touch: "inset 0 0 0 #000",
+        touch1: "inset 192px 0 0 #000",
       }
     },
   },

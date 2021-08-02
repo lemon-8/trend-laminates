@@ -15,7 +15,7 @@ import testimonial1 from './images/testimonial1.png';
 function Content() {
     return (
         <div className="px-10 mt-20 xl:px-32">
-            <div className="flex">
+            <div className="flex" data-aos="fade-up" data-aos-duration="1500">
                 <div className="flex flex-col">
                     <p className="text-lg font-bold">With</p>
                     <img className="h-10 -mt-4 -ml-1 lg:h-auto" src={withTrend} />
@@ -25,56 +25,60 @@ function Content() {
                     <img className="h-10 -mt-4 lg:h-auto" src={withoutTrend} />
                 </div>
             </div>
-            <ReactCompareImage leftImage={leftimage} rightImage={rightimage} sliderLineWidth={8} handleSize={60} />
-            <p className="mt-6 text-xl font-light text-justify">We are TrendPVC, a <span className="font-bold">leader in the lamination industry</span> supplying premium flat laminated panels to a diverse clientele. We are a fully family-owned business that prides itself on being the trendsetters in the interior industry, because of our innovative and futuristic approach to design solutions</p>
-            <div className="flex justify-center">
-                <button className="flex items-center justify-center p-4 mt-6 font-medium text-black border border-product w-44 h-9 rounded-2xl">Our Products <BsArrowRight className="ml-0.25" size={30} /></button>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <ReactCompareImage leftImage={leftimage} rightImage={rightimage} sliderLineWidth={8} handleSize={60} />
+            </div>
+            <div data-aos="fade-up" data-aos-duration="1500">
+                <p className="mt-6 text-xl font-light text-justify">We are TrendPVC, a <span className="font-bold">leader in the lamination industry</span> supplying premium flat laminated panels to a diverse clientele. We are a fully family-owned business that prides itself on being the trendsetters in the interior industry, because of our innovative and futuristic approach to design solutions</p>
+                <div className="flex justify-center">
+                    <button className="flex items-center justify-center p-4 py-6 mt-6 font-medium text-black duration-300 ease-out border border-black shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-2xl">Our Products <BsArrowRight className="ml-2" size={30} /></button>
+                </div>
             </div>
             <div className="grid items-center grid-cols-2 mt-20 md:gap-20">
-                <div className="relative col-span-2 md:col-span-1">
+                <div className="relative col-span-2 md:col-span-1" data-aos="fade-right" data-aos-duration="1500" >
                     <img src={dots} className="absolute z-0 -right-4 -bottom-10" />
                     <img src={room4} className="relative z-10 w-11/12" />
                 </div>
-                <div className="col-span-2 my-16 md:col-span-1">
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Stunning Designs</p>
                     <p className="mt-6 text-xl font-light text-justify text-textColor">Get your apartment fully furnished by a <span className="font-medium"> professional interior designer </span> and rent high-quality furniture on a monthly subscription.</p>
                 </div>
             </div>
             <div className="flex flex-col-reverse items-center grid-cols-2 mt-20 md:gap-20 md:mt-32 md:grid">
-                <div className="col-span-2 my-16 md:col-span-1">
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Finest Textures</p>
                     <p className="mt-6 text-xl font-light text-justify text-textColor">Premium textures right at your fingertips.
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the <span className="font-medium">shiniest, smoothest, and most pleasing textures,</span> which will make your home come alive.
                     </p>
                 </div>
-                <div className="relative col-span-2 md:col-span-1">
+                <div className="relative col-span-2 md:col-span-1" data-aos="fade-left" data-aos-duration="1500">
                     <img src={dots} className="absolute z-0 -left-16 -bottom-10" />
                     <img src={room5} className="relative z-10 w-11/12" />
                 </div>
             </div>
             <div className="grid items-center grid-cols-2 mt-20 md:gap-20 md:mb-20 md:mt-32">
-                <div className="relative col-span-2 md:col-span-1">
+                <div className="relative col-span-2 md:col-span-1" data-aos="fade-right" data-aos-duration="1500">
                     <img src={dots} className="absolute z-0 -right-4 -bottom-10" />
                     <img src={room4} className="relative z-10 w-11/12" />
                 </div>
-                <div className="col-span-2 my-16 md:col-span-1">
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Stunning Designs</p>
                     <p className="mt-6 text-xl font-light text-justify text-textColor">Get your apartment fully furnished by a <span className="font-medium"> professional interior designer </span> and rent high-quality furniture on a monthly subscription.</p>
                 </div>
             </div>
             <div className="flex flex-col-reverse items-center grid-cols-2 mt-20 md:gap-20 md:mt-32 md:mb-28 md:grid">
-                <div className="col-span-2 my-16 md:col-span-1">
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Finest Textures</p>
                     <p className="mt-6 text-xl font-light text-justify text-textColor">Premium textures right at your fingertips.
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the <span className="font-medium">shiniest, smoothest, and most pleasing textures,</span> which will make your home come alive.
                     </p>
                 </div>
-                <div className="relative col-span-2 md:col-span-1">
+                <div className="relative col-span-2 md:col-span-1" data-aos="fade-left" data-aos-duration="1500">
                     <img src={dots} className="absolute z-0 -left-16 -bottom-10" />
                     <img src={room5} className="relative z-10 w-11/12" />
                 </div>
             </div>
-            <div className="relative h-full py-4 mt-10 md:h-96 bg-carousel">
+            <div className="relative h-full py-4 mt-10 md:h-96 bg-carousel" data-aos="fade-up" data-aos-duration="1500">
                 <hr className="h-1 mx-6 my-5 bg-hr" />
                 <Carousel itemsToShow={1} itemsToScroll={1} enableAutoPlay autoPlaySpeed={5000} >
                     <div className="grid items-center grid-cols-8 md:gap-10">
