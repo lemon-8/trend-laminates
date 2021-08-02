@@ -7,26 +7,26 @@ import LogoW from '../images/logowhite.png';
 export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     const menubtn = navbarOpen === false ? <BiMenu style={{ color: '#000' }} /> : <AiFillCloseCircle style={{ color: '#000' }} />
-    const [active,setActive] = React.useState(false);
+    const [active, setActive] = React.useState(false);
 
-    const changeBackground = () =>{
-        if(window.scrollY >= 500){
+    const changeBackground = () => {
+        if (window.scrollY >= 500) {
             setActive(true);
         }
-        else{
+        else {
             setActive(false)
         }
     }
 
-    window.addEventListener('scroll',changeBackground);
-    
+    window.addEventListener('scroll', changeBackground);
+
     return (
         <>
-            <nav className={( active ? "bg-white fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:pl-28 text-black" : "fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:pl-28 text-white bg-transparent" )}>
+            <nav className={(active ? "bg-white fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:pl-28 text-black" : "fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:pl-28 text-white bg-transparent")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
-                        <a className="inline-block py-2">
-                            {(active ? <img src={Logo} alt="Logo" className="h-10 text-white md:h-16" /> : <img src={LogoW} alt="Logo" className="h-10 md:h-16" />) }
+                        <a className="inline-block py-2" href="#">
+                            {(active ? <img src={Logo} alt="Logo" className="h-10 text-white md:h-16" /> : <img src={LogoW} alt="Logo" className="h-10 md:h-16" />)}
                         </a>
                         <button
                             className="block px-3 py-1 ml-auto text-3xl cursor-pointer lg:hidden"
@@ -44,7 +44,10 @@ export default function Navbar() {
                     >
                         <ul className="flex flex-col list-none lg:flex-row lg:ml-auto"   >
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75" href="#">
+                                <a
+                                    className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75"
+                                    href="#"
+                                >
                                     About Us
                                 </a>
                             </li>

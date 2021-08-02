@@ -18,11 +18,11 @@ function Content() {
             <div className="flex" data-aos="fade-up" data-aos-duration="1500">
                 <div className="flex flex-col">
                     <p className="text-lg font-bold">With</p>
-                    <img className="h-10 -mt-4 -ml-1 lg:h-auto" src={withTrend} />
+                    <img className="h-10 -mt-4 -ml-1 lg:h-auto" src={withTrend} alt="Trend" />
                 </div>
                 <div className="flex flex-col ml-auto">
                     <p className="ml-1 text-lg font-bold text-without">Without</p>
-                    <img className="h-10 -mt-4 lg:h-auto" src={withoutTrend} />
+                    <img className="h-10 -mt-4 lg:h-auto" src={withoutTrend} alt="Trend" />
                 </div>
             </div>
             <div data-aos="fade-up" data-aos-duration="1500">
@@ -36,8 +36,8 @@ function Content() {
             </div>
             <div className="grid items-center grid-cols-2 mt-20 md:gap-20">
                 <div className="relative col-span-2 md:col-span-1" data-aos="fade-right" data-aos-duration="1500" >
-                    <img src={dots} className="absolute z-0 -right-4 -bottom-10" />
-                    <img src={room4} className="relative z-10 w-11/12" />
+                    <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" />
+                    <img src={room4} className="relative z-10 w-11/12" alt="Image of a room" />
                 </div>
                 <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Stunning Designs</p>
@@ -52,14 +52,14 @@ function Content() {
                     </p>
                 </div>
                 <div className="relative col-span-2 md:col-span-1" data-aos="fade-left" data-aos-duration="1500">
-                    <img src={dots} className="absolute z-0 -left-16 -bottom-10" />
-                    <img src={room5} className="relative z-10 w-11/12" />
+                    <img src={dots} className="absolute z-0 -left-16 -bottom-10" alt="" />
+                    <img src={room5} className="relative z-10 w-11/12" alt="Image of a room" />
                 </div>
             </div>
             <div className="grid items-center grid-cols-2 mt-20 md:gap-20 md:mb-20 md:mt-32">
                 <div className="relative col-span-2 md:col-span-1" data-aos="fade-right" data-aos-duration="1500">
-                    <img src={dots} className="absolute z-0 -right-4 -bottom-10" />
-                    <img src={room4} className="relative z-10 w-11/12" />
+                    <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" />
+                    <img src={room4} className="relative z-10 w-11/12" alt="Image of a room" />
                 </div>
                 <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Stunning Designs</p>
@@ -74,8 +74,8 @@ function Content() {
                     </p>
                 </div>
                 <div className="relative col-span-2 md:col-span-1" data-aos="fade-left" data-aos-duration="1500">
-                    <img src={dots} className="absolute z-0 -left-16 -bottom-10" />
-                    <img src={room5} className="relative z-10 w-11/12" />
+                    <img src={dots} className="absolute z-0 -left-16 -bottom-10" alt="" />
+                    <img src={room5} className="relative z-10 w-11/12" alt="Image of a room" />
                 </div>
             </div>
             <div className="relative h-full py-4 mt-10 md:h-96 bg-carousel" data-aos="fade-up" data-aos-duration="1500">
@@ -83,8 +83,8 @@ function Content() {
                 <Carousel itemsToShow={1} itemsToScroll={1} enableAutoPlay autoPlaySpeed={5000} >
                     <div className="grid items-center grid-cols-8 md:gap-10">
                         <div className="relative w-40 col-span-8 pt-20 mx-20 mt-10 mb-10 rounded-md md:col-span-4 lg:col-span-3 h-36 bg-testimonial">
-                            <img src={testimonial} className="absolute z-10 w-full -bottom-5 -right-1/4" />
-                            <img src={testimonial1} className="absolute w-full -top-10 -left-10" />
+                            <img src={testimonial} className="absolute z-10 w-full -bottom-5 -right-1/4" alt="" />
+                            <img src={testimonial1} className="absolute w-full -top-10 -left-10" alt="" />
                         </div>
                         <div className="relative col-span-8 md:col-span-4 lg:col-span-5">
                             <p className="text-2xl font-light">“Trend PVC Laminates are the best quality laminates. They have designs for all needs”</p>
@@ -93,8 +93,8 @@ function Content() {
                     </div>
                     <div className="grid items-center grid-cols-8 md:gap-10">
                         <div className="relative w-40 col-span-8 pt-20 mx-20 mt-10 mb-10 rounded-md md:col-span-4 lg:col-span-3 h-36 bg-testimonial">
-                            <img src={testimonial} className="absolute z-10 w-full -bottom-5 -right-1/4" />
-                            <img src={testimonial1} className="absolute w-full -top-10 -left-10" />
+                            <img src={testimonial} className="absolute z-10 w-full -bottom-5 -right-1/4" alt="" />
+                            <img src={testimonial1} className="absolute w-full -top-10 -left-10" alt="" />
                         </div>
                         <div className="col-span-8 md:col-span-4 lg:col-span-5">
                             <p className="text-2xl font-light">“Trend PVC Laminates are the best quality laminates. They have designs for all needs”</p>
@@ -103,8 +103,8 @@ function Content() {
                     </div>
                     <div className="grid items-center grid-cols-8 md:gap-10">
                         <div className="relative w-40 col-span-8 pt-20 mx-20 mt-10 mb-10 rounded-md md:col-span-4 lg:col-span-3 h-36 bg-testimonial">
-                            <img src={testimonial} className="absolute z-10 w-full -bottom-5 -right-1/4" />
-                            <img src={testimonial1} className="absolute w-full -top-10 -left-10" />
+                            <img src={testimonial} className="absolute z-10 w-full -bottom-5 -right-1/4" alt="" />
+                            <img src={testimonial1} className="absolute w-full -top-10 -left-10" alt="" />
                         </div>
                         <div className="col-span-8 md:col-span-4 lg:col-span-5">
                             <p className="text-2xl font-light">“Trend PVC Laminates are the best quality laminates. They have designs for all needs”</p>
