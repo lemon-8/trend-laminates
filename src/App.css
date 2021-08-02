@@ -27,6 +27,7 @@
   z-index: 999;
   width: 10px;
   height: 10px;
+  pointer-events: none;
   background: #000;
   tranform: translate3d(0,0,0);
   border-radius: 50%;
