@@ -1,18 +1,32 @@
 import React from 'react';
 import { BiMenu } from 'react-icons/bi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import Logo from '../images/logo.png';
+import Logo from '../images/logoblack.png';
+import LogoW from '../images/logowhite.png';
 
 export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
-    const menubtn = navbarOpen === false ? <BiMenu style={{ color: '#fff' }} /> : <AiFillCloseCircle style={{ color: '#fff' }} />
+    const menubtn = navbarOpen === false ? <BiMenu style={{ color: '#000' }} /> : <AiFillCloseCircle style={{ color: '#000' }} />
+    const [active,setActive] = React.useState(false);
+
+    const changeBackground = () =>{
+        if(window.scrollY >= 500){
+            setActive(true);
+        }
+        else{
+            setActive(false)
+        }
+    }
+
+    window.addEventListener('scroll',changeBackground);
+    
     return (
         <>
-            <nav className="fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full text-white">
-                <div className="container flex flex-wrap items-center justify-between px-10 rounded-md lg:px-12 xl:px-28 navbar">
+            <nav className={( active ? "bg-white fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:pl-28 text-black" : "fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:pl-28 text-white bg-transparent" )}>
+                <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <a className="inline-block py-2">
-                            <img src={Logo} alt="Logo" className="h-16 md:h-28" />
+                            {(active ? <img src={Logo} alt="Logo" className="h-10 text-white md:h-16" /> : <img src={LogoW} alt="Logo" className="h-10 md:h-16" />) }
                         </a>
                         <button
                             className="block px-3 py-1 ml-auto text-3xl cursor-pointer lg:hidden"
@@ -28,15 +42,15 @@ export default function Navbar() {
                             (navbarOpen ? "flex" : " hidden")
                         }
                     >
-                        <ul className="flex flex-col list-none lg:flex-row lg:ml-auto">
+                        <ul className="flex flex-col list-none lg:flex-row lg:ml-auto"   >
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-6 py-2 text-lg font-normal hover:opacity-75">
+                                <a className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75" href="#">
                                     About Us
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="flex items-center justify-center px-6 py-2 text-lg font-normal hover:opacity-75"
+                                    className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75"
                                     href="#"
                                 >
                                     Products
@@ -44,14 +58,14 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a
-                                    className="flex items-center justify-center px-6 py-2 text-lg font-normal hover:opacity-75"
+                                    className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75"
                                     href="#"
                                 >
                                     Catalogues
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-6 py-2 text-lg font-normal hover:opacity-75">
+                                <a className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75" href="#">
                                     Contact Us
                                 </a>
                             </li>

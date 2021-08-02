@@ -12,8 +12,8 @@
 
 .slide-container {
   width: 100%;
-  animation: slider 10s ease-out infinite;
-  background-image: url("./images/room3.png");
+  animation: slider 18s ease-out infinite;
+  background-image: url("./images/room1.png");
   background-position: center;
   position: absolute;
   z-index: -1;
@@ -23,16 +23,23 @@
   transition: all 0.5s ease-out;
 }
 
+.slide-container:after{
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: inset 0px 0px 250px black;
+}
+
 .title:before {
   content: "We are trend setters - ";
-  animation: slider1 10s ease-in-out infinite;
+  animation: slider1 18s ease-out infinite;
   transition: all 0.5s ease-out;
   opacity: 0;
 }
 
 .subtitle:before {
   content: "Stunning designs that will give you a taste of the future.";
-  animation: slider2 10s ease-in-out infinite;
+  animation: slider2 18s ease-out infinite;
   transition: all 0.5s ease-out;
   opacity: 0;
 }
@@ -60,26 +67,21 @@
   background: #4678ee;
 }
 
-@media screen and (max-width: 600px) {
-  .navbar {
-    background: rgba(0, 0, 0, 0.25);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.18);
-  }
-}
-
 @keyframes slider {
   0% {
-    background-image: url("./images/room3.png");
-  }
-  33% {
     background-image: url("./images/room1.png");
   }
-  67% {
+  25% {
     background-image: url("./images/room2.png");
   }
-  100% {
+  50% {
     background-image: url("./images/room3.png");
+  }
+  75%{
+    background-image: url("./images/room4.png")
+  }
+  100% {
+    background-image: url("./images/room1.png");
   }
 }
 
@@ -87,37 +89,49 @@
   0% {
     opacity: 0;
   }
-  20% {
+  5% {
     content: "We are trend setters - ";
     opacity: 1;
   }
-  35% {
-    opacity: 0;
+  23%{
     content: "We are trend setters - ";
+    opacity: 0;
   }
-  36% {
+  24%{
+    opacity:0;
+    content: "Premium Quality - ";
+  }
+  30%{
+    content: "Premium Quality - ";
+    opacity: 1;
+  }
+  48% {
     opacity: 0;
     content: "Premium Quality - ";
+  }
+  49% {
+    opacity: 0;
+    content: "Customer Satisfaction - ";
   }
   55% {
-    content: "Premium Quality - ";
+    content: "Customer Satisfaction - ";
     opacity: 1;
   }
-  70% {
-    opacity: 0;
-    content: "Premium Quality - ";
-  }
-  71% {
+  73% {
     opacity: 0;
     content: "Customer Satisfaction - ";
   }
-  85% {
-    content: "Customer Satisfaction - ";
+  74% {
+    opacity: 0;
+    content: "Panoramic Catalogue - ";
+  }
+  80% {
+    content: "Panoramic Catalogue - ";
     opacity: 1;
   }
   100% {
     opacity: 0;
-    content: "Customer Satisfaction - ";
+    content: "Panoramic Catalogue - ";
   }
 }
 
@@ -125,36 +139,48 @@
   0% {
     opacity: 0;
   }
-  20% {
+  5% {
     content: "Stunning designs that will give you a taste of the future.";
     opacity: 1;
   }
-  35% {
-    opacity: 0;
+  23%{
     content: "Stunning designs that will give you a taste of the future.";
+    opacity: 0;
   }
-  36% {
+  24%{
     opacity: 0;
     content: "Unparalleled product quality made with the finest raw material available in the market.";
   }
-  55% {
+  31%{
     content: "Unparalleled product quality made with the finest raw material available in the market.";
     opacity: 1;
   }
-  70% {
+  48% {
     opacity: 0;
     content: "Unparalleled product quality made with the finest raw material available in the market.";
   }
-  71% {
+  49% {
     opacity: 0;
     content: "Building trust and understanding with our clients, with our premier customer service.";
   }
-  85% {
+  56% {
     content: "Building trust and understanding with our clients, with our premier customer service.";
+    opacity: 1;
+  }
+  73% {
+    opacity: 0;
+    content: "Building trust and understanding with our clients, with our premier customer service.";
+  }
+  74% {
+    opacity: 0;
+    content: "An extensive gamut of designs and textures to choose from.";
+  }
+  81% {
+    content: "An extensive gamut of designs and textures to choose from.";
     opacity: 1;
   }
   100% {
     opacity: 0;
-    content: "Building trust and understanding with our clients, with our premier customer service.";
+    content: "An extensive gamut of designs and textures to choose from.";
   }
 }
