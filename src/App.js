@@ -6,24 +6,26 @@ import Hero from './Hero';
 import Cursor from './Cursor';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import Logo from './images/logoblack.png';
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 5000)
+    }, 3000)
   });
   return (
     <div>
       {loading ?
-      <div className="flex items-center justify-center h-screen"> 
+      <div className="flex flex-col items-center justify-center h-screen"> 
+      <img src={Logo} alt="Logo" className="mb-10" />
       <Loader
-        type="Grid"
-        color="#00BFFF"
+        type="TailSpin"
+        color="#000"
         height={100}
         width={100}
-        timeout={5000}
+        timeout={3000}
       />
       </div> 
       : <div>

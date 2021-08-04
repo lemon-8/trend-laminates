@@ -7,7 +7,7 @@ module.exports = {
         'garamond': 'EB Garamond',
       },
       colors: {
-        without: '#CACACA',
+        subtitle: '#8C8C8C',
         textColor: '#363636',
         whiteSmoke: '#F5F5F5',
         carousel: '#DCECF1',
@@ -16,7 +16,9 @@ module.exports = {
       },
       boxShadow:{
         touch: "inset 0 0 0 #000",
-        touch1: "inset 192px 0 0 #000",
+        touch1: "inset 250px 0 0 #000",
+        get: "inset 0 0 0 #fff",
+        get1: "inset 192px 0 0 #fff",
       }
     },
   },

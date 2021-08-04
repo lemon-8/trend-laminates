@@ -1,84 +1,115 @@
 import React from 'react';
-import withTrend from './images/with_trend.png';
-import withoutTrend from './images/without_trend.png';
-import ReactCompareImage from 'react-compare-image';
 import leftimage from './images/left_compare.png';
 import rightimage from './images/right_compare.png';
 import { BsArrowRight } from 'react-icons/bs';
-import dots from './images/dots.png';
 import room4 from './images/room5.png';
+import logo from './images/logowhite.png';
 import room5 from './images/room6.png';
+import room6 from './images/room7.png';
 import Carousel from 'react-elastic-carousel';
 import testimonial from './images/testimonial.png';
 import testimonial1 from './images/testimonial1.png';
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
+import decorative from './images/decorative.png';
+import mdf_board from './images/mdf_board.png';
+import pvc_laminates from './images/pvc_laminates.png';
+import pvc_panel from './images/pvc_panel.png';
+import pvc_tape from './images/pvc_tape.png';
+import korean from './images/korean.png';
+import acrylic from './images/acrylic.png';
+import wpc_board from './images/wpc_board.png'
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 function Content() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 2500,
+        slidesToScroll: 1,
+        cssEase: "linear",
+        swipeToSlide: true,
+    };
+
+    const Products = ({ title, src }) => {
+        return (
+            <div className="relative px-16 mt-20">
+                <img src={src} className="rounded-md product-list h-96" alt="" />
+                <h3 className="absolute left-0 right-0 w-48 p-4 mx-auto text-center text-black bg-white rounded-md bottom-20 product-text">{title}</h3>
+            </div>
+        )
+    }
     return (
         <div className="px-10 mt-20 xl:px-32">
-            <div className="flex" data-aos="fade-up" data-aos-duration="1500">
-                <div className="flex flex-col">
-                    <p className="text-lg font-bold">With</p>
-                    <img className="h-10 -mt-4 -ml-1 lg:h-auto" src={withTrend} alt="Trend" />
+            <div className="h-screen" data-aos="fade-up" data-aos-duration="2000">
+                <p className="text-5xl font-bold text-center font-garamond">Unparalleled Product Quality</p>
+                <p className="mt-4 mb-2 text-base font-normal text-center text-subtitle">Stunning designs that will give you a taste of the future.</p>
+                <div className="z-20 flex">
+                    <div className="absolute z-20 flex flex-col left-28 top-40">
+                        <p className="ml-2 text-lg font-normal text-white">With</p>
+                        <img className="h-10 -mt-4 lg:h-auto" src={logo} alt="Trend" />
+                    </div>
+                    <div className="absolute z-20 flex flex-col right-20 top-40">
+                        <p className="ml-2 text-lg font-normal text-white">Without</p>
+                        <img className="h-10 -mt-4 lg:h-auto" src={logo} alt="Trend" />
+                    </div>
                 </div>
-                <div className="flex flex-col ml-auto">
-                    <p className="ml-1 text-lg font-bold text-without">Without</p>
-                    <img className="h-10 -mt-4 lg:h-auto" src={withoutTrend} alt="Trend" />
-                </div>
+                <ReactCompareSlider style={{ height: "75vh", width: "100%", objectFit: "contain", marginTop: "20px" }}
+                    itemOne={<ReactCompareSliderImage src={leftimage} alt="Image one" />}
+                    itemTwo={<ReactCompareSliderImage src={rightimage} alt="Image two" />}
+                />
             </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <ReactCompareImage leftImage={leftimage} rightImage={rightimage} sliderLineWidth={8} handleSize={60} />
-            </div>
-            <div data-aos="fade-up" data-aos-duration="1500">
-                <p className="mt-6 text-xl font-light text-justify">We are TrendPVC, a <span className="font-bold">leader in the lamination industry</span> supplying premium flat laminated panels to a diverse clientele. We are a fully family-owned business that prides itself on being the trendsetters in the interior industry, because of our innovative and futuristic approach to design solutions</p>
-                <div className="flex justify-center">
-                    <button className="flex items-center justify-center p-4 py-6 mt-6 font-medium text-black duration-300 ease-out border border-black shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-2xl">Our Products <BsArrowRight className="ml-2" size={30} /></button>
+            <div className="flex flex-col items-center">
+                <p className="text-5xl font-bold text-center font-garamond">Top Products</p>
+                <p className="mt-6 text-base font-normal text-center text-subtitle">We are TrendPVC, a leader in the lamination industry supplying premium flat laminated panels to a diverse clientele.</p>
+                <div className="w-full h-full">
+                    <Slider {...settings}>
+                        <Products title="Decorative" src={decorative} />
+                        <Products title="MDF Board" src={mdf_board} />
+                        <Products title="PVC Laminates" src={pvc_laminates} />
+                        <Products title="Korean Charcoal" src={korean} />
+                        <Products title="PVC 3D PANEL" src={pvc_panel} />
+                        <Products title="PVC Tapes" src={pvc_tape} />
+                        <Products title="Acrylic Laminates" src={acrylic} />
+                        <Products title="WPC Board" src={wpc_board} />
+                    </Slider>
                 </div>
+                <button className="flex items-center justify-center p-4 py-6 mt-20 font-medium text-black duration-700 ease-out border border-black w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-2xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
             </div>
             <div className="grid items-center grid-cols-2 mt-20 md:gap-20">
-                <div className="relative col-span-2 md:col-span-1" data-aos="fade-right" data-aos-duration="1500" >
-                    <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" />
-                    <img src={room4} className="relative z-10 w-11/12" alt="Image of a room" />
+                <div className="relative col-span-2 overflow-hidden md:col-span-1" data-aos="fade-right" data-aos-duration="2000" >
+                    <img src={room4} className="relative z-10 duration-500 transform hover:scale-125" alt="Image of a room" />
                 </div>
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Stunning Designs</p>
-                    <p className="mt-6 text-xl font-light text-justify text-textColor">Get your apartment fully furnished by a <span className="font-medium"> professional interior designer </span> and rent high-quality furniture on a monthly subscription.</p>
+                    <p className="mt-6 text-xl font-light text-justify text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                 </div>
             </div>
             <div className="flex flex-col-reverse items-center grid-cols-2 mt-20 md:gap-20 md:mt-32 md:grid">
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Finest Textures</p>
                     <p className="mt-6 text-xl font-light text-justify text-textColor">Premium textures right at your fingertips.
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the <span className="font-medium">shiniest, smoothest, and most pleasing textures,</span> which will make your home come alive.
                     </p>
                 </div>
-                <div className="relative col-span-2 md:col-span-1" data-aos="fade-left" data-aos-duration="1500">
-                    <img src={dots} className="absolute z-0 -left-16 -bottom-10" alt="" />
-                    <img src={room5} className="relative z-10 w-11/12" alt="Image of a room" />
+                <div className="relative col-span-2 overflow-hidden md:col-span-1" data-aos="fade-left" data-aos-duration="2000">
+                    <img src={room5} className="relative z-10 duration-500 transform hover:scale-125" alt="Image of a room" />
                 </div>
             </div>
             <div className="grid items-center grid-cols-2 mt-20 md:gap-20 md:mb-20 md:mt-32">
-                <div className="relative col-span-2 md:col-span-1" data-aos="fade-right" data-aos-duration="1500">
-                    <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" />
-                    <img src={room4} className="relative z-10 w-11/12" alt="Image of a room" />
+                <div className="relative col-span-2 overflow-hidden md:col-span-1" data-aos="fade-right" data-aos-duration="2000">
+                    {/* <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" /> */}
+                    <img src={room6} className="relative z-10 duration-500 transform hover:scale-125" alt="Image of a room" />
                 </div>
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
-                    <p className="text-4xl font-semibold md:text-5xl font-garamond">Stunning Designs</p>
-                    <p className="mt-6 text-xl font-light text-justify text-textColor">Get your apartment fully furnished by a <span className="font-medium"> professional interior designer </span> and rent high-quality furniture on a monthly subscription.</p>
-                </div>
-            </div>
-            <div className="flex flex-col-reverse items-center grid-cols-2 mt-20 md:gap-20 md:mt-32 md:mb-28 md:grid">
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1500">
-                    <p className="text-4xl font-semibold md:text-5xl font-garamond">Finest Textures</p>
-                    <p className="mt-6 text-xl font-light text-justify text-textColor">Premium textures right at your fingertips.
-                        We pay close attention to the finishing and feel of every sheet during the production process so that you get the <span className="font-medium">shiniest, smoothest, and most pleasing textures,</span> which will make your home come alive.
-                    </p>
-                </div>
-                <div className="relative col-span-2 md:col-span-1" data-aos="fade-left" data-aos-duration="1500">
-                    <img src={dots} className="absolute z-0 -left-16 -bottom-10" alt="" />
-                    <img src={room5} className="relative z-10 w-11/12" alt="Image of a room" />
+                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
+                    <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>
+                    <p className="mt-6 text-xl font-light text-justify text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
                 </div>
             </div>
-            <div className="relative h-full py-4 mt-10 md:h-96 bg-carousel" data-aos="fade-up" data-aos-duration="1500">
+            <div className="relative h-full py-4 mt-10 md:h-96 bg-carousel" data-aos="fade-up" data-aos-duration="2000">
                 <hr className="h-1 mx-6 my-5 bg-hr" />
                 <Carousel itemsToShow={1} itemsToScroll={1} enableAutoPlay autoPlaySpeed={5000} >
                     <div className="grid items-center grid-cols-8 md:gap-10">
@@ -119,3 +150,4 @@ function Content() {
 }
 
 export default Content;
+{/*  */ }

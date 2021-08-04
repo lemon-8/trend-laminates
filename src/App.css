@@ -11,6 +11,15 @@
   cursor: none;
 }
 
+body::after{
+  position:absolute;
+  width:0;
+  height:0; 
+  overflow:hidden;
+  z-index:-1;
+  content: url("./images/room1.png") url("./images/room2.png") url("./images/room3.png") url("./images/room4.png");
+}
+
 .mainCursor{
   z-index: 999;
   border-radius: 50%;
@@ -95,13 +104,25 @@
   0% {
     background-image: url("./images/room1.png");
   }
+  10%{
+    background-image: url("./images/room1.png");
+  }
   25% {
+    background-image: url("./images/room2.png");
+  }
+  35%{
     background-image: url("./images/room2.png");
   }
   50% {
     background-image: url("./images/room3.png");
   }
+  60% {
+    background-image: url("./images/room3.png");
+  }
   75%{
+    background-image: url("./images/room4.png")
+  }
+  85%{
     background-image: url("./images/room4.png")
   }
   100% {
@@ -112,99 +133,133 @@
 @keyframes slider1 {
   0% {
     opacity: 0;
+    content: "We are trend setters - ";
   }
-  5% {
+  2% {
     content: "We are trend setters - ";
     opacity: 1;
   }
-  23%{
+  12%{
+    opacity:1;
+  }
+  18%{
     content: "We are trend setters - ";
     opacity: 0;
   }
-  24%{
+  20%{
     opacity:0;
     content: "Premium Quality - ";
   }
-  30%{
-    content: "Premium Quality - ";
-    opacity: 1;
-  }
-  48% {
-    opacity: 0;
+  25%{
+    opacity:1;
     content: "Premium Quality - ";
   }
-  49% {
+  37%{
+    opacity:1;
+  }
+  43% {
+    opacity: 0;
+    content: "Premium Quality - ";
+  }
+  45% {
     opacity: 0;
     content: "Customer Satisfaction - ";
   }
-  55% {
+  50% {
     content: "Customer Satisfaction - ";
     opacity: 1;
   }
-  73% {
+  62%{
+    opacity: 1;
+  }
+  68% {
     opacity: 0;
     content: "Customer Satisfaction - ";
   }
-  74% {
+  70% {
     opacity: 0;
     content: "Panoramic Catalogue - ";
   }
-  80% {
+  75% {
     content: "Panoramic Catalogue - ";
     opacity: 1;
+  }
+  89%{
+    opacity:1;
+  }
+  98%{
+    opacity:0;
+    content: "Panoramic Catalogue - ";
   }
   100% {
     opacity: 0;
-    content: "Panoramic Catalogue - ";
+    content: "We are trend setters - ";
   }
 }
 
 @keyframes slider2 {
   0% {
     opacity: 0;
+    content: "Stunning designs that will give you a taste of the future.";
   }
-  5% {
+  2% {
     content: "Stunning designs that will give you a taste of the future.";
     opacity: 1;
   }
-  23%{
+  12%{
+    opacity:1;
+  }
+  18%{
     content: "Stunning designs that will give you a taste of the future.";
     opacity: 0;
   }
-  24%{
+  20%{
     opacity: 0;
     content: "Unparalleled product quality made with the finest raw material available in the market.";
   }
-  31%{
+  25%{
     content: "Unparalleled product quality made with the finest raw material available in the market.";
     opacity: 1;
   }
-  48% {
+  37%{
+    opacity:1;
+  }
+  43% {
     opacity: 0;
     content: "Unparalleled product quality made with the finest raw material available in the market.";
   }
-  49% {
+  45% {
     opacity: 0;
     content: "Building trust and understanding with our clients, with our premier customer service.";
   }
-  56% {
+  50% {
     content: "Building trust and understanding with our clients, with our premier customer service.";
     opacity: 1;
   }
-  73% {
+  62%{
+    opacity: 1;
+  }
+  68% {
     opacity: 0;
     content: "Building trust and understanding with our clients, with our premier customer service.";
   }
-  74% {
+  70% {
     opacity: 0;
     content: "An extensive gamut of designs and textures to choose from.";
   }
-  81% {
+  75% {
     content: "An extensive gamut of designs and textures to choose from.";
     opacity: 1;
+  }
+  89%{
+    opacity:1;
+  }
+  98%{
+    opacity:0;
+    content: "An extensive gamut of designs and textures to choose from.";
   }
   100% {
     opacity: 0;
-    content: "An extensive gamut of designs and textures to choose from.";
+    content: "Stunning designs that will give you a taste of the future.";
   }
 }
