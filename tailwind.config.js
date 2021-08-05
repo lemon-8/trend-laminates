@@ -13,6 +13,9 @@ module.exports = {
         carousel: '#DCECF1',
         hr: '#7BB8CB',
         testimonial: '#91C4D4',
+        custom: "#47474D",
+        custombg: "#F2F2F3",
+        customdesc: "#A0A0A7",
       },
       boxShadow:{
         touch: "inset 0 0 0 #000",
