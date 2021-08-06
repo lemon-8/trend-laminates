@@ -15,8 +15,8 @@ import { BsArrowRight } from 'react-icons/bs';
 function Carousel() {
     const Products = ({ title, src }) => {
         return (
-            <div className="relative px-10 mt-20">
-                <img src={src} className="rounded-md product-list h-96" alt="" />
+            <div className="relative items-center mx-4 mt-20 overflow-hidden text-center">
+                <img src={src} className="w-full duration-500 transform rounded-md hover:scale-125 product-list h-96" alt="" />
                 <button className="absolute left-0 right-0 w-48 py-2 mx-auto text-center text-black duration-500 bg-white hover:border-black hover:text-white button-slide rounded-2xl bottom-5 product-text">{title}</button>
             </div>
         )
@@ -25,7 +25,7 @@ function Carousel() {
     const settings = {
         dots: true,
         infinite: true,
-        slidesToShow: 4.25,
+        slidesToShow: 5.25,
         autoplay: true,
         autoplaySpeed: 2500,
         slidesToScroll: 1,

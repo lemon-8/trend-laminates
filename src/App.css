@@ -104,15 +104,23 @@ body::after {
   display: none !important;
 }
 
+.rooms{
+  width: 470px;
+  height: 516px;
+  display: block;
+  margin: auto;
+}
+
 .custom-image{
   background: url('./images/customdec.png');
-  padding-top: 56.25%;
+  /* padding-top: 56.25%; */
   background-position: center;
   display: block;
   margin: auto;
-  height: 100%;
-  width: 100%;
-  /* width: 366px; */
+  /* height: 100%; */
+  /* width: 100%; */
+  width: 366px;
+  height: 448px;
   background-repeat: no-repeat;
 }
 
@@ -159,7 +167,7 @@ body::after {
     content: "We are trend setters";
     opacity: 1;
   }
-  15% {
+  17% {
     opacity: 1;
   }
   18% {
@@ -174,7 +182,7 @@ body::after {
     opacity: 1;
     content: "Premium Quality";
   }
-  40% {
+  42% {
     opacity: 1;
   }
   43% {
@@ -189,7 +197,7 @@ body::after {
     content: "Customer Satisfaction";
     opacity: 1;
   }
-  65% {
+  67% {
     opacity: 1;
   }
   68% {
@@ -204,7 +212,7 @@ body::after {
     content: "Panoramic Catalogue";
     opacity: 1;
   }
-  96% {
+  98% {
     opacity: 1;
   }
   99% {
@@ -226,7 +234,7 @@ body::after {
     content: "Stunning designs that will give you a taste of the future.";
     opacity: 1;
   }
-  15% {
+  17% {
     opacity: 1;
   }
   18% {
@@ -241,7 +249,7 @@ body::after {
     content: "Unparalleled product quality made with the finest raw material available in the market.";
     opacity: 1;
   }
-  40% {
+  42% {
     opacity: 1;
   }
   43% {
@@ -256,7 +264,7 @@ body::after {
     content: "Building trust and understanding with our clients, with our premier customer service.";
     opacity: 1;
   }
-  65% {
+  67% {
     opacity: 1;
   }
   68% {
@@ -271,7 +279,7 @@ body::after {
     content: "An extensive gamut of designs and textures to choose from.";
     opacity: 1;
   }
-  96% {
+  98% {
     opacity: 1;
   }
   99% {
