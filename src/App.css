@@ -26,11 +26,12 @@ body::after {
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  border: 1px solid #555;
+  border: 2px solid #555;
   pointer-events: none;
   overflow: hidden;
   tranform: translate3d(0, 0, 0);
   position: fixed;
+  mix-blend-mode: difference; /*difference screen exclusion */
 }
 
 .secondaryCursor {
@@ -113,12 +114,9 @@ body::after {
 
 .custom-image{
   background: url('./images/customdec.png');
-  /* padding-top: 56.25%; */
   background-position: center;
   display: block;
   margin: auto;
-  /* height: 100%; */
-  /* width: 100%; */
   width: 366px;
   height: 448px;
   background-repeat: no-repeat;

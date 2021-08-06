@@ -53,7 +53,7 @@ function Content() {
     return (
 
         <div className="mt-20">
-            <div className="h-screen px-10 mt-20 xl:px-52" data-aos="fade-up" data-aos-duration="2000">
+            <div className="h-screen px-10 mt-20 xl:px-44" data-aos="fade-up" data-aos-duration="2000">
                 <p className="text-5xl font-bold text-center font-garamond">Unparalleled Product Quality</p>
                 <p className="mt-4 mb-2 text-base font-normal text-center text-subtitle">Stunning designs that will give you a taste of the future.</p>
                 <div className="relative z-20 flex">
@@ -77,7 +77,7 @@ function Content() {
 
 
             <div className="grid items-center justify-center grid-cols-2 py-20 mt-20 md:gap-10 bg-custombg" data-aos="fade-up" data-aos-duration="2000">
-                <div className="col-span-2 px-10 md:px-52 md:col-span-1" >
+                <div className="col-span-2 px-10 md:px-44 md:col-span-1" >
                     <p className="text-5xl font-bold font-garamond text-custom">Custom solutions catered to your needs.</p>
                     <p className="mt-6 text-xl font-normal text-customdesc">We bring you a dazzling line-up of laminates and PVC sheets for all your needs. From rugged laminates to glossy attractive panels we have you covered.</p>
                     <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out bg-white border border-white w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-2xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
@@ -99,7 +99,7 @@ function Content() {
             </div>
 
 
-            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-0 xl:pl-20 xl:pr-52">
+            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-0 xl:pl-20 xl:pr-44">
                 <div className="relative col-span-2 overflow-hidden md:col-span-1 rooms" data-aos="fade-right" data-aos-duration="2000" >
                     <img src={room4} className="relative z-10 duration-500 transform rooms hover:scale-125" alt="Image of a room" />
                 </div>
@@ -111,7 +111,7 @@ function Content() {
                     </div>
                 </div>
             </div>
-            <div className="flex flex-col-reverse items-center grid-cols-2 px-10 mt-20 xl:px-52 md:gap-20 md:mt-32 md:grid">
+            <div className="flex flex-col-reverse items-center grid-cols-2 px-10 mt-20 xl:px-44 md:gap-20 md:mt-32 md:grid">
                 <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Finest Textures</p>
                     <p className="mt-6 text-xl font-light text-justify text-textColor"><span className="italic">Premium textures right at your fingertips. </span>
@@ -125,7 +125,7 @@ function Content() {
                     <img src={room5} className="relative z-10 duration-500 transform rooms hover:scale-125" alt="Image of a room" />
                 </div>
             </div>
-            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-24 xl:pr-52 md:gap-20 md:mb-20 md:mt-32">
+            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-24 xl:pr-44 md:gap-20 md:mb-20 md:mt-32">
                 <div className="relative col-span-2 overflow-hidden rooms md:col-span-1" data-aos="fade-right" data-aos-duration="2000">
                     {/* <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" /> */}
                     <img src={room6} className="relative z-10 duration-500 transform rooms hover:scale-125" alt="Image of a room" />
