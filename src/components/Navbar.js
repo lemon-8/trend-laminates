@@ -22,7 +22,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={(active ? "bg-white fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 text-black" : "fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
+            <nav className={(active ? "bg-white fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 text-black" : "fixed top-0 pt-4 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <a className="inline-block py-2" href="#">

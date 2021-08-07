@@ -87,7 +87,7 @@ body::after {
   transform: scaleX(0);
   content: "";
   width: 100%;
-  border-radius: 16px;
+  border-radius: 100px;
   transform-origin: left;
   transition: transform 500ms ease-in-out;
 }
@@ -110,16 +110,108 @@ body::after {
   height: 516px;
   display: block;
   margin: auto;
+  overflow:hidden;
+}
+
+.custom-image-container{
+  width: 366px;
+  height: 448px;
+  display: block;
+  margin: auto;
+  overflow: hidden;
+}
+
+.custom-image-container:hover .custom-image,.rooms:hover .room-design,.products:hover .product-list{
+  transform: scale(1.25);
 }
 
 .custom-image{
   background: url('./images/customdec.png');
   background-position: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  transition: all 400ms ease-out;
+}
+
+.room-design,.product-list{
+  width: 100%;
+  height: 100%;
+  transition: all 400ms ease-out;
+}
+
+.stunning-design{
+  background: url('./images/room5.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.finest-texture{
+  background: url('./images/room6.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.laser-precision{
+  background: url('./images/room7.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.products{
+  width: 290px;
+  height: 366px;
   display: block;
   margin: auto;
-  width: 366px;
-  height: 448px;
-  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.decorative{
+  background: url('./images/decorative.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.mdf_board{
+  background: url('./images/mdf_board.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.pvc_laminates{
+  background: url('./images/pvc_laminates.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.korean{
+  background: url('./images/korean.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.pvc_panel{
+  background: url('./images/pvc_panel.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.pvc_tape{
+  background: url('./images/pvc_tape.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.acrylic{
+  background: url('./images/acrylic.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.wpc_board{
+  background: url('./images/wpc_board.png');
+  background-size: cover;
+  background-position: center;
 }
 
 .slick-dots {
@@ -165,7 +257,7 @@ body::after {
     content: "We are trend setters";
     opacity: 1;
   }
-  17% {
+  11% {
     opacity: 1;
   }
   18% {
@@ -176,11 +268,11 @@ body::after {
     opacity: 0;
     content: "Premium Quality";
   }
-  20% {
+  25% {
     opacity: 1;
     content: "Premium Quality";
   }
-  42% {
+  36% {
     opacity: 1;
   }
   43% {
@@ -191,11 +283,11 @@ body::after {
     opacity: 0;
     content: "Customer Satisfaction";
   }
-  45% {
+  50% {
     content: "Customer Satisfaction";
     opacity: 1;
   }
-  67% {
+  61% {
     opacity: 1;
   }
   68% {
@@ -206,11 +298,11 @@ body::after {
     opacity: 0;
     content: "Panoramic Catalogue";
   }
-  70% {
+  75% {
     content: "Panoramic Catalogue";
     opacity: 1;
   }
-  98% {
+  94% {
     opacity: 1;
   }
   99% {
@@ -232,7 +324,7 @@ body::after {
     content: "Stunning designs that will give you a taste of the future.";
     opacity: 1;
   }
-  17% {
+  11% {
     opacity: 1;
   }
   18% {
@@ -243,11 +335,11 @@ body::after {
     opacity: 0;
     content: "Unparalleled product quality made with the finest raw material available in the market.";
   }
-  20% {
+  25% {
     content: "Unparalleled product quality made with the finest raw material available in the market.";
     opacity: 1;
   }
-  42% {
+  36% {
     opacity: 1;
   }
   43% {
@@ -258,11 +350,11 @@ body::after {
     opacity: 0;
     content: "Building trust and understanding with our clients, with our premier customer service.";
   }
-  45% {
+  50% {
     content: "Building trust and understanding with our clients, with our premier customer service.";
     opacity: 1;
   }
-  67% {
+  61% {
     opacity: 1;
   }
   68% {
@@ -273,11 +365,11 @@ body::after {
     opacity: 0;
     content: "An extensive gamut of designs and textures to choose from.";
   }
-  70% {
+  75% {
     content: "An extensive gamut of designs and textures to choose from.";
     opacity: 1;
   }
-  98% {
+  94% {
     opacity: 1;
   }
   99% {

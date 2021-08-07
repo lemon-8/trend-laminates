@@ -16,6 +16,9 @@ import customdec from './images/customdec.png';
 import leaf from './images/leaf.png';
 import star from './images/star.png';
 import Carousel from './Carousel';
+import office from './images/office.jpg';
+import living_room from './images/livingroom.jpg';
+import bed_room from './images/bedroom.jpg';
 
 function Content() {
 
@@ -30,7 +33,8 @@ function Content() {
         swipeToSlide: true,
         autoplay: true,
         cssEase: "linear",
-        autoplaySpeed: 4000,
+        autoplaySpeed: 3500,
+        pauseOnHover: false,
     };
 
 
@@ -66,7 +70,7 @@ function Content() {
                         <img className="h-10 -mt-4 lg:h-auto" src={logo} alt="Trend" />
                     </div>
                 </div>
-                <ReactCompareSlider style={{ height: "75vh", width: "100%", objectFit: "contain", marginTop: "20px" }}
+                <ReactCompareSlider style={{ height: "75vh", width: "100%", objectFit: "contain", marginTop: "20px", borderRadius:"5px" }}
                     itemOne={<ReactCompareSliderImage src={leftimage} alt="Image one" />}
                     itemTwo={<ReactCompareSliderImage src={rightimage} alt="Image two" />}
                 />
@@ -77,20 +81,21 @@ function Content() {
 
 
             <div className="grid items-center justify-center grid-cols-2 py-20 mt-20 md:gap-10 bg-custombg" data-aos="fade-up" data-aos-duration="2000">
-                <div className="col-span-2 px-10 md:px-44 md:col-span-1" >
+                <div className="col-span-2 px-10 md:pl-60 md:col-span-1" >
                     <p className="text-5xl font-bold font-garamond text-custom">Custom solutions catered to your needs.</p>
                     <p className="mt-6 text-xl font-normal text-customdesc">We bring you a dazzling line-up of laminates and PVC sheets for all your needs. From rugged laminates to glossy attractive panels we have you covered.</p>
-                    <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out bg-white border border-white w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-2xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
+                    <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out bg-white border border-white w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-3xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
                 </div>
                 <div className="relative grid col-span-2 pr-10 md:col-span-1">
-                    <div className="custom-image"></div>
-                    {/* <img src={customdec} className="mx-auto w-96 h-96" alt="Room with books in shelves" /> */}
-                    <div className="absolute h-auto p-3 bg-white rounded-md right-40 opacity-90 w-44 -top-12">
+                    <div className="rounded-md custom-image-container">
+                        <div className="custom-image"></div>
+                    </div>{/* <img src={customdec} className="mx-auto w-96 h-96" alt="Room with books in shelves" /> */}
+                    <div className="absolute h-auto p-3 bg-white rounded-md right-17 opacity-90 w-44 -top-11">
                         <img src={leaf} />
                         <p className="mt-2 text-xl font-bold font-garamond">Eco Friendly</p>
                         <p className="mt-2 text-xs font-normal">All our products are made with exceptional care for the environment. We follow the best sustainable practices in the industry to assemble our unique eco-friendly inventory.</p>
                     </div>
-                    <div className="absolute h-auto p-3 bg-white rounded-md left-20 opacity-90 -bottom-12 w-44">
+                    <div className="absolute h-auto p-3 bg-white rounded-md left-13 opacity-90 -bottom-11 w-44">
                         <img src={star} />
                         <p className="mt-2 text-xl font-bold font-garamond">High Quality Panels</p>
                         <p className="mt-2 text-xs font-normal">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
@@ -99,42 +104,44 @@ function Content() {
             </div>
 
 
-            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-0 xl:pl-20 xl:pr-44">
+            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-0 xl:pl-28 xl:pr-60">
                 <div className="relative col-span-2 overflow-hidden md:col-span-1 rooms" data-aos="fade-right" data-aos-duration="2000" >
-                    <img src={room4} className="relative z-10 duration-500 transform rooms hover:scale-125" alt="Image of a room" />
+                    {/* <img src={room4} className="relative z-10 duration-500 transform rounded-md hover:rounded-md rooms hover:scale-125" alt="Image of a room" /> */}
+                    <div className="rounded-md rooms">
+                        <div className="stunning-design room-design"></div>
+                    </div>
                 </div>
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
+                <div className="col-span-2 pr-40 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Stunning Designs</p>
-                    <p className="mt-6 text-xl font-light text-justify text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
+                    <p className="mt-6 text-xl font-light text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                     <div className="relative">
-                        <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-2xl button-slide">See Catalogues <BsArrowRight className="ml-2" size={30} /></button>
+                        <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">See Catalogues <BsArrowRight className="ml-2" size={30} /></button>
                     </div>
                 </div>
             </div>
             <div className="flex flex-col-reverse items-center grid-cols-2 px-10 mt-20 xl:px-44 md:gap-20 md:mt-32 md:grid">
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
+                <div className="col-span-2 pl-16 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Finest Textures</p>
-                    <p className="mt-6 text-xl font-light text-justify text-textColor"><span className="italic">Premium textures right at your fingertips. </span>
+                    <p className="mt-6 text-xl font-light text-textColor"><span className="italic">Premium textures right at your fingertips. </span>
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the shiniest, smoothest, and most pleasing textures, which will make your home come alive.
                     </p>
                     <div className="relative">
-                        <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-2xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
+                        <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </div>
                 </div>
-                <div className="relative col-span-2 overflow-hidden rooms md:col-span-1" data-aos="fade-left" data-aos-duration="2000">
-                    <img src={room5} className="relative z-10 duration-500 transform rooms hover:scale-125" alt="Image of a room" />
+                <div className="rounded-md rooms">
+                    <div className="finest-texture room-design"></div>
                 </div>
             </div>
-            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-24 xl:pr-44 md:gap-20 md:mb-20 md:mt-32">
-                <div className="relative col-span-2 overflow-hidden rooms md:col-span-1" data-aos="fade-right" data-aos-duration="2000">
-                    {/* <img src={dots} className="absolute z-0 -right-4 -bottom-10" alt="" /> */}
-                    <img src={room6} className="relative z-10 duration-500 transform rooms hover:scale-125" alt="Image of a room" />
+            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-20 md:mb-20 md:mt-32">
+                <div className="rounded-md rooms">
+                    <div className="laser-precision room-design"></div>
                 </div>
-                <div className="col-span-2 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
+                <div className="col-span-2 pr-40 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>
-                    <p className="mt-6 text-xl font-light text-justify text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
+                    <p className="mt-6 text-xl font-light text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
                     <div className="relative">
-                        <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-2xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
+                        <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </div>
                 </div>
             </div>
@@ -142,10 +149,9 @@ function Content() {
 
             <div className="mt-10 bg-custombg">
                 <Slider {...settings1}>
-                    <Reviews title="Satisfied Clients" src={pvc_laminates} desc='“Trend PVC Laminates are the best quality laminates. They have designs for all needs”' author="- Vibha Arora  (Bedroom renovation)" />
-                    <Reviews title="Satisfied Clients" src={pvc_panel} desc='“Trend PVC Laminates are the best quality laminates. They have designs for all needs”' author="- Vibha Arora  (Bedroom renovation)" />
-                    <Reviews title="Satisfied Clients" src={pvc_laminates} desc='“Trend PVC Laminates are the best quality laminates. They have designs for all needs”' author="- Vibha Arora  (Bedroom renovation)" />
-                    <Reviews title="Satisfied Clients" src={pvc_panel} desc='“Trend PVC Laminates are the best quality laminates. They have designs for all needs”' author="- Vibha Arora  (Bedroom renovation)" />
+                    <Reviews title="Satisfied Clients" src={bed_room} desc='“Trend PVC Laminates are the best quality laminates. They have designs for all needs”' author="- Vibha Arora  (Bedroom renovation)" />
+                    <Reviews title="Satisfied Clients" src={living_room} desc='“Trend PVC Laminates gave my home a very great ambience. Just loved the design.”' author="- Rajesh Chopra  (Home renovation)" />
+                    <Reviews title="Satisfied Clients" src={office} desc='“Trend PVC Laminates changed the entire look of my office. Best recommendation.”' author="- Rahul Kumar  (Office renovation)" />
                 </Slider>
             </div>
         </div>

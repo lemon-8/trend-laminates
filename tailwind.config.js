@@ -22,6 +22,14 @@ module.exports = {
         touch1: "inset 250px 0 0 #000",
         get: "inset 0 0 0 #fff",
         get1: "inset 192px 0 0 #fff",
+      },
+      borderRadius:{
+        "3xl": "100px",
+      },
+      inset:{
+        "17": "17%",
+        "-11": "-11%",
+        "13": "13%"
       }
     },
   },

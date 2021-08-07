@@ -13,11 +13,14 @@ import "slick-carousel/slick/slick-theme.css";
 import { BsArrowRight } from 'react-icons/bs';
 
 function Carousel() {
-    const Products = ({ title, src }) => {
+    const Products = ({ title, src, type }) => {
         return (
             <div className="relative items-center mx-4 mt-20 overflow-hidden text-center">
-                <img src={src} className="w-full duration-500 transform rounded-md hover:scale-125 product-list h-96" alt="" />
-                <button className="absolute left-0 right-0 w-48 py-2 mx-auto text-center text-black duration-500 bg-white hover:border-black hover:text-white button-slide rounded-2xl bottom-5 product-text">{title}</button>
+                <div className="rounded-md products">
+                    <div className={"product-list " + type} />
+                    {/* <img src={src} className={"w-full duration-500 transform rounded-md hover:scale-125 product-list h-96"} alt="" /> */}
+                </div>
+                <button className="absolute left-0 right-0 w-48 py-2 mx-auto text-center text-black duration-500 bg-white hover:border-black hover:text-white button-slide rounded-3xl bottom-5 product-text">{title}</button>
             </div>
         )
     }
@@ -58,17 +61,17 @@ function Carousel() {
                 <p className="mt-6 text-base font-normal text-center text-subtitle">We are TrendPVC, a leader in the lamination industry supplying premium flat laminated panels to a diverse clientele.</p>
                 <div className="w-full h-full">
                     <Slider {...settings}>
-                        <Products title="Decorative" src={decorative} />
-                        <Products title="MDF Board" src={mdf_board} />
-                        <Products title="PVC Laminates" src={pvc_laminates} />
-                        <Products title="Korean Charcoal" src={korean} />
-                        <Products title="PVC 3D PANEL" src={pvc_panel} />
-                        <Products title="PVC Tapes" src={pvc_tape} />
-                        <Products title="Acrylic Laminates" src={acrylic} />
-                        <Products title="WPC Board" src={wpc_board} />
+                        <Products title="Decorative" type="decorative" src={decorative} />
+                        <Products title="MDF Board" type="mdf_board" src={mdf_board} />
+                        <Products title="PVC Laminates" type="pvc_laminates" src={pvc_laminates} />
+                        <Products title="Korean Charcoal" type="korean" src={korean} />
+                        <Products title="PVC 3D PANEL" type="pvc_panel" src={pvc_panel} />
+                        <Products title="PVC Tapes" type="pvc_tape" src={pvc_tape} />
+                        <Products title="Acrylic Laminates" type="acrylic" src={acrylic} />
+                        <Products title="WPC Board" type="wpc_board" src={wpc_board} />
                     </Slider>
                 </div>
-                <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out border border-black w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-2xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
+                <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out border border-black w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-3xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
             </div>
         </div>
     )
