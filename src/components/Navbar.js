@@ -3,6 +3,8 @@ import { BiMenu } from 'react-icons/bi';
 import { AiFillCloseCircle } from 'react-icons/ai';
 import Logo from '../images/logoblack.png';
 import LogoW from '../images/logowhite.png';
+import { Link } from 'react-router-dom';
+import Products from '../Products';
 
 export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -22,7 +24,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={(active ? "bg-white fixed top-0 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 text-black" : "fixed top-0 pt-4 right-0 z-50 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
+            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 text-black" : "fixed top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <a className="inline-block py-2" href="#">
@@ -42,7 +44,16 @@ export default function Navbar() {
                             (navbarOpen ? "flex" : " hidden")
                         }
                     >
-                        <ul className="flex flex-col list-none lg:flex-row lg:ml-auto"   >
+                        <ul className="flex flex-col list-none lg:flex-row lg:ml-auto">
+                            <li className="nav-item">
+                                <a
+                                    className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75"
+                                >
+                                    <Link to="/">
+                                        Home
+                                    </Link>
+                                </a>
+                            </li>
                             <li className="nav-item">
                                 <a
                                     className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75"
@@ -54,9 +65,10 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <a
                                     className="flex items-center justify-center px-4 py-2 text-lg font-normal duration-200 hover:opacity-75"
-                                    href="#"
                                 >
-                                    Products
+                                    <Link to="/products">
+                                        Products
+                                    </Link>
                                 </a>
                             </li>
                             <li className="nav-item">

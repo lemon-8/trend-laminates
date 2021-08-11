@@ -215,7 +215,62 @@ body::after {
 }
 
 .slick-dots {
-  display: none !important;
+  transform: rotate(90deg);
+  right: 5%;
+  bottom: 30%;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+}
+
+.slick-dots li button{
+  right: 0;
+}
+
+.slick-dots li button:before{
+  font-size: 1rem;
+}
+
+.lam-image1,.lam-image2,.lam-image3,.lam-image4,.lam-image5,.lam-image6,.lam-image7,.lam-image8{
+  transition: transform 500ms ease-in;
+}
+
+.laminates1:hover~.lam-image1{
+  transform: translateY(-96px);
+}
+
+.laminates2:hover~.lam-image2{
+  transform: translateY(-96px);
+}
+.laminates3:hover~.lam-image3{
+  transform: translateY(-96px);
+}
+
+.laminates4:hover~.lam-image4{
+  transform: translateY(-96px);
+}
+.laminates5:hover~.lam-image5{
+  transform: translateY(-96px);
+}
+.laminates6:hover~.lam-image6{
+  transform: translateY(-96px);
+}
+.laminates7:hover~.lam-image7{
+  transform: translateY(-96px);
+}
+.laminates8:hover~.lam-image8{
+  transform: translateY(-96px);
+}
+
+.circles{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+
+.circles.active{
+  background: black;
 }
 
 @keyframes slider {

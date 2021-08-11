@@ -2,17 +2,11 @@ import React from 'react';
 import leftimage from './images/left_compare.png';
 import rightimage from './images/right_compare.png';
 import { BsArrowRight } from 'react-icons/bs';
-import room4 from './images/room5.png';
 import logo from './images/logowhite.png';
-import room5 from './images/room6.png';
-import room6 from './images/room7.png';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
-import pvc_laminates from './images/pvc_laminates.png';
-import pvc_panel from './images/pvc_panel.png';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import customdec from './images/customdec.png';
 import leaf from './images/leaf.png';
 import star from './images/star.png';
 import Carousel from './Carousel';
@@ -24,7 +18,7 @@ function Content() {
 
 
     const settings1 = {
-        dots: true,
+        dots: false,
         fade: true,
         infinite: true,
         speed: 500,
@@ -89,7 +83,7 @@ function Content() {
                 <div className="relative grid col-span-2 pr-10 md:col-span-1">
                     <div className="rounded-md custom-image-container">
                         <div className="custom-image"></div>
-                    </div>{/* <img src={customdec} className="mx-auto w-96 h-96" alt="Room with books in shelves" /> */}
+                    </div>
                     <div className="absolute h-auto p-3 bg-white rounded-md right-17 opacity-90 w-44 -top-11">
                         <img src={leaf} />
                         <p className="mt-2 text-xl font-bold font-garamond">Eco Friendly</p>
@@ -106,7 +100,6 @@ function Content() {
 
             <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-0 xl:pl-28 xl:pr-60">
                 <div className="relative col-span-2 overflow-hidden md:col-span-1 rooms" data-aos="fade-right" data-aos-duration="2000" >
-                    {/* <img src={room4} className="relative z-10 duration-500 transform rounded-md hover:rounded-md rooms hover:scale-125" alt="Image of a room" /> */}
                     <div className="rounded-md rooms">
                         <div className="stunning-design room-design"></div>
                     </div>
@@ -129,12 +122,12 @@ function Content() {
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </div>
                 </div>
-                <div className="rounded-md rooms">
+                <div className="rounded-md rooms"  data-aos="fade-left" data-aos-duration="2000">
                     <div className="finest-texture room-design"></div>
                 </div>
             </div>
             <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-20 md:mb-20 md:mt-32">
-                <div className="rounded-md rooms">
+                <div className="rounded-md rooms"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="laser-precision room-design"></div>
                 </div>
                 <div className="col-span-2 pr-40 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
