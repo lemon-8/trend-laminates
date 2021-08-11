@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BsArrowRight } from 'react-icons/bs';
 import laminate1 from './images/laminate1.png';
 import laminate2 from './images/laminate2.png';
@@ -11,50 +12,25 @@ import laminate7 from './images/laminate7.png';
 import product1 from './images/decorative.png';
 import product2 from './images/customdec.png';
 import product3 from './images/bedroom.jpg';
-import Footer from './components/Footer';
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import korean from './images/korean.png';
 
 
 function Products() {
-    const settings = {
-        dots: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        vertical: true,
-        verticalSwiping: true,        
-    };
-
-    const settings1 = {
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2500,
-        cssEase: "linear",      
-    };
 
     const ImageSlider = () => {
         return (
-            <div className="h-66">
-                <div className="grid grid-cols-12 gap-10">
-                    <div className="col-span-6">
-                        <Slider {...settings1}>
-                            <img src={product1} alt="" className="" />
-                            <img src={product2} alt="" className="" />
-                            <img src={product3} alt="" className="" />
-                        </Slider>
-                    </div>
-                    <div className="col-span-6">
-                        <p className="text-5xl font-bold font-garamond">Decorative Laminates</p>
-                        <p className="mt-6 text-3xl font-normal">0.8mm laminates</p>
-                        <p className="w-9/12 mt-6 mb-10 text-lg font-normal">Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor- an effectual way to obtain superior style and elegance in interior surface design.</p>
-                        <button className="flex items-center justify-center w-48 text-lg font-normal duration-700 border border-black shadow-touch hover:shadow-touch1 rounded-3xl h-9 hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
-                    </div>
+            <div className="grid justify-center h-screen grid-cols-2 text-left">
+                <div className="h-auto col-span-1">
+                    <Carousel axis={'vertical'} verticalSwipe={'standard'} showIndicators={false}>
+                        <img src={product1} alt="" />
+                        <img src={product2} alt="" />
+                        <img src={product3} alt="" />
+                    </Carousel>
+                </div>
+                <div className="col-span-1 p-10">
+                    <p className="text-5xl font-bold font-garamond">Decorative Laminates</p>
+                    <p className="mt-6 text-3xl font-normal">0.8mm laminates</p>
+                    <p className="w-9/12 mt-6 mb-10 text-lg font-normal">Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor- an effectual way to obtain superior style and elegance in interior surface design.</p>
+                    <button className="flex items-center justify-center w-48 text-lg font-normal duration-700 border border-black shadow-touch hover:shadow-touch1 rounded-3xl h-9 hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
                 </div>
             </div>
         )
@@ -62,7 +38,6 @@ function Products() {
 
     return (
         <div>
-            <Navbar />
             <div className="relative px-10 pt-40 pb-40 overflow-hidden text-white bg-black md:h-screen xl:pl-48 xl:pr-0">
                 <h1 className="font-bold text-7xl font-garamond">Our Products</h1>
                 <p className="w-full mt-6 text-xl font-light md:w-2/3">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
@@ -90,15 +65,14 @@ function Products() {
                     </div>
                 </div>
             </div>
-            <div className="mt-20 mb-20">
-                <Slider {...settings}>
+            <div className="flex justify-center h-screen py-20">
+                <Carousel axis={'vertical'} verticalSwipe={'natural'} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={20} showArrows={false} interval={5000} showThumbs={false} showIndicators={true} showStatus={false} autoPlay={true} swipeable={true} infiniteLoop={true} >
                     <ImageSlider />
                     <ImageSlider />
                     <ImageSlider />
                     <ImageSlider />
-                </Slider>
-            </div>
-            <Footer />
+                </Carousel>
+            </div >
         </div >
     )
 }

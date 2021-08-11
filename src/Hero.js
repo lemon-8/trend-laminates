@@ -1,6 +1,5 @@
 import React from 'react';
 import { BsArrowRight } from 'react-icons/bs';
-import Footer from './components/Footer';
 import Content from './Content';
 
 function Hero() {
@@ -13,7 +12,6 @@ function Hero() {
                 <button className="flex items-center justify-center w-48 p-4 py-6 mt-6 font-medium text-white duration-700 ease-out border border-white shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">Get in Touch <BsArrowRight className="ml-2" size={30} /></button>
             </div>
             <Content />
-            <Footer />
         </div>
     )
 }
