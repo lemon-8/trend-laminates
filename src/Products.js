@@ -9,24 +9,20 @@ import laminate4 from './images/laminate4.png';
 import laminate5 from './images/laminate5.png';
 import laminate6 from './images/laminate6.png';
 import laminate7 from './images/laminate7.png';
-import product1 from './images/decorative.png';
-import product2 from './images/customdec.png';
-import product3 from './images/bedroom.jpg';
-
 
 function Products() {
 
     const ImageSlider = () => {
         return (
-            <div className="grid justify-center h-screen grid-cols-2 text-left">
-                <div className="h-auto col-span-1">
-                    <Carousel axis={'vertical'} verticalSwipe={'standard'} showIndicators={false}>
-                        <img src={product1} alt="" />
-                        <img src={product2} alt="" />
-                        <img src={product3} alt="" />
+            <div className="grid justify-center grid-cols-2 text-left h-90">
+                <div className="col-span-1 product-line">
+                    <Carousel axis={'vertical'} verticalSwipe={'standard'} showThumbs={true} showIndicators={false}>
+                        <div className="h-90 product1" />
+                        <div className="h-90 product2" />
+                        <div className="h-90 product3" />
                     </Carousel>
                 </div>
-                <div className="col-span-1 p-10">
+                <div className="items-center col-span-1 px-10 py-20">
                     <p className="text-5xl font-bold font-garamond">Decorative Laminates</p>
                     <p className="mt-6 text-3xl font-normal">0.8mm laminates</p>
                     <p className="w-9/12 mt-6 mb-10 text-lg font-normal">Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor- an effectual way to obtain superior style and elegance in interior surface design.</p>
@@ -65,7 +61,7 @@ function Products() {
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center h-screen py-20">
+            <div className="flex justify-center h-90">
                 <Carousel axis={'vertical'} verticalSwipe={'natural'} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={20} showArrows={false} interval={5000} showThumbs={false} showIndicators={true} showStatus={false} autoPlay={true} swipeable={true} infiniteLoop={true} >
                     <ImageSlider />
                     <ImageSlider />

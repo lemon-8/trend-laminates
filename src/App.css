@@ -220,6 +220,27 @@ body::after {
   bottom: 60% !important;
 }
 
+.product1{
+  background : url('./images/decorative.png');
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position : center;
+}
+
+.product2{
+  background : url('./images/korean.png');
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position : center;
+}
+
+.product3{
+  background : url('./images/bedroom.jpg');
+  background-repeat : no-repeat;
+  background-size : cover;
+  background-position : center;
+}
+
 .carousel .control-dots .dot{
   background: #000 !important;
 }
