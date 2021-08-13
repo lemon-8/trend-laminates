@@ -16,7 +16,6 @@ import bed_room from './images/bedroom.jpg';
 
 function Content() {
 
-
     const settings1 = {
         dots: false,
         fade: true,
@@ -30,7 +29,6 @@ function Content() {
         autoplaySpeed: 3500,
         pauseOnHover: false,
     };
-
 
 
     const Reviews = ({ title, src, desc, author }) => {
@@ -70,9 +68,7 @@ function Content() {
                 />
             </div>
 
-
             <Carousel />
-
 
             <div className="grid items-center justify-center grid-cols-2 py-20 mt-20 md:gap-10 bg-custombg" data-aos="fade-up" data-aos-duration="2000">
                 <div className="col-span-2 px-10 md:pl-60 md:col-span-1" >
@@ -98,13 +94,13 @@ function Content() {
             </div>
 
 
-            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-0 xl:pl-28 xl:pr-60">
+            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-20 xl:pl-28 xl:pr-60">
                 <div className="relative col-span-2 overflow-hidden md:col-span-1 rooms" data-aos="fade-right" data-aos-duration="2000" >
                     <div className="rounded-md rooms">
                         <div className="stunning-design room-design"></div>
                     </div>
                 </div>
-                <div className="col-span-2 pr-40 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
+                <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Stunning Designs</p>
                     <p className="mt-6 text-xl font-light text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                     <div className="relative">
@@ -130,7 +126,7 @@ function Content() {
                 <div className="rounded-md rooms"  data-aos="fade-right" data-aos-duration="2000">
                     <div className="laser-precision room-design"></div>
                 </div>
-                <div className="col-span-2 pr-40 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
+                <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>
                     <p className="mt-6 text-xl font-light text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
                     <div className="relative">

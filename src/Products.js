@@ -6,20 +6,17 @@ import laminate1 from './images/laminate1.png';
 import laminate2 from './images/laminate2.png';
 import laminate3 from './images/laminate3.png';
 import laminate4 from './images/laminate4.png';
-import laminate5 from './images/laminate5.png';
-import laminate6 from './images/laminate6.png';
-import laminate7 from './images/laminate7.png';
 
 function Products() {
 
     const ImageSlider = () => {
         return (
-            <div className="grid justify-center grid-cols-2 text-left h-90">
+            <div className="grid justify-center h-screen grid-cols-2 text-left">
                 <div className="col-span-1 product-line">
-                    <Carousel axis={'vertical'} verticalSwipe={'standard'} showThumbs={true} showIndicators={false}>
-                        <div className="h-90 product1" />
-                        <div className="h-90 product2" />
-                        <div className="h-90 product3" />
+                    <Carousel axis={'vertical'} verticalSwipe={'standard'} autoPlay={true} interval={1700} infiniteLoop={true} showThumbs={true} showIndicators={false}>
+                        <div className="h-screen product1" />
+                        <div className="h-screen product2" />
+                        <div className="h-screen product3" />
                     </Carousel>
                 </div>
                 <div className="items-center col-span-1 px-10 py-20">
@@ -32,37 +29,35 @@ function Products() {
         )
     }
 
+    const Button = ({ text,addClass }) => {
+        return (
+            <button className={`flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1 ${addClass}`}>{text} <BsArrowRight className="ml-2" size={30} /></button>
+        )
+    }
+
     return (
         <div>
             <div className="relative px-10 pt-40 pb-40 overflow-hidden text-white bg-black md:h-screen xl:pl-48 xl:pr-0">
                 <h1 className="font-bold text-7xl font-garamond">Our Products</h1>
-                <p className="w-full mt-6 text-xl font-light md:w-2/3">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
+                <p className="w-full mt-10 text-xl font-light md:w-1/2">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                     Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
-                <div className="grid grid-cols-4 md:w-1/3">
+                <div className="grid grid-cols-4 gap-10 mt-6 md:w-1/3">
                     <div className="col-span-4 md:col-span-2">
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates1 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">Decorative <BsArrowRight className="ml-2" size={30} /></button>
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates2 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">PVC 3D Panel <BsArrowRight className="ml-2" size={30} /></button>
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates3 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">PVC Laminates <BsArrowRight className="ml-2" size={30} /></button>
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates4 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">PVC Tape <BsArrowRight className="ml-2" size={30} /></button>
-                        <img src={laminate1} className="absolute h-1/3 md:h-4/5 lam-image1 -bottom-20 z-70 -right-32 md:-right-40" />
-                        <img src={laminate2} className="absolute h-1/3 md:h-4/5 lam-image2 -bottom-20 z-60 -right-20 md:-right-20" />
-                        <img src={laminate3} className="absolute z-50 md:right-0 lam-image3 h-1/3 md:h-4/5 -right-10 -bottom-20" />
-                        <img src={laminate4} className="absolute right-0 z-40 lam-image4 h-1/3 md:h-4/5 -bottom-20 md:right-20" />
+                        <Button text="Decorative" addClass="laminates1" />
+                        <Button text="PVC Laminates" addClass="laminates2" />
+                        <img src={laminate1} className="absolute z-50 h-1/3 md:h-full lam-image1 -bottom-0 -right-32 md:-right-60" />
+                        <img src={laminate2} className="absolute z-40 h-1/3 md:h-full lam-image2 -bottom-0 -right-20 md:-right-40" />
                     </div>
                     <div className="col-span-4 md:col-span-2 mb-96">
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates5 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">MDF Board <BsArrowRight className="ml-2" size={30} /></button>
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates6 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">WPC Board <BsArrowRight className="ml-2" size={30} /></button>
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates7 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">Acrylic Laminates <BsArrowRight className="ml-2" size={30} /></button>
-                        <button className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white laminates8 shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1">Decorative Sheets <BsArrowRight className="ml-2" size={30} /></button>
-                        <img src={laminate5} className="absolute z-30 h-1/3 md:h-4/5 lam-image5 right-10 -bottom-20 md:right-40" />
-                        <img src={laminate6} className="absolute z-20 h-1/3 md:h-4/5 lam-image6 right-32 -bottom-20 md:right-72" />
-                        <img src={laminate7} className="absolute z-10 h-1/3 md:h-4/5 lam-image7 right-40 -bottom-20 md:right-80" />
-                        <img src={laminate5} className="absolute z-0 h-1/3 md:h-4/5 lam-image8 right-60 -bottom-20 md:right-96" />
+                        <Button text="MDF Board" addClass="laminates3" />
+                        <Button text="WPC Board" addClass="laminates4" />
+                        <img src={laminate3} className="absolute z-30 h-1/3 md:h-full lam-image3 right-10 -bottom-0 md:-right-20" />
+                        <img src={laminate4} className="absolute z-20 h-1/3 md:h-full lam-image4 right-32 -bottom-0 md:right-0" />
                     </div>
                 </div>
             </div>
-            <div className="flex justify-center h-90">
-                <Carousel axis={'vertical'} verticalSwipe={'natural'} preventMovementUntilSwipeScrollTolerance={true} swipeScrollTolerance={20} showArrows={false} interval={5000} showThumbs={false} showIndicators={true} showStatus={false} autoPlay={true} swipeable={true} infiniteLoop={true} >
+            <div className="flex justify-center h-screen overflow-x-hidden" style={{ scrollSnapType: "y mandatory" }}>
+                <Carousel axis={'vertical'} swipeable={true} emulateTouch={true} useKeyboardArrows={true} onSwipeStart={true} verticalSwipe={'natural'} showArrows={false} interval={5000} showThumbs={false} showStatus={false} autoPlay={false} infiniteLoop={true} >
                     <ImageSlider />
                     <ImageSlider />
                     <ImageSlider />

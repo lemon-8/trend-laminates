@@ -245,7 +245,7 @@ body::after {
   background: #000 !important;
 }
 
-.lam-image1,.lam-image2,.lam-image3,.lam-image4,.lam-image5,.lam-image6,.lam-image7,.lam-image8{
+.lam-image1,.lam-image2,.lam-image3,.lam-image4{
   transition: transform 500ms ease-in;
 }
 
@@ -256,23 +256,12 @@ body::after {
 .laminates2:hover~.lam-image2{
   transform: translateY(-96px);
 }
+
 .laminates3:hover~.lam-image3{
   transform: translateY(-96px);
 }
 
 .laminates4:hover~.lam-image4{
-  transform: translateY(-96px);
-}
-.laminates5:hover~.lam-image5{
-  transform: translateY(-96px);
-}
-.laminates6:hover~.lam-image6{
-  transform: translateY(-96px);
-}
-.laminates7:hover~.lam-image7{
-  transform: translateY(-96px);
-}
-.laminates8:hover~.lam-image8{
   transform: translateY(-96px);
 }
 
