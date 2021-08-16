@@ -109,7 +109,7 @@ function Products() {
                 </div>
             </div>
             <div id="products-container" className="relative h-screen">
-                <Tabs defaultIndex="1">
+                <Tabs defaultIndex="1" onTabClick={console.log}>
                     <TabItem label="Decorative" index="1">
                         <ImageSlider src1={decorative} src2={decorative1} title="Decorative Laminates" />
                     </TabItem>
