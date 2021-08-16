@@ -25,13 +25,13 @@ import pvc_tape1 from './images/pvc_tape1.png';
 
 function Products() {
 
-    const ImageSlider = ({ src1, src2, src3, title }) => {
+    const ImageSlider = ({ src1, src2, title }) => {
         return (
             <div className="grid justify-center h-screen grid-cols-2 text-left">
                 <div className="col-span-1 product-line">
                     <Carousel dynamicHeight={true} thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showThumbs={true} showIndicators={false}>
-                        <img src={src1} className="h-screen" />
-                        <img src={src2} className="h-screen" />
+                        <img src={src1} className="h-screen" alt={`Sample of ${title}`} />
+                        <img src={src2} className="h-screen" alt={`Sample of ${title}`} />
                     </Carousel>
                 </div>
                 <div className="col-span-1 p-10">
@@ -52,10 +52,9 @@ function Products() {
 
     const TabItem = props => <div {...props} />;
 
-    const Tabs = ({ defaultIndex = 1, onTabClick, children }) => {
+    const Tabs = ({ defaultIndex, children }) => {
         const [bindIndex, setBindIndex] = React.useState(defaultIndex);
         const changeTab = newIndex => {
-            if (typeof onTabClick === 'function') onTabClick(bindIndex);
             setBindIndex(newIndex);
         };
         const items = children.filter(item => item.type.name === 'TabItem');
@@ -64,7 +63,7 @@ function Products() {
             <div className="wrapper">
                 <div className="tab-view">
                     {items.map(({ props }) => (
-                        <div key={props}
+                        <div
                             {...props}
                             className={`tab-content ${bindIndex === props.index ? 'block' : 'hidden'}`}
                             key={`tab-content-${props.index}`}
@@ -109,7 +108,7 @@ function Products() {
                 </div>
             </div>
             <div id="products-container" className="relative h-screen">
-                <Tabs defaultIndex="1" onTabClick={console.log}>
+                <Tabs defaultIndex="1">
                     <TabItem label="Decorative" index="1">
                         <ImageSlider src1={decorative} src2={decorative1} title="Decorative Laminates" />
                     </TabItem>
@@ -135,6 +134,7 @@ function Products() {
                         <ImageSlider src1={pvc_panel} src2={pvc_panel1} title="PVC 3D Panels" />
                     </TabItem>
                 </Tabs>
+                {/* <Products_slider /> */}
             </div>
         </div>
     )
