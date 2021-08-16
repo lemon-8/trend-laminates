@@ -12,7 +12,7 @@ export default function Navbar() {
     const [active, setActive] = React.useState(false);
 
     const changeBackground = () => {
-        if (window.scrollY >= 500) {
+        if (window.scrollY >= 100) {
             setActive(true);
         }
         else {
@@ -24,11 +24,13 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 text-black" : "fixed top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
+            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 duration-500 text-black" : "fixed duration-500 top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <a className="inline-block py-2" href="#">
+                        <Link to="/">
                             {(active ? <img src={Logo} alt="Logo" className="h-8 text-white md:h-12" /> : <img src={LogoW} alt="Logo" className="h-8 md:h-12" />)}
+                        </Link>
                         </a>
                         <button
                             className="block px-3 py-1 ml-auto text-3xl cursor-pointer lg:hidden"
