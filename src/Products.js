@@ -52,7 +52,7 @@ function Products() {
 
     const TabItem = props => <div {...props} />;
 
-    const Tabs = ({ defaultIndex = 0, onTabClick, children }) => {
+    const Tabs = ({ defaultIndex = 1, onTabClick, children }) => {
         const [bindIndex, setBindIndex] = React.useState(defaultIndex);
         const changeTab = newIndex => {
             if (typeof onTabClick === 'function') onTabClick(bindIndex);
@@ -62,7 +62,7 @@ function Products() {
 
         return (
             <div className="wrapper">
-                <div>
+                <div className="tab-view">
                     {items.map(({ props }) => (
                         <div key={props}
                             {...props}
@@ -71,7 +71,7 @@ function Products() {
                         />
                     ))}
                 </div>
-                <div className="absolute right-0 w-1/2 text-center bottom-16">
+                <div className="absolute right-0 w-1/2 text-center tab-menu bottom-16">
                     {items.map(({ props: { index, label } }) => (
                         <button
                             key={`tab-btn-${index}`}
@@ -89,7 +89,7 @@ function Products() {
     return (
         <div>
             <div className="relative px-10 pt-40 pb-40 overflow-hidden text-white bg-black md:h-screen xl:pl-48 xl:pr-0">
-                <h1 className="font-bold text-7xl font-garamond">Our Products</h1>
+                <h1 className="text-7xl font-garamond">Our Products</h1>
                 <p className="w-full mt-10 text-xl font-light md:w-3/4">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                     Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
                 <div className="grid justify-center grid-cols-4 gap-10 mt-10 md:max-w-sm">
