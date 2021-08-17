@@ -64,10 +64,11 @@ function Products() {
                 <div className="tab-view">
                     {items.map(({ props }) => (
                         <div
-                            {...props}
                             className={`tab-content ${bindIndex === props.index ? 'block' : 'hidden'}`}
                             key={`tab-content-${props.index}`}
-                        />
+                        >
+                            <ImageSlider src1={props.src1} src2={props.src2} title={props.title} />
+                            </div>
                     ))}
                 </div>
                 <div className="absolute right-0 w-1/2 text-center tab-menu bottom-16">
@@ -109,32 +110,15 @@ function Products() {
             </div>
             <div id="products-container" className="relative h-screen">
                 <Tabs defaultIndex="1">
-                    <TabItem label="Decorative" index="1">
-                        <ImageSlider src1={decorative} src2={decorative1} title="Decorative Laminates" />
-                    </TabItem>
-                    <TabItem label="PVC Premium" index="2">
-                        <ImageSlider src1={pvc_laminate} src2={pvc_laminate1} title="PVC Premium" />
-                    </TabItem>
-                    <TabItem label="HD Acryllic" index="3">
-                        <ImageSlider src1={acrylic} src2={acrylic1} title="HD Acryllic" />
-                    </TabItem>
-                    <TabItem label="WPC Boards" index="4">
-                        <ImageSlider src1={wpc_board} src2={wpc_board1} title="WPC Boards" />
-                    </TabItem>
-                    <TabItem label="MDF Boards" index="5">
-                        <ImageSlider src1={mdf_board} src2={mdf_board1} title="MDF Boards" />
-                    </TabItem>
-                    <TabItem label="Korean Charcoal Panels" index="6">
-                        <ImageSlider src1={korean} src2={korean1} title="Korean Charcoal Panels" />
-                    </TabItem>
-                    <TabItem label="PVC Edge Band Tape" index="7">
-                        <ImageSlider src1={pvc_tape} src2={pvc_tape1} title="PVC Edge Band Tape" />
-                    </TabItem>
-                    <TabItem label="PVC 3D Panels" index="8">
-                        <ImageSlider src1={pvc_panel} src2={pvc_panel1} title="PVC 3D Panels" />
-                    </TabItem>
+                    <TabItem label="Decorative" index="1" src1={decorative} src2={decorative1} title="Decorative Laminates" />
+                    <TabItem label="PVC Premium" index="2" src1={pvc_laminate} src2={pvc_laminate1} title="PVC Premium" />
+                    <TabItem label="HD Acryllic" index="3" src1={acrylic} src2={acrylic1} title="HD Acryllic" />
+                    <TabItem label="WPC Boards" index="4" src1={wpc_board} src2={wpc_board1} title="WPC Boards" />
+                    <TabItem label="MDF Boards" index="5" src1={mdf_board} src2={mdf_board1} title="MDF Boards" />
+                    <TabItem label="Korean Charcoal Panels" index="6" src1={korean} src2={korean1} title="Korean Charcoal Panels" />
+                    <TabItem label="PVC Edge Band Tape" index="7" src1={pvc_tape} src2={pvc_tape1} title="PVC Edge Band Tape" />                    
+                    <TabItem label="PVC 3D Panels" index="8" src1={pvc_panel} src2={pvc_panel1} title="PVC 3D Panels" />
                 </Tabs>
-                {/* <Products_slider /> */}
             </div>
         </div>
     )
