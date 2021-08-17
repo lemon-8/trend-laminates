@@ -222,7 +222,7 @@ body::after {
 }
 
 .tab-content{
-  animation: fade 1s ease-in;
+  animation: fade 700ms ease-in-out;
 }
 
 @keyframes fade{

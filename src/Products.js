@@ -25,65 +25,91 @@ import pvc_tape1 from './images/pvc_tape1.png';
 
 function Products() {
 
-    const ImageSlider = ({ src1, src2, title }) => {
-        return (
-            <div className="grid justify-center h-screen grid-cols-2 text-left">
-                <div className="col-span-1 product-line">
-                    <Carousel dynamicHeight={true} thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showThumbs={true} showIndicators={false}>
-                        <img src={src1} className="h-screen" alt={`Sample of ${title}`} />
-                        <img src={src2} className="h-screen" alt={`Sample of ${title}`} />
-                    </Carousel>
-                </div>
-                <div className="col-span-1 p-10">
-                    <p className="text-5xl font-bold font-garamond">{title}</p>
-                    <p className="mt-6 text-3xl font-normal">0.8mm laminates</p>
-                    <p className="w-9/12 mt-6 mb-10 text-lg font-normal">Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor- an effectual way to obtain superior style and elegance in interior surface design.</p>
-                    <button className="flex items-center justify-center w-48 text-lg font-normal duration-700 border border-black shadow-touch hover:shadow-touch1 rounded-3xl h-9 hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
-                </div>
-            </div>
-        )
-    }
-
     const Button = ({ text, addClass }) => {
         return (
             <button className={`flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1 ${addClass}`}>{text} <BsArrowRight className="ml-2" size={30} /></button>
         )
     }
 
-    const TabItem = props => <div {...props} />;
-
-    const Tabs = ({ defaultIndex, children }) => {
-        const [bindIndex, setBindIndex] = React.useState(defaultIndex);
-        const changeTab = newIndex => {
-            setBindIndex(newIndex);
-        };
-        const items = children.filter(item => item.type.name === 'TabItem');
-
+    const tabItems = [
+        {
+            id: 1,
+            src1: decorative,
+            src2: decorative1,
+            title: 'Decorative Laminates',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 2,
+            src1: pvc_laminate,
+            src2: pvc_laminate1,
+            title: 'PVC Premium',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 3,
+            src1: acrylic,
+            src2: acrylic1,
+            title: 'HD Acryllic',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 4,
+            src1: wpc_board,
+            src2: wpc_board1,
+            title: 'WPC Boards',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 5,
+            src1: mdf_board,
+            src2: mdf_board1,
+            title: 'MDF Boards',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 6,
+            src1: korean,
+            src2: korean1,
+            title: 'Korean Charcoal Panels',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 7,
+            src1: pvc_tape,
+            src2: pvc_tape1,
+            title: 'PVC Edge Band Tape',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+        {
+            id: 8,
+            src1: pvc_panel,
+            src2: pvc_panel1,
+            title: 'PVC 3D Panels',
+            subtitle: '0.8 laminates',
+            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
+        },
+    ];
+    
+    const [index, setIndex] = React.useState(1);
+    
+    const TabItemComponent = ({
+        title = '',
+        onItemClicked = () => console.error('You passed no action to the component'),
+        isActive = false,
+    }) => {
         return (
-            <div className="wrapper">
-                <div className="tab-view">
-                    {items.map(({ props }) => (
-                        <div
-                            className={`tab-content ${bindIndex === props.index ? 'block' : 'hidden'}`}
-                            key={`tab-content-${props.index}`}
-                        >
-                            <ImageSlider src1={props.src1} src2={props.src2} title={props.title} />
-                            </div>
-                    ))}
-                </div>
-                <div className="absolute right-0 w-1/2 text-center tab-menu bottom-16">
-                    {items.map(({ props: { index, label } }) => (
-                        <button
-                            key={`tab-btn-${index}`}
-                            onClick={() => changeTab(index)}
-                            className={bindIndex === index ? 'font-semibold px-4 py-2 text-black' : 'font-normal px-4 py-2 text-gray-500 hover:text-black hover:font-semibold'}
-                        >
-                            {label}
-                        </button>
-                    ))}
-                </div>
+            <div className={isActive ? 'font-semibold px-3 py-2 text-black' : 'font-normal px-3 py-2 text-gray-500 hover:text-black'} onClick={onItemClicked}>
+                <p>{title}</p>
             </div>
-        );
+        )
     };
 
     return (
@@ -109,18 +135,39 @@ function Products() {
                 </div>
             </div>
             <div id="products-container" className="relative h-screen">
-                <Tabs defaultIndex="1">
-                    <TabItem label="Decorative" index="1" src1={decorative} src2={decorative1} title="Decorative Laminates" />
-                    <TabItem label="PVC Premium" index="2" src1={pvc_laminate} src2={pvc_laminate1} title="PVC Premium" />
-                    <TabItem label="HD Acryllic" index="3" src1={acrylic} src2={acrylic1} title="HD Acryllic" />
-                    <TabItem label="WPC Boards" index="4" src1={wpc_board} src2={wpc_board1} title="WPC Boards" />
-                    <TabItem label="MDF Boards" index="5" src1={mdf_board} src2={mdf_board1} title="MDF Boards" />
-                    <TabItem label="Korean Charcoal Panels" index="6" src1={korean} src2={korean1} title="Korean Charcoal Panels" />
-                    <TabItem label="PVC Edge Band Tape" index="7" src1={pvc_tape} src2={pvc_tape1} title="PVC Edge Band Tape" />                    
-                    <TabItem label="PVC 3D Panels" index="8" src1={pvc_panel} src2={pvc_panel1} title="PVC 3D Panels" />
-                </Tabs>
+                <div className="absolute right-0 flex flex-wrap justify-center w-1/2 bottom-16">
+                    {tabItems.map(({ id, title }) =>
+                        <TabItemComponent
+                            key={title}
+                            title={title}
+                            onItemClicked={() => setIndex(id)}
+                            isActive={index === id}
+                        />
+                    )}
+                </div>
+                <div>
+                    {tabItems.map(({ id, src1, src2, title, subtitle, content }) => {
+                        return (
+                            index === id ?
+                                <div className="grid justify-center h-screen grid-cols-2 text-left tab-content" key={id}>
+                                    <div className="col-span-1">
+                                        <Carousel dynamicHeight={true} thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showThumbs={true} showIndicators={false}>
+                                            <img src={src1} className="h-screen" alt={`Sample of ${title}`} />
+                                            <img src={src2} className="h-screen" alt={`Sample of ${title}`} />
+                                        </Carousel>
+                                    </div>
+                                    <div className="col-span-1 p-10">
+                                        <p className="text-5xl font-bold font-garamond">{title}</p>
+                                        <p className="mt-6 text-3xl font-normal">{subtitle}</p>
+                                        <p className="w-10/12 mt-6 mb-10 text-lg font-normal">{content}</p>
+                                        <button className="flex items-center justify-center w-48 text-lg font-normal duration-700 border border-black shadow-touch hover:shadow-touch1 rounded-3xl h-9 hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
+                                    </div>
+                                </div> : ''
+                        )
+                    })}
+                </div>
             </div>
-        </div>
+        </div >
     )
 }
 
