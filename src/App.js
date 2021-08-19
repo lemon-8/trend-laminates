@@ -8,9 +8,16 @@ import Logo from './images/logoblack.png';
 import Products from './Products';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);
+  
+  React.useEffect(() => {
+    AOS.init();
+  }, [loading]);
+  
   React.useEffect(() => {
     setTimeout(() => {
       setLoading(false);

@@ -62,7 +62,7 @@ function Content() {
                         <img className="h-10 -mt-4 lg:h-auto" src={logo} alt="Trend" />
                     </div>
                 </div>
-                <ReactCompareSlider style={{ height: "75vh", width: "100%", objectFit: "contain", marginTop: "20px", borderRadius:"5px" }}
+                <ReactCompareSlider style={{ height: "75vh", width: "100%", objectFit: "contain", marginTop: "20px", borderRadius: "5px" }}
                     itemOne={<ReactCompareSliderImage src={leftimage} alt="Image one" />}
                     itemTwo={<ReactCompareSliderImage src={rightimage} alt="Image two" />}
                 />
@@ -118,12 +118,12 @@ function Content() {
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </div>
                 </div>
-                <div className="rounded-md rooms"  data-aos="fade-left" data-aos-duration="2000">
+                <div className="rounded-md rooms" data-aos="fade-left" data-aos-duration="2000">
                     <div className="finest-texture room-design"></div>
                 </div>
             </div>
             <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-20 md:mb-20 md:mt-32">
-                <div className="rounded-md rooms"  data-aos="fade-right" data-aos-duration="2000">
+                <div className="rounded-md rooms" data-aos="fade-right" data-aos-duration="2000">
                     <div className="laser-precision room-design"></div>
                 </div>
                 <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">

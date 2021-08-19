@@ -106,7 +106,7 @@ function Products() {
         isActive = false,
     }) => {
         return (
-            <div className={isActive ? 'font-semibold px-3 py-2 text-black' : 'font-normal px-3 py-2 text-gray-500 hover:text-black'} onClick={onItemClicked}>
+            <div className={isActive ? 'font-semibold p-2 text-black' : 'font-normal px-1 py-2 text-gray-500 hover:text-black'} onClick={onItemClicked}>
                 <p>{title}</p>
             </div>
         )
@@ -149,14 +149,14 @@ function Products() {
                     {tabItems.map(({ id, src1, src2, title, subtitle, content }) => {
                         return (
                             index === id ?
-                                <div className="grid justify-center h-screen grid-cols-2 text-left tab-content" key={id}>
+                                <div className="grid justify-center h-screen grid-cols-2 overflow-hidden text-left tab-content" key={id}>
                                     <div className="col-span-1">
                                         <Carousel dynamicHeight={true} thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showThumbs={true} showIndicators={false}>
                                             <img src={src1} className="h-screen" alt={`Sample of ${title}`} />
                                             <img src={src2} className="h-screen" alt={`Sample of ${title}`} />
                                         </Carousel>
                                     </div>
-                                    <div className="col-span-1 p-10">
+                                    <div className="col-span-1 px-10 py-20">
                                         <p className="text-5xl font-bold font-garamond">{title}</p>
                                         <p className="mt-6 text-3xl font-normal">{subtitle}</p>
                                         <p className="w-10/12 mt-6 mb-10 text-lg font-normal">{content}</p>

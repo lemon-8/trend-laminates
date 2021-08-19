@@ -215,21 +215,26 @@ body::after {
   background-position: center;
 }
 
-.carousel .control-dots{
-  right: -45%;
-  transform: rotate(90deg);
-  bottom: 60% !important;
-}
-
 .tab-content{
   animation: fade 700ms ease-in-out;
+  transform-origin: bottom;
 }
 
 @keyframes fade{
   0%{
     opacity: 0;
+    transform: translateY(30vh);
+    z-index: -1;
+  }
+  20%{
+    opacity: 0;
+    z-index: -1;
+  }
+  50%{
+    z-index: -1;
   }
   100%{
+    z-index: 1;
     opacity: 1;
   }
 }
@@ -241,7 +246,7 @@ body::after {
 
 .carousel{
   position: absolute;
-  bottom: 55%;
+  bottom: 50%;
 }
 
 .thumbs-wrapper img{
