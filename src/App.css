@@ -254,6 +254,14 @@ body::after {
   height: 120px;
 }
 
+.thumbs .selected img{
+  opacity: 0.5;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: 3px solid #fff;
+}
+
 .lam-image1,.lam-image2,.lam-image3,.lam-image4{
   transition: transform 500ms ease-in;
 }
