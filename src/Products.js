@@ -25,9 +25,9 @@ import pvc_tape1 from './images/pvc_tape1.png';
 
 function Products() {
 
-    const Button = ({ text, addClass }) => {
+    const Button = ({ text, addClass,id }) => {
         return (
-            <button className={`flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white shadow-get h-9 rounded-3xl hover:text-black hover:shadow-get1 ${addClass}`}>{text} <BsArrowRight className="ml-2" size={30} /></button>
+            <a href="#products-container" className={addClass}><button  onClick={()=>setIndex(id)} className="flex items-center justify-center w-48 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white shadow-get h-9 rounded-3xl laminates1 hover:text-black hover:shadow-get1">{text} <BsArrowRight className="ml-2" size={30} /></button></a>
         )
     }
 
@@ -106,7 +106,7 @@ function Products() {
         isActive = false,
     }) => {
         return (
-            <div className={isActive ? 'font-semibold p-2 text-black' : 'font-normal px-1 py-2 text-gray-500 hover:text-black'} onClick={onItemClicked}>
+            <div className={isActive ? 'font-medium p-2 text-black' : 'p-2 text-gray-500 hover:text-black'} onClick={onItemClicked}>
                 <p>{title}</p>
             </div>
         )
@@ -120,16 +120,16 @@ function Products() {
                     Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
                 <div className="grid justify-center grid-cols-4 gap-10 mt-10 md:max-w-sm">
                     <div className="col-span-4 md:col-span-2">
-                        <Button text="Decorative" addClass="laminates1" />
-                        <Button text="PVC Laminates" addClass="laminates2" />
-                        <img src={laminate1} className="absolute z-50 top-32 lam-image1 md:-right-96" />
-                        <img src={laminate2} className="absolute z-40 top-32 lam-image2 -right-20 md:-right-72" />
+                        <Button text="Acrylic Laminates" addClass="laminates1" id={3} />
+                        <Button text="PVC 3D/Laminates" addClass="laminates2" id={2} />
+                        <img src={laminate1} className="absolute z-20 h-full -bottom-1/2 lam-image1 md:right-20" />
+                        <img src={laminate2} className="absolute z-30 h-full -bottom-1/2 lam-image2 -right-20 md:-right-0" />
                     </div>
                     <div className="col-span-4 md:col-span-2 mb-96">
-                        <Button text="MDF Board" addClass="laminates3" />
-                        <Button text="WPC Board" addClass="laminates4" />
-                        <img src={laminate3} className="absolute z-30 top-32 lam-image3 right-10 md:-right-52" />
-                        <img src={laminate4} className="absolute z-20 top-32 lam-image4 right-32 md:-right-32" />
+                        <Button text="MDF Board" addClass="laminates3" id={5} />
+                        <Button text="Decorative" addClass="laminates4" id={1} />
+                        <img src={laminate3} className="absolute z-40 h-full -bottom-1/2 lam-image3 right-10 md:-right-20" />
+                        <img src={laminate4} className="absolute z-50 h-full -bottom-1/2 lam-image4 right-32 md:-right-40" />
                     </div>
                     <a href="#products-container"><p className="absolute flex items-center text-base font-normal bottom-20">View All Products <BsArrowDown className="ml-4" size={30} /></p></a>
                 </div>

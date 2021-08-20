@@ -254,10 +254,6 @@ body::after {
   height: 120px;
 }
 
-.carousel .control-dots .dot{
-  background: #000 !important;
-}
-
 .lam-image1,.lam-image2,.lam-image3,.lam-image4{
   transition: transform 500ms ease-in;
 }
