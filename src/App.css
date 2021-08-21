@@ -223,25 +223,16 @@ body::after {
 @keyframes fade{
   0%{
     opacity: 0;
-    transform: translateY(30vh);
-    z-index: -1;
-  }
-  20%{
-    opacity: 0;
-    z-index: -1;
-  }
-  50%{
-    z-index: -1;
   }
   100%{
-    z-index: 1;
     opacity: 1;
   }
 }
 
 .thumbs-wrapper{
   position: absolute;
-  left: 51%;
+  right: 26.5%;
+  z-index: 10;
 }
 
 .carousel{

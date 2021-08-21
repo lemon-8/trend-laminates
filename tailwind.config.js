@@ -21,10 +21,11 @@ module.exports = {
         touch: "inset 0 0 0 #000",
         touch1: "inset 250px 0 0 #000",
         get: "inset 0 0 0 #fff",
-        get1: "inset 192px 0 0 #fff",
+        get1: "inset 240px 0 0 #fff",
       },
       borderRadius:{
         "3xl": "100px",
+        "18": "18px",
       },
       inset:{
         "17": "17%",
@@ -36,9 +37,6 @@ module.exports = {
         "70" :"70",
         "60" :"60",
       },
-      height:{
-        "90": "95vh",
-      }
     },
   },
   variants: {
