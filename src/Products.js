@@ -114,9 +114,9 @@ function Products() {
 
     return (
         <div>
-            <div className="relative px-10 pt-40 pb-40 overflow-hidden text-white bg-black md:h-screen xl:pl-48 xl:pr-0">
+            <div className="relative px-10 overflow-hidden text-white bg-black py-36 md:h-screen xl:pl-48 xl:pr-0">
                 <h1 className="text-7xl font-garamond">Our Products</h1>
-                <p className="w-full mt-10 text-lg font-light md:w-3/4">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
+                <p className="w-full mt-6 text-lg font-light md:w-3/4">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                     Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
                 <div className="grid justify-center grid-cols-4 gap-10 mt-10 md:max-w-lg">
                     <div className="col-span-4 md:col-span-2">

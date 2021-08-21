@@ -231,7 +231,7 @@ body::after {
 
 .thumbs-wrapper{
   position: absolute;
-  right: 26.5%;
+  right: 25%;
   z-index: 10;
 }
 

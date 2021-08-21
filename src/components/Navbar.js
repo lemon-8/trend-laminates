@@ -4,7 +4,7 @@ import { AiFillCloseCircle } from 'react-icons/ai';
 import Logo from '../images/logoblack.png';
 import LogoW from '../images/logowhite.png';
 import { Link } from 'react-router-dom';
-import Products from '../Products';
+import { useLocation } from "react-router-dom";
 
 export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -21,6 +21,10 @@ export default function Navbar() {
     }
 
     window.addEventListener('scroll', changeBackground);
+
+    React.useEffect(()=>{
+        window.scrollTo(0, 0);
+    },[useLocation()])
 
     return (
         <>
