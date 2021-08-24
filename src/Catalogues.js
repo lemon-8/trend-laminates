@@ -9,12 +9,46 @@ import magazine5 from './images/magazine5.png';
 import magazine6 from './images/magazine6.png';
 
 function Catalogues() {
+
+    const catalogues = [
+        {
+            id: 1,
+            title1: "Trend 1MM 2021",
+            span1: "5",
+            src1: magazine1,
+            title2: "Trend 0.8MM 2021",
+            span2: "7",
+            src2: magazine2,
+            fade: "right",
+        },
+        {
+            id: 2,
+            title1: "Trend Premium Door Skins",
+            span1: "7",
+            src1: magazine3,
+            title2: "Trend HD Digital Laminates",
+            span2: "5",
+            src2: magazine4,
+            fade: "left",
+        },
+        {
+            id: 3,
+            title1: "Trend Liner Mica 2020",
+            span1: "6",
+            src1: magazine5,
+            title2: "Korean Charcoal Panels",
+            span2: "6",
+            src2: magazine6,
+            fade: "right",
+        },
+    ]
+
     return (
         <div>
-            <div className="px-10 pt-40 pb-28 xl:px-44">
+            <div className="px-10 pt-36 pb-28 xl:px-44">
                 <div className="h-screen" data-aos="fade-up">
                     <p className="font-garamond text-7xl">Catalogues</p>
-                    <p className="mt-10 text-xl font-light">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
+                    <p className="mt-6 text-xl font-light">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                         Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
                     <div className="grid grid-cols-12 gap-10 mt-10">
                         <div className="col-span-12 md:col-span-4">
@@ -27,38 +61,23 @@ function Catalogues() {
                         </div>
                     </div>
                 </div>
-                <div className="grid grid-cols-12 gap-10" data-aos="fade-right">
-                    <div className="col-span-12 md:col-span-5" >
-                        <p className="text-2xl font-medium text-trend">Trend 1MM 2021</p>
-                        <img src={magazine1} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
-                    </div>
-                    <div className="col-span-12 md:col-span-7">
-                        <p className="text-2xl font-medium text-trend">Trend 0.8MM 2021</p>
-                        <img src={magazine2} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-10" data-aos="fade-left">
-                    <div className="col-span-12 md:col-span-7">
-                        <p className="text-2xl font-medium text-trend">Trend Premium Door Skins</p>
-                        <img src={magazine3} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
-                    </div>
-                    <div className="col-span-12 md:col-span-5">
-                        <p className="text-2xl font-medium text-trend">Trend HD Digital Laminates</p>
-                        <img src={magazine4} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
-                    </div>
-                </div>
-                <div className="grid grid-cols-12 gap-10" data-aos="fade-right">
-                    <div className="col-span-12 md:col-span-6">
-                        <p className="text-2xl font-medium text-trend">Trend Liner Mica 2020</p>
-                        <img src={magazine5} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
-                    </div>
-                    <div className="col-span-12 md:col-span-6">
-                        <p className="text-2xl font-medium text-trend">Korean Charcoal Panels</p>
-                        <img src={magazine6} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
-                    </div>
+                <div>
+                    {catalogues.map(({ id, src1, src2, title1, title2, span1, span2, fade }) => {
+                        return (<div className="grid grid-cols-12 gap-10" data-aos={`fade-${fade}`} key={id}>
+                            <div className={`col-span-12 md:col-span-${span1}`} >
+                                <p className="text-2xl font-medium text-trend">{title1}</p>
+                                <img src={src1} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
+                            </div>
+                            <div className={`col-span-12 md:col-span-${span2}`}>
+                                <p className="text-2xl font-medium text-trend">{title2}</p>
+                                <img src={src2} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
+                            </div>
+                        </div>
+                        )
+                    })}
                 </div>
             </div>
-        </div >
+        </div>
     )
 }
 
