@@ -46,31 +46,39 @@ function Catalogues() {
     return (
         <div>
             <div className="px-10 pt-36 pb-28 xl:px-44">
-                <div className="h-screen" data-aos="fade-up">
+                <div data-aos="fade-up">
                     <p className="font-garamond text-7xl">Catalogues</p>
                     <p className="mt-6 text-xl font-light">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                         Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
-                    <div className="grid grid-cols-12 gap-10 mt-10">
+                    <div className="grid grid-cols-12 gap-10 my-10">
                         <div className="col-span-12 md:col-span-4">
-                            <p className="text-2xl font-medium text-trend">Trend 1MM 2021</p>
-                            <img src={trend1} className="w-full mt-4 rounded-lg h-3/4" alt="" />
+                            <p className="mb-4 text-2xl font-medium text-trend">Trend 1MM 2021</p>
+                            <div className="overflow-hidden">
+                                <img src={trend1} className="w-full duration-500 transform rounded-lg hover:scale-125 h-96" alt="" />
+                            </div>
                         </div>
                         <div className="col-span-12 md:col-span-8">
-                            <p className="text-2xl font-medium text-trend">Trend 0.8MM 2021</p>
-                            <img src={trend8} className="w-full mt-4 rounded-lg h-3/4" alt="" />
+                            <p className="mb-4 text-2xl font-medium text-trend">Trend 0.8MM 2021</p>
+                            <div className="overflow-hidden">
+                                <img src={trend8} className="w-full duration-500 transform rounded-lg hover:scale-125 h-96" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div>
                     {catalogues.map(({ id, src1, src2, title1, title2, span1, span2, fade }) => {
-                        return (<div className="grid grid-cols-12 gap-10" data-aos={`fade-${fade}`} key={id}>
+                        return (<div className="grid grid-cols-12 gap-10 mt-10 overflow-hidden" data-aos={`fade-${fade}`} key={id}>
                             <div className={`col-span-12 md:col-span-${span1}`} >
-                                <p className="text-2xl font-medium text-trend">{title1}</p>
-                                <img src={src1} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
+                                <p className="mb-4 text-2xl font-medium text-trend">{title1}</p>
+                                <div className="overflow-hidden">
+                                    <img src={src1} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg h-96 hover:scale-125" />
+                                </div>
                             </div>
                             <div className={`col-span-12 md:col-span-${span2}`}>
-                                <p className="text-2xl font-medium text-trend">{title2}</p>
-                                <img src={src2} alt="magazine" className="w-full mt-4 rounded-lg h-3/4" />
+                                <p className="mb-4 text-2xl font-medium text-trend">{title2}</p>
+                                <div className="overflow-hidden">
+                                    <img src={src2} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg h-96 hover:scale-125" />
+                                </div>
                             </div>
                         </div>
                         )
