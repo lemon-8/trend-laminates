@@ -10,6 +10,7 @@ export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     const menubtn = navbarOpen === false ? <BiMenu style={{ color: '#000' }} /> : <AiFillCloseCircle style={{ color: '#000' }} />
     const [active, setActive] = React.useState(false);
+    const [textColor,setTextColor] = React.useState("white")
 
     const changeBackground = () => {
         if (window.scrollY >= 100) {
@@ -20,21 +21,29 @@ export default function Navbar() {
         }
     }
 
+    const location = useLocation();
+
     window.addEventListener('scroll', changeBackground);
 
-    React.useEffect(()=>{
+    React.useEffect(() => {
         window.scrollTo(0, 0);
-    },[useLocation()])
+    }, [location])
+
+    React.useEffect(() => {
+        if(location.pathname == "/catalogues"){
+        setActive(true);
+        }
+    })
 
     return (
         <>
-            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 duration-500 text-black" : "fixed duration-500 top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 text-white bg-transparent")}>
+            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 duration-500 text-black" : `fixed duration-500 top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 bg-transparent + text-${textColor}`)}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <a className="inline-block py-2" href="#">
-                        <Link to="/">
-                            {(active ? <img src={Logo} alt="Logo" className="h-8 text-white md:h-12" /> : <img src={LogoW} alt="Logo" className="h-8 md:h-12" />)}
-                        </Link>
+                            <Link to="/">
+                                {(active ? <img src={Logo} alt="Logo" className="h-8 md:h-12" /> : <img src={LogoW} alt="Logo" className="h-8 md:h-12" />)}
+                            </Link>
                         </a>
                         <button
                             className="block px-3 py-1 ml-auto text-3xl cursor-pointer lg:hidden"
@@ -82,7 +91,9 @@ export default function Navbar() {
                                     className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75"
                                     href="#"
                                 >
-                                    Catalogues
+                                    <Link to="/catalogues">
+                                        Catalogues
+                                    </Link>
                                 </a>
                             </li>
                             <li className="nav-item">

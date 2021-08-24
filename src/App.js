@@ -10,12 +10,15 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Catalogues from './Catalogues';
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);
   
   React.useEffect(() => {
-    AOS.init();
+    AOS.init({
+      duration: 2000,
+    });
   }, [loading]);
   
   React.useEffect(() => {
@@ -43,6 +46,7 @@ const App = () => {
             <Switch>
               <Route exact path="/" component={Hero} />
               <Route path="/products" component={Products} />
+              <Route path="/catalogues" component={Catalogues} />
             </Switch>
             <Footer />
           </Router>
