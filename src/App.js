@@ -11,6 +11,7 @@ import Footer from './components/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Catalogues from './Catalogues';
+import About from './About';
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);
@@ -47,6 +48,7 @@ const App = () => {
               <Route exact path="/" component={Hero} />
               <Route path="/products" component={Products} />
               <Route path="/catalogues" component={Catalogues} />
+              <Route path="/about" component={About} />
             </Switch>
             <Footer />
           </Router>

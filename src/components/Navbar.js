@@ -10,7 +10,6 @@ export default function Navbar() {
     const [navbarOpen, setNavbarOpen] = React.useState(false);
     const menubtn = navbarOpen === false ? <BiMenu style={{ color: '#000' }} /> : <AiFillCloseCircle style={{ color: '#000' }} />
     const [active, setActive] = React.useState(false);
-    const [textColor,setTextColor] = React.useState("white")
 
     const changeBackground = () => {
         if (window.scrollY >= 100) {
@@ -30,14 +29,14 @@ export default function Navbar() {
     }, [location])
 
     React.useEffect(() => {
-        if(location.pathname == "/catalogues"){
-        setActive(true);
+        if ((location.pathname == "/catalogues") || (location.pathname =="/about")) {
+            setActive(true);
         }
     })
 
     return (
         <>
-            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 duration-500 text-black" : `fixed duration-500 top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 bg-transparent + text-${textColor}`)}>
+            <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 duration-500 text-black" : "fixed duration-500 top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 bg-transparent text-white")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <a className="inline-block py-2" href="#">
@@ -72,9 +71,10 @@ export default function Navbar() {
                             <li className="nav-item">
                                 <a
                                     className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75"
-                                    href="#"
                                 >
-                                    About Us
+                                    <Link to="/about">
+                                        About Us
+                                    </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
