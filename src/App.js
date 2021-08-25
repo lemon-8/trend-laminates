@@ -12,6 +12,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Catalogues from './Catalogues';
 import About from './About';
+import Contact from './Contact';
 
 const App = () => {
   const [loading, setLoading] = React.useState(true);
@@ -49,6 +50,7 @@ const App = () => {
               <Route path="/products" component={Products} />
               <Route path="/catalogues" component={Catalogues} />
               <Route path="/about" component={About} />
+              <Route path="/contact" component={Contact} />
             </Switch>
             <Footer />
           </Router>

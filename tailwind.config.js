@@ -16,6 +16,7 @@ module.exports = {
         custom: "#47474D",
         custombg: "#F2F2F3",
         customdesc: "#A0A0A7",
+        borderColor: "#858585",
       },
       boxShadow:{
         touch: "inset 0 0 0 #000",

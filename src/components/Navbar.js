@@ -29,7 +29,7 @@ export default function Navbar() {
     }, [location])
 
     React.useEffect(() => {
-        if ((location.pathname == "/catalogues") || (location.pathname =="/about")) {
+        if ((location.pathname == "/catalogues") || (location.pathname == "/about")) {
             setActive(true);
         }
     })
@@ -60,45 +60,38 @@ export default function Navbar() {
                     >
                         <ul className="flex flex-col list-none lg:flex-row lg:ml-auto">
                             <li className="nav-item">
-                                <a
-                                    className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75"
-                                >
+                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
                                     <Link to="/">
                                         Home
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75"
-                                >
+                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
                                     <Link to="/about">
                                         About Us
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75"
-                                >
+                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
                                     <Link to="/products">
                                         Products
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a
-                                    className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75"
-                                    href="#"
-                                >
+                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
                                     <Link to="/catalogues">
                                         Catalogues
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a className="flex items-center justify-center py-2 pl-4 text-base font-normal duration-200 hover:opacity-75" href="#">
-                                    Contact Us
+                                <a className="flex items-center justify-center py-2 pl-4 text-base font-normal duration-200 hover:opacity-75">
+                                    <Link to="/contact">
+                                        Contact Us
+                                    </Link>
                                 </a>
                             </li>
                         </ul>

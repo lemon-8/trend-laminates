@@ -273,6 +273,12 @@ body::after {
   transform: translateY(-96px);
 }
 
+.contact{
+  background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/left_compare.png') center center;
+  height: 40vh;
+  background-size: cover;
+}
+
 @keyframes slider {
   0% {
     background-image: url("./images/room1.png");
