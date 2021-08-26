@@ -29,7 +29,7 @@ export default function Navbar() {
     }, [location])
 
     React.useEffect(() => {
-        if ((location.pathname == "/catalogues") || (location.pathname == "/about")) {
+        if ((location.pathname == "/Catalogues") || (location.pathname == "/About")) {
             setActive(true);
         }
     })
@@ -68,28 +68,28 @@ export default function Navbar() {
                             </li>
                             <li className="nav-item">
                                 <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/about">
+                                    <Link to="/About">
                                         About Us
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/products">
+                                    <Link to="/Products">
                                         Products
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/catalogues">
+                                    <Link to="/Catalogues">
                                         Catalogues
                                     </Link>
                                 </a>
                             </li>
                             <li className="nav-item">
                                 <a className="flex items-center justify-center py-2 pl-4 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/contact">
+                                    <Link to="/Contact">
                                         Contact Us
                                     </Link>
                                 </a>

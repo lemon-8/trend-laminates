@@ -106,7 +106,7 @@ function Products() {
         isActive = false,
     }) => {
         return (
-            <div className={isActive ? 'p-2 text-black' : 'p-2 text-gray-500 hover:text-black'} onClick={onItemClicked}>
+            <div className={isActive ? 'p-2 text-black' : 'p-2 text-product hover:text-black'} onClick={onItemClicked}>
                 <p>{title}</p>
             </div>
         )
@@ -131,7 +131,7 @@ function Products() {
                         <img src={laminate3} className="absolute z-40 h-full -bottom-96 lam-image3 right-10 md:-right-4" />
                         <img src={laminate4} className="absolute z-50 h-full -bottom-96 lam-image4 right-32 md:-right-32" />
                     </div>
-                    <a href="#products-container"><p className="absolute flex items-center text-base font-normal bottom-20">View All Products <BsArrowDown className="ml-4" size={30} /></p></a>
+                    <a href="#products-container"><p className="absolute flex items-center text-base font-normal bottom-20 hover:opacity-75">View All Products <BsArrowDown className="ml-4" size={30} /></p></a>
                 </div>
             </div>
             <div id="products-container" className="relative h-screen">

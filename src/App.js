@@ -47,10 +47,10 @@ const App = () => {
             <Navbar />
             <Switch>
               <Route exact path="/" component={Hero} />
-              <Route path="/products" component={Products} />
-              <Route path="/catalogues" component={Catalogues} />
-              <Route path="/about" component={About} />
-              <Route path="/contact" component={Contact} />
+              <Route path="/Products" component={Products} />
+              <Route path="/Catalogues" component={Catalogues} />
+              <Route path="/About" component={About} />
+              <Route path="/Contact" component={Contact} />
             </Switch>
             <Footer />
           </Router>
