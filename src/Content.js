@@ -13,6 +13,7 @@ import Carousel from './Carousel';
 import office from './images/office.jpg';
 import living_room from './images/livingroom.jpg';
 import bed_room from './images/bedroom.jpg';
+import { Link } from 'react-router-dom';
 
 function Content() {
 
@@ -74,19 +75,21 @@ function Content() {
                 <div className="col-span-2 px-10 md:pl-60 md:col-span-1" >
                     <p className="text-5xl font-bold font-garamond text-custom">Custom solutions catered to your needs.</p>
                     <p className="mt-6 text-xl font-normal text-customdesc">We bring you a dazzling line-up of laminates and PVC sheets for all your needs. From rugged laminates to glossy attractive panels we have you covered.</p>
-                    <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out bg-white border border-white w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-3xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
+                    <Link to="/Products">
+                        <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out bg-white border border-white w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-3xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
+                    </Link>
                 </div>
                 <div className="relative grid col-span-2 pr-10 md:col-span-1">
                     <div className="rounded-md custom-image-container">
                         <div className="custom-image"></div>
                     </div>
                     <div className="absolute h-auto p-3 bg-white rounded-md right-17 opacity-90 w-44 -top-11">
-                        <img src={leaf} />
+                        <img src={leaf} alt="leaf" />
                         <p className="mt-2 text-xl font-bold font-garamond">Eco Friendly</p>
                         <p className="mt-2 text-xs font-normal">All our products are made with exceptional care for the environment. We follow the best sustainable practices in the industry to assemble our unique eco-friendly inventory.</p>
                     </div>
                     <div className="absolute h-auto p-3 bg-white rounded-md left-13 opacity-90 -bottom-11 w-44">
-                        <img src={star} />
+                        <img src={star} alt="star" />
                         <p className="mt-2 text-xl font-bold font-garamond">High Quality Panels</p>
                         <p className="mt-2 text-xs font-normal">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                     </div>
@@ -103,9 +106,9 @@ function Content() {
                 <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Stunning Designs</p>
                     <p className="mt-6 text-xl font-light text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
-                    <div className="relative">
+                    <Link className="relative" to="/Catalogues">
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">See Catalogues <BsArrowRight className="ml-2" size={30} /></button>
-                    </div>
+                    </Link>
                 </div>
             </div>
             <div className="flex flex-col-reverse items-center grid-cols-2 px-10 mt-20 xl:px-44 md:gap-20 md:mt-32 md:grid">
@@ -114,9 +117,9 @@ function Content() {
                     <p className="mt-6 text-xl font-light text-textColor"><span className="italic">Premium textures right at your fingertips. </span>
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the shiniest, smoothest, and most pleasing textures, which will make your home come alive.
                     </p>
-                    <div className="relative">
+                    <Link className="relative" to="/About">
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
-                    </div>
+                    </Link>
                 </div>
                 <div className="rounded-md rooms" data-aos="fade-left" data-aos-duration="2000">
                     <div className="finest-texture room-design"></div>
@@ -129,9 +132,9 @@ function Content() {
                 <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>
                     <p className="mt-6 text-xl font-light text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
-                    <div className="relative">
+                    <Link className="relative" to="/About">
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
-                    </div>
+                    </Link>
                 </div>
             </div>
 
@@ -148,4 +151,3 @@ function Content() {
 }
 
 export default Content;
-{/*  */ }

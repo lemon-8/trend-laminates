@@ -22,9 +22,12 @@ import mdf_board from './images/mdf_board.png';
 import mdf_board1 from './images/mdf_board1.png';
 import pvc_tape from './images/pvc_tape.png';
 import pvc_tape1 from './images/pvc_tape1.png';
+import { Link } from 'react-router-dom';
 
 function Products() {
 
+    const [index, setIndex] = React.useState(1);
+    
     const Button = ({ text, addClass,id }) => {
         return (
             <a href="#products-container" className={addClass}><button  onClick={()=>setIndex(id)} className="flex items-center justify-center p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white w-60 shadow-get h-9 rounded-3xl laminates1 hover:text-black hover:shadow-get1">{text} <BsArrowRight className="ml-2" size={30} /></button></a>
@@ -98,8 +101,6 @@ function Products() {
         },
     ];
     
-    const [index, setIndex] = React.useState(1);
-    
     const TabItemComponent = ({
         title = '',
         onItemClicked = () => console.error('You passed no action to the component'),
@@ -122,14 +123,14 @@ function Products() {
                     <div className="col-span-4 md:col-span-2">
                         <Button text="Acrylic Laminates" addClass="laminates1" id={3} />
                         <Button text="PVC 3D/Laminates" addClass="laminates2" id={2} />
-                        <img src={laminate1} className="absolute z-20 h-full -bottom-96 lam-image1 md:right-48" />
-                        <img src={laminate2} className="absolute z-30 h-full -bottom-96 lam-image2 -right-20 md:right-24" />
+                        <img src={laminate1} className="absolute z-20 h-full -bottom-96 lam-image1 md:right-48" alt="Acrylic Laminate" />
+                        <img src={laminate2} className="absolute z-30 h-full -bottom-96 lam-image2 -right-20 md:right-24" alt="PVC Laminate" />
                     </div>
                     <div className="col-span-4 md:col-span-2 mb-96">
                         <Button text="MDF Board" addClass="laminates3" id={5} />
                         <Button text="Decorative" addClass="laminates4" id={1} />
-                        <img src={laminate3} className="absolute z-40 h-full -bottom-96 lam-image3 right-10 md:-right-4" />
-                        <img src={laminate4} className="absolute z-50 h-full -bottom-96 lam-image4 right-32 md:-right-32" />
+                        <img src={laminate3} className="absolute z-40 h-full -bottom-96 lam-image3 right-10 md:-right-4" alt="MDF Board" />
+                        <img src={laminate4} className="absolute z-50 h-full -bottom-96 lam-image4 right-32 md:-right-32" alt="Decorative Laminate" />
                     </div>
                     <a href="#products-container"><p className="absolute flex items-center text-base font-normal bottom-20 hover:opacity-75">View All Products <BsArrowDown className="ml-4" size={30} /></p></a>
                 </div>
@@ -160,7 +161,9 @@ function Products() {
                                         <p className="text-5xl font-bold font-garamond">{title}</p>
                                         <p className="mt-6 text-3xl font-normal">{subtitle}</p>
                                         <p className="mt-6 mb-10 text-lg font-normal">{content}</p>
-                                        <button className="flex items-center justify-center w-40 h-10 text-lg font-bold duration-1000 border border-black shadow-touch hover:shadow-touch1 rounded-3xl hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
+                                        <Link to="/Contact">
+                                            <button className="flex items-center justify-center w-40 h-10 text-lg font-bold duration-1000 border border-black shadow-touch hover:shadow-touch1 rounded-3xl hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
+                                        </Link>
                                     </div>
                                 </div> : ''
                         )

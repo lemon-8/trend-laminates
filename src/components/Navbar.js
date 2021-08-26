@@ -29,7 +29,7 @@ export default function Navbar() {
     }, [location])
 
     React.useEffect(() => {
-        if ((location.pathname == "/Catalogues") || (location.pathname == "/About")) {
+        if ((location.pathname === "/Catalogues") || (location.pathname === "/About")) {
             setActive(true);
         }
     })
@@ -39,11 +39,9 @@ export default function Navbar() {
             <nav className={(active ? "bg-white fixed top-0 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-44 duration-500 text-black" : "fixed duration-500 top-0 pt-4 right-0 z-80 flex flex-wrap justify-between w-full lg:px-12 xl:px-48 bg-transparent text-white")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
-                        <a className="inline-block py-2" href="#">
-                            <Link to="/">
-                                {(active ? <img src={Logo} alt="Logo" className="h-8 md:h-12" /> : <img src={LogoW} alt="Logo" className="h-8 md:h-12" />)}
-                            </Link>
-                        </a>
+                        <Link to="/" className="inline-block py-2">
+                            {(active ? <img src={Logo} alt="Logo" className="h-8 md:h-12" /> : <img src={LogoW} alt="Logo" className="h-8 md:h-12" />)}
+                        </Link>
                         <button
                             className="block px-3 py-1 ml-auto text-3xl cursor-pointer lg:hidden"
                             type="button"
@@ -60,39 +58,29 @@ export default function Navbar() {
                     >
                         <ul className="flex flex-col list-none lg:flex-row lg:ml-auto">
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/">
-                                        Home
-                                    </Link>
-                                </a>
+                                <Link to="/" className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
+                                    Home
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/About">
-                                        About Us
-                                    </Link>
-                                </a>
+                                <Link to="/About" className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
+                                    About Us
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/Products">
-                                        Products
-                                    </Link>
-                                </a>
+                                <Link to="/Products" className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
+                                    Products
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/Catalogues">
-                                        Catalogues
-                                    </Link>
-                                </a>
+                                <Link to="/Catalogues" className="flex items-center justify-center px-4 py-2 text-base font-normal duration-200 hover:opacity-75">
+                                    Catalogues
+                                </Link>
                             </li>
                             <li className="nav-item">
-                                <a className="flex items-center justify-center py-2 pl-4 text-base font-normal duration-200 hover:opacity-75">
-                                    <Link to="/Contact">
-                                        Contact Us
-                                    </Link>
-                                </a>
+                                <Link to="/Contact" className="flex items-center justify-center py-2 pl-4 text-base font-normal duration-200 hover:opacity-75">
+                                    Contact Us
+                                </Link>
                             </li>
                         </ul>
                     </div>
