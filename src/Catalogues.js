@@ -12,7 +12,7 @@ import trend8file from './catalogs/Trend_0.8MM_2021.pdf';
 import acrylicfile from './catalogs/Trend_ACRYLIC_2021.pdf';
 import laminatesfile from './catalogs/Trend_PVC_Laminates_2020.pdf';
 import charcoalfile from './catalogs/Trend_Charcoal_Panels_2020.pdf';
-import doorfile from './catalogs/Trend_Door_Skin 2021.pdf';
+import doorfile from './catalogs/Trend_Door_Skin_2021.pdf';
 import digitalfile from './catalogs/Trend_HD_Digital_2021.pdf';
 import micafile from './catalogs/Trend_Liner_Mica_2020.pdf';
 
