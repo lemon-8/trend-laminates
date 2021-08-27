@@ -16,7 +16,7 @@ function About() {
             </div>
             
             <div className="grid items-center grid-cols-6 gap-10 mt-20">
-                <div className="col-span-3 overflow-hidden" data-aos="fade-right">
+                <div className="col-span-3 overflow-hidden rounded-md" data-aos="fade-right">
                     <img src={trend} alt="" className="h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <div className="col-span-3 pr-20" data-aos="fade-left">
@@ -34,13 +34,13 @@ function About() {
                         <br /><span className="font-bold">Our mission is to be trendsetters.</span>
                     </p>
                 </div>
-                <div className="col-span-3 overflow-hidden" data-aos="fade-left">
+                <div className="col-span-3 overflow-hidden rounded-md" data-aos="fade-left">
                     <img src={mission} alt="" className="w-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
             </div>
 
             <div className="relative z-10 text-center text-white" data-aos="fade-up">
-                <div className="overflow-hidden">
+                <div className="overflow-hidden rounded-md">
                     <img src={principle} alt="" className="w-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <div className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
@@ -68,7 +68,7 @@ function About() {
             </div>
 
             <div className="grid items-center grid-cols-6 gap-10 mt-20">
-                <div className="col-span-3 overflow-hidden" data-aos="fade-right">
+                <div className="col-span-3 overflow-hidden rounded-md" data-aos="fade-right">
                     <img src={decorative} alt="" className="duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <div className="col-span-3" data-aos="fade-left">

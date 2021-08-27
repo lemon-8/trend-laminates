@@ -22,11 +22,11 @@ function Catalogues() {
         {
             id: 1,
             title1: "PVC Premium Laminates",
-            span1: "5",
+            span1: 5,
             src1: magazine1,
             file1: laminatesfile,
             title2: "Acrylic Premium Laminates",
-            span2: "7",
+            span2: 7,
             src2: magazine2,
             fade: "right",
             file2: acrylicfile,
@@ -34,11 +34,11 @@ function Catalogues() {
         {
             id: 2,
             title1: "Trend Premium Door Skins",
-            span1: "7",
+            span1: 7,
             src1: magazine3,
             file1: doorfile,
             title2: "Trend HD Digital Laminates",
-            span2: "5",
+            span2: 5,
             src2: magazine4,
             fade: "left",
             file2: digitalfile,
@@ -46,11 +46,11 @@ function Catalogues() {
         {
             id: 3,
             title1: "Trend Liner Mica 2020",
-            span1: "6",
+            span1: 6,
             src1: magazine5,
             file1: micafile,
             title2: "Korean Charcoal Panels",
-            span2: "6",
+            span2: 6,
             src2: magazine6,
             fade: "right",
             file2: charcoalfile,
@@ -90,7 +90,7 @@ function Catalogues() {
                                 <a href={file1} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
                                     <div className="w-11/12 overflow-hidden rounded-lg">
-                                        <img src={src1} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-80 hover:scale-125" />
+                                        <img src={src1} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-96 hover:scale-125" />
                                     </div>
                                 </a>
                             </div>
@@ -98,7 +98,7 @@ function Catalogues() {
                                 <a href={file2} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
                                     <div className="w-11/12 overflow-hidden rounded-lg">
-                                        <img src={src2} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-80 hover:scale-125" />
+                                        <img src={src2} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-96 hover:scale-125" />
                                     </div>
                                 </a>
                             </div>
