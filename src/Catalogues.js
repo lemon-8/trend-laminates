@@ -22,11 +22,11 @@ function Catalogues() {
         {
             id: 1,
             title1: "PVC Premium Laminates",
-            span1: 5,
+            span1: 2,
             src1: magazine1,
             file1: laminatesfile,
             title2: "Acrylic Premium Laminates",
-            span2: 7,
+            span2: 4,
             src2: magazine2,
             fade: "right",
             file2: acrylicfile,
@@ -34,11 +34,11 @@ function Catalogues() {
         {
             id: 2,
             title1: "Trend Premium Door Skins",
-            span1: 7,
+            span1: 4,
             src1: magazine3,
             file1: doorfile,
             title2: "Trend HD Digital Laminates",
-            span2: 5,
+            span2: 2,
             src2: magazine4,
             fade: "left",
             file2: digitalfile,
@@ -46,11 +46,11 @@ function Catalogues() {
         {
             id: 3,
             title1: "Trend Liner Mica 2020",
-            span1: 6,
+            span1: 3,
             src1: magazine5,
             file1: micafile,
             title2: "Korean Charcoal Panels",
-            span2: 6,
+            span2: 3,
             src2: magazine6,
             fade: "right",
             file2: charcoalfile,
@@ -85,7 +85,7 @@ function Catalogues() {
                 </div>
                 <div>
                     {catalogs.map(({ id, src1, src2, title1, title2, span1, span2, fade, file1, file2 }) => {
-                        return (<div className="grid grid-cols-12 mt-10 overflow-hidden md:gap-20" data-aos={`fade-${fade}`} key={id}>
+                        return (<div className="grid grid-cols-6 mt-10 overflow-hidden md:gap-20" data-aos={`fade-${fade}`} key={id}>
                             <div className={`col-span-${span1}`} >
                                 <a href={file1} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
