@@ -86,18 +86,18 @@ function Catalogues() {
                 <div>
                     {catalogs.map(({ id, src1, src2, title1, title2, span1, span2, fade, file1, file2 }) => {
                         return (<div className="grid grid-cols-6 mt-10 overflow-hidden md:gap-20" data-aos={`fade-${fade}`} key={id}>
-                            <div className={`col-span-${span1}`} >
+                            <div className={`col-span-6 md:col-span-${span1}`} >
                                 <a href={file1} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
-                                    <div className="w-11/12 overflow-hidden rounded-lg">
+                                    <div className="overflow-hidden rounded-lg">
                                         <img src={src1} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-96 hover:scale-125" />
                                     </div>
                                 </a>
                             </div>
-                            <div className={`col-span-${span2}`}>
+                            <div className={`col-span-6 md:col-span-${span2}`}>
                                 <a href={file2} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
-                                    <div className="w-11/12 overflow-hidden rounded-lg">
+                                    <div className="overflow-hidden rounded-lg">
                                         <img src={src2} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-96 hover:scale-125" />
                                     </div>
                                 </a>
