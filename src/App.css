@@ -274,6 +274,54 @@ body::after {
   transform: translateY(-96px);
 }
 
+.trend1{
+  background: url('./images/trend_1mm.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.trend8{
+  background: url('./images/trend_8mm.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.magazine1{
+  background: url('./images/magazine1.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.magazine2{
+  background: url('./images/magazine2.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.magazine3{
+  background: url('./images/magazine3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.magazine4{
+  background: url('./images/magazine4.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.magazine5{
+  background: url('./images/magazine5.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.magazine6{
+  background: url('./images/magazine6.png');
+  background-size: cover;
+  background-position: center;
+}
+
 .contact{
   background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./images/left_compare.png') center center;
   height: 40vh;

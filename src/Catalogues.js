@@ -1,12 +1,4 @@
 import React from 'react'
-import trend1 from './images/trend_1mm.png';
-import trend8 from './images/trend_8mm.png';
-import magazine1 from './images/magazine1.png';
-import magazine2 from './images/magazine2.png';
-import magazine3 from './images/magazine3.png';
-import magazine4 from './images/magazine4.png';
-import magazine5 from './images/magazine5.png';
-import magazine6 from './images/magazine6.png';
 import trend1file from './catalogs/Trend_1MM_2021.pdf';
 import trend8file from './catalogs/Trend_0.8MM_2021.pdf';
 import acrylicfile from './catalogs/Trend_ACRYLIC_2021.pdf';
@@ -23,11 +15,11 @@ function Catalogues() {
             id: 1,
             title1: "PVC Premium Laminates",
             span1: 2,
-            src1: magazine1,
+            src1: "magazine1",
             file1: laminatesfile,
             title2: "Acrylic Premium Laminates",
             span2: 4,
-            src2: magazine2,
+            src2: "magazine2",
             fade: "right",
             file2: acrylicfile,
         },
@@ -35,11 +27,11 @@ function Catalogues() {
             id: 2,
             title1: "Trend Premium Door Skins",
             span1: 4,
-            src1: magazine3,
+            src1: "magazine3",
             file1: doorfile,
             title2: "Trend HD Digital Laminates",
             span2: 2,
-            src2: magazine4,
+            src2: "magazine4",
             fade: "left",
             file2: digitalfile,
         },
@@ -47,11 +39,11 @@ function Catalogues() {
             id: 3,
             title1: "Trend Liner Mica 2020",
             span1: 3,
-            src1: magazine5,
+            src1: "magazine5",
             file1: micafile,
             title2: "Korean Charcoal Panels",
             span2: 3,
-            src2: magazine6,
+            src2: "magazine6",
             fade: "right",
             file2: charcoalfile,
         },
@@ -68,16 +60,16 @@ function Catalogues() {
                         <div className="col-span-12 md:col-span-4">
                             <a href={trend1file} download>
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 1MM 2021</p>
-                                <div className="overflow-hidden rounded-lg">
-                                    <img src={trend1} className="w-full duration-500 transform rounded-lg cursor-pointer hover:scale-125 h-96" alt="" />
+                                <div className="w-full overflow-hidden rounded-lg h-96">
+                                    <div className="w-full h-full overflow-hidden duration-500 transform rounded-lg cursor-pointer hover:scale-125 trend1" />
                                 </div>
                             </a>
                         </div>
                         <div className="col-span-12 md:col-span-8">
                             <a href={trend8file} download>
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 0.8MM 2021</p>
-                                <div className="overflow-hidden rounded-lg">
-                                    <img src={trend8} className="w-full duration-500 transform rounded-lg cursor-pointer hover:scale-125 h-96" alt="" />
+                                <div className="w-full overflow-hidden rounded-lg h-96">
+                                    <div className="w-full h-full overflow-hidden duration-500 transform rounded-lg cursor-pointer hover:scale-125 trend8" />
                                 </div>
                             </a>
                         </div>
@@ -89,16 +81,16 @@ function Catalogues() {
                             <div className={`col-span-6 md:col-span-${span1}`} >
                                 <a href={file1} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
-                                    <div className="overflow-hidden rounded-lg">
-                                        <img src={src1} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-96 hover:scale-125" />
+                                    <div className="w-full overflow-hidden rounded-lg h-96">
+                                        <div className={"w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-full hover:scale-125 " + src1} />
                                     </div>
                                 </a>
                             </div>
                             <div className={`col-span-6 md:col-span-${span2}`}>
                                 <a href={file2} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
-                                    <div className="overflow-hidden rounded-lg">
-                                        <img src={src2} alt="magazine" className="w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-96 hover:scale-125" />
+                                    <div className="w-full overflow-hidden rounded-lg h-96">
+                                        <div className={"w-full overflow-hidden duration-500 transform rounded-lg cursor-pointer h-full hover:scale-125 " + src2} />
                                     </div>
                                 </a>
                             </div>
