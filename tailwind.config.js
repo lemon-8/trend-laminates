@@ -1,5 +1,16 @@
 module.exports = {
-  purge: ['./src/**/*.{js,jsx}', './public/index.html'],
+  purge: {
+    mode: 'all',
+    preserveHtmlElements: false,
+    css: ['./src/App.css'],
+    content : ['./src/**/*.{js,jsx}', './public/index.html'],
+    options: {
+      keyframes: true,
+      blocklist: [/^debug-/],
+      fontFace: true,
+      variables: true,
+    },
+},
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -23,7 +34,7 @@ module.exports = {
         touch: "inset 0 0 0 #000",
         touch1: "inset 250px 0 0 #000",
         get: "inset 0 0 0 #fff",
-        get1: "inset 240px 0 0 #fff",
+        get1: "inset 260px 0 0 #fff",
       },
       borderRadius:{
         "3xl": "100px",

@@ -1,8 +1,8 @@
 import React from 'react';
 import { BiMenu } from 'react-icons/bi';
 import { AiFillCloseCircle } from 'react-icons/ai';
-import Logo from '../images/logoblack.png';
-import LogoW from '../images/logowhite.png';
+import Logo from '../images/logoblack.webp';
+import LogoW from '../images/logowhite.webp';
 import { Link } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
 

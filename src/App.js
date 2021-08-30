@@ -4,7 +4,7 @@ import Hero from './Hero';
 import Cursor from './Cursor';
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
-import Logo from './images/logoblack.png';
+import Logo from './images/logoblack.webp';
 import Products from './Products';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';

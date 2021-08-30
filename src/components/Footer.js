@@ -12,8 +12,8 @@ function Footer() {
                 <p className="mr-auto text-xl">Get Connected:</p>
                 <div className="flex ml-auto">
                     <a href="https://www.facebook.com/trendpvc/" target="_blank" rel="noreferrer noopener" className="px-3"><RiFacebookFill size={25} /></a>
-                    <a href="#" className="px-3"><RiTwitterFill size={25} /></a>
-                    <a href="#" className="px-3"><FiInstagram size={25} /></a>
+                    <a href="/" className="px-3"><RiTwitterFill size={25} /></a>
+                    <a href="/" className="px-3"><FiInstagram size={25} /></a>
                 </div>
             </div>
             <footer className="px-10 text-black md:pr-16 md:pb-10 xl:px-32">
@@ -25,10 +25,10 @@ function Footer() {
                     <div className="col-span-6 mt-6 md:col-span-1 md:mt-0">
                         <p className="text-2xl font-bold font-garamond">Products</p>
                         <ul className="font-normal list-none">
-                            <li className="mt-2">Lorem</li>
-                            <li className="mt-2">Ipsum</li>
-                            <li className="mt-2">Lorem</li>
-                            <li className="mt-2">Ipsum</li>
+                            <Link to="/Products"><li className="mt-2 cursor-pointer">Decorative Laminates</li></Link>
+                            <Link to="/Products"><li className="mt-2 cursor-pointer">PVC Premium Laminates</li></Link>
+                            <Link to="/Products"><li className="mt-2 cursor-pointer">HD Acrylic Laminates</li></Link>
+                            <Link to="/Products"><li className="mt-2 cursor-pointer">WPC PVC Board</li></Link>
                         </ul>
                     </div>
                     <div className="col-span-6 mt-6 md:mt-0 md:col-span-1">

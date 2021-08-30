@@ -1,18 +1,18 @@
 import React from 'react';
-import leftimage from './images/left_compare.png';
-import rightimage from './images/right_compare.png';
+import leftimage from './images/left_compare.webp';
+import rightimage from './images/right_compare.webp';
 import { BsArrowRight } from 'react-icons/bs';
-import logo from './images/logowhite.png';
+import logo from './images/logowhite.webp';
 import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import leaf from './images/leaf.png';
-import star from './images/star.png';
+import leaf from './images/leaf.webp';
+import star from './images/star.webp';
 import Carousel from './Carousel';
-import office from './images/office.jpg';
-import living_room from './images/livingroom.jpg';
-import bed_room from './images/bedroom.jpg';
+import office from './images/office.webp';
+import living_room from './images/livingroom.webp';
+import bed_room from './images/bedroom.webp';
 import { Link } from 'react-router-dom';
 
 function Content() {

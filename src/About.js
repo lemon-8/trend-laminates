@@ -1,8 +1,8 @@
 import React from 'react';
-import trend from './images/left_compare.png';
-import mission from './images/mission.png';
-import principle from './images/principle_bg.png';
-import decorative from './images/decorative.png';
+import trend from './images/left_compare.webp';
+import mission from './images/mission.webp';
+import principle from './images/principle_bg.webp';
+import decorative from './images/decorative.webp';
 
 function About() {
     return (

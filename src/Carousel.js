@@ -56,10 +56,8 @@ function Carousel() {
                 <div className="w-full h-full">
                     <Slider {...settings}>
                         <Products title="Decorative" type="decorative" />
-                        <Products title="MDF Board" type="mdf_board" />
                         <Products title="PVC Laminates" type="pvc_laminates" />
                         <Products title="Korean Charcoal" type="korean" />
-                        <Products title="PVC 3D PANEL" type="pvc_panel" />
                         <Products title="PVC Tapes" type="pvc_tape" />
                         <Products title="Acrylic Laminates" type="acrylic" />
                         <Products title="WPC Board" type="wpc_board" />

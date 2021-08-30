@@ -2,26 +2,22 @@ import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { BsArrowRight, BsArrowDown } from 'react-icons/bs';
-import laminate1 from './images/laminate1.png';
-import laminate2 from './images/laminate2.png';
-import laminate3 from './images/laminate3.png';
-import laminate4 from './images/laminate4.png';
-import decorative from './images/decorative.png';
-import korean from './images/korean.png';
-import korean1 from './images/korean1.png';
-import decorative1 from './images/decorative1.png';
-import pvc_panel from './images/pvc_panel.png';
-import pvc_panel1 from './images/pvc_panel1.png';
-import acrylic from './images/acrylic.png';
-import acrylic1 from './images/acrylic1.png';
-import pvc_laminate from './images/pvc_laminates.png';
-import pvc_laminate1 from './images/pvc_laminates1.png';
-import wpc_board from './images/wpc_board.png';
-import wpc_board1 from './images/wpc_board1.png';
-import mdf_board from './images/mdf_board.png';
-import mdf_board1 from './images/mdf_board1.png';
-import pvc_tape from './images/pvc_tape.png';
-import pvc_tape1 from './images/pvc_tape1.png';
+import laminate1 from './images/laminate1.webp';
+import laminate2 from './images/laminate2.webp';
+import laminate3 from './images/laminate3.webp';
+import laminate4 from './images/laminate4.webp';
+import decorative from './images/decorative.webp';
+import korean from './images/korean.webp';
+import korean1 from './images/korean1.webp';
+import decorative1 from './images/decorative1.webp';
+import acrylic from './images/acrylic.webp';
+import acrylic1 from './images/acrylic1.webp';
+import pvc_laminate from './images/pvc_laminates.webp';
+import pvc_laminate1 from './images/pvc_laminates1.webp';
+import wpc_board from './images/wpc_board.webp';
+import wpc_board1 from './images/wpc_board1.webp';
+import pvc_tape from './images/pvc_tape.webp';
+import pvc_tape1 from './images/pvc_tape1.webp';
 import { Link } from 'react-router-dom';
 
 function Products() {
@@ -30,7 +26,7 @@ function Products() {
     
     const Button = ({ text, addClass,id }) => {
         return (
-            <a href="#products-container" className={addClass}><button  onClick={()=>setIndex(id)} className="flex items-center justify-center p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white w-60 shadow-get h-9 rounded-3xl laminates1 hover:text-black hover:shadow-get1">{text} <BsArrowRight className="ml-2" size={30} /></button></a>
+            <a href="#products-container" className={addClass}><button  onClick={()=>setIndex(id)} className="flex items-center justify-center w-64 p-4 py-6 mt-10 font-medium text-white duration-700 ease-out border border-white shadow-get h-9 rounded-3xl laminates1 hover:text-black hover:shadow-get1">{text} <BsArrowRight className="ml-2" size={30} /></button></a>
         )
     }
 
@@ -47,7 +43,7 @@ function Products() {
             id: 2,
             src1: pvc_laminate,
             src2: pvc_laminate1,
-            title: 'PVC 3D/Laminates',
+            title: 'PVC Premium Laminates',
             subtitle: '0.8 laminates',
             content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
         },
@@ -55,7 +51,7 @@ function Products() {
             id: 3,
             src1: acrylic,
             src2: acrylic1,
-            title: 'HD Acryllic',
+            title: 'HD Acrylic Lmainates',
             subtitle: '0.8 laminates',
             content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
         },
@@ -63,20 +59,12 @@ function Products() {
             id: 4,
             src1: wpc_board,
             src2: wpc_board1,
-            title: 'WPC Boards',
+            title: 'WPC PVC Boards',
             subtitle: '0.8 laminates',
             content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
         },
         {
             id: 5,
-            src1: mdf_board,
-            src2: mdf_board1,
-            title: 'MDF Boards',
-            subtitle: '0.8 laminates',
-            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
-        },
-        {
-            id: 6,
             src1: korean,
             src2: korean1,
             title: 'Korean Charcoal Panels',
@@ -84,18 +72,10 @@ function Products() {
             content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
         },
         {
-            id: 7,
+            id: 6,
             src1: pvc_tape,
             src2: pvc_tape1,
-            title: 'PVC Edge Band Tape',
-            subtitle: '0.8 laminates',
-            content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
-        },
-        {
-            id: 8,
-            src1: pvc_panel,
-            src2: pvc_panel1,
-            title: 'PVC 3D Panels',
+            title: 'PVC Edgeband',
             subtitle: '0.8 laminates',
             content: 'Hi-Gloss decorative bring in fashionable, appealing, elegant and durable solutions for home and office decor-an effectual way to obtain superior style and elegance in interior surface design.',
         },
@@ -128,7 +108,7 @@ function Products() {
                     </div>
                     <div className="col-span-4 md:col-span-2 mb-96">
                         <Button text="MDF Board" addClass="laminates3" id={5} />
-                        <Button text="Decorative" addClass="laminates4" id={1} />
+                        <Button text="Decorative Laminates" addClass="laminates4" id={1} />
                         <img src={laminate3} className="absolute z-40 h-full -bottom-96 lam-image3 right-10 md:-right-4" alt="MDF Board" />
                         <img src={laminate4} className="absolute z-50 h-full -bottom-96 lam-image4 right-32 md:-right-32" alt="Decorative Laminate" />
                     </div>
