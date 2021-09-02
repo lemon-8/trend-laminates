@@ -15,7 +15,7 @@ function Carousel() {
     const Products = ({ title, src }) => {
         return (
             <div className="relative items-center mx-4 mt-20 overflow-hidden text-center">
-                <div className="mx-auto overflow-hidden rounded-md w-72 h-96" data-aos="fade-right" data-aos-duration="2000">
+                <div className="mx-auto overflow-hidden rounded-md w-72 h-96">
                     <img src={src} alt={`Sample of ${title}`} className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <Link to="/Products"> 
@@ -57,7 +57,7 @@ function Carousel() {
     };
     return (
         <div>
-            <div className="flex flex-col items-center px-10 mt-20 lg:mt-0 xl:mt-20" data-aos="fade-up" data-aos-duration="2000">
+            <div className="flex flex-col items-center px-10 mt-20 lg:mt-0 xl:mt-20">
                 <p className="text-5xl font-bold text-center font-garamond">Top Products</p>
                 <p className="mt-6 text-base font-normal text-center text-subtitle">We are TrendPVC, a leader in the lamination industry supplying premium flat laminated panels to a diverse clientele.</p>
                 <div className="w-full h-full">
