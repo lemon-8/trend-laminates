@@ -61,7 +61,7 @@ function Catalogues() {
     return (
         <div>
             <div className="px-10 pt-36 pb-28 xl:px-44">
-                <div>
+                <div data-aos="fade-up">
                     <p className="font-garamond text-7xl">Catalogues</p>
                     <p className="mt-6 text-xl font-light">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                         Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
@@ -69,7 +69,7 @@ function Catalogues() {
                         <div className="col-span-12 lg:col-span-4">
                             <a href={trend1file} download>
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 1MM 2021</p>
-                                <div className="w-full mx-auto overflow-hidden rounded-md h-96">
+                                <div className="w-full mx-auto overflow-hidden rounded-md h-96" data-aos="fade-right" data-aos-duration="2000">
                                     <img src={trend1} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                 </div>
                             </a>
@@ -77,7 +77,7 @@ function Catalogues() {
                         <div className="col-span-12 mt-6 lg:mt-0 lg:col-span-8">
                             <a href={trend8file} download>
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 0.8MM 2021</p>
-                                <div className="w-full mx-auto overflow-hidden rounded-md h-96">
+                                <div className="w-full mx-auto overflow-hidden rounded-md h-96" data-aos="fade-right" data-aos-duration="2000">
                                     <img src={trend8} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                 </div>
                             </a>
@@ -86,7 +86,7 @@ function Catalogues() {
                 </div>
                 <div>
                     {catalogs.map(({ id, src1, src2, title1, title2, span1, span2, fade, file1, file2 }) => {
-                        return (<div className="grid grid-cols-6 mt-10 overflow-hidden lg:gap-20" key={id}>
+                        return (<div className="grid grid-cols-6 mt-10 overflow-hidden lg:gap-20" data-aos={`fade-${fade}`} data-aos-duration="2000" key={id}>
                             <div className={`col-span-6 lg:col-span-${span1}`} >
                                 <a href={file1} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>

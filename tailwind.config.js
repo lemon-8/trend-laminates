@@ -1,12 +1,5 @@
 module.exports = {
-  purge: {
-    content : ['./src/**/*.{js,jsx}', './public/index.html'],
-    options: {
-      keyframes: true,
-      fontFace: true,
-      variables: true,
-    },
-},
+  purge:  ['./src/**/*.{js,jsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
