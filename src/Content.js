@@ -53,7 +53,7 @@ function Content() {
     return (
 
         <div className="mt-20">
-            <div className="h-screen px-10 xl:px-44">
+            <div className="h-screen px-10 xl:px-44" data-aos="fade-up" data-aos-duration="2000">
                 <p className="text-5xl font-bold text-center font-garamond">Unparalleled Product Quality</p>
                 <p className="mt-4 mb-2 text-base font-normal text-center text-subtitle">Stunning designs that will give you a taste of the future.</p>
                 <div className="relative z-20 flex">
