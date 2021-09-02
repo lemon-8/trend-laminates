@@ -8,8 +8,8 @@ import Logo from './images/logoblack.webp';
 import Products from './Products';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Footer from './components/Footer';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+// import AOS from 'aos';
+// import 'aos/dist/aos.css';
 import Catalogues from './Catalogues';
 import About from './About';
 import Contact from './Contact';
@@ -17,11 +17,11 @@ import Contact from './Contact';
 const App = () => {
   const [loading, setLoading] = React.useState(true);
   
-  React.useEffect(() => {
-    AOS.init({
-      duration: 2000,
-    });
-  }, [loading]);
+  // React.useEffect(() => {
+  //   AOS.init({
+  //     duration: 2000,
+  //   });
+  // }, [loading]);
   
   React.useEffect(() => {
     setTimeout(() => {
