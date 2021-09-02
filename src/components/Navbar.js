@@ -41,7 +41,7 @@ export default function Navbar() {
 
     return (
         <>
-            <nav className={(active ? "bg-white w-full fixed top-0 z-80 flex flex-wrap justify-between pt-2 md:px-10 xl:px-44 duration-500 text-black" : "fixed duration-500 top-0 pt-4 z-80 flex flex-wrap justify-between md:px-10 xl:px-48 w-full bg-transparent text-white")}>
+            <nav className={"w-full fixed top-0 z-80 flex flex-wrap justify-between md:px-10 xl:px-44 duration-500 " + (active ? "bg-white text-black" : "pt-2 bg-transparent text-white")}>
                 <div className="container flex flex-wrap items-center justify-between px-10 rounded-md md:px-0">
                     <div className="relative flex justify-between w-full lg:w-80 lg:static lg:block lg:justify-start">
                         <Link to="/" className="inline-block py-2">
@@ -49,7 +49,6 @@ export default function Navbar() {
                         </Link>
                         <button
                             className={"block text-3xl cursor-pointer lg:hidden " + (active ? "text-black": "text-white")}
-                            type="button"
                             onClick={() => setNavbarOpen(!navbarOpen)}
                         >
                             {menubtn}

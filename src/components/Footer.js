@@ -25,20 +25,20 @@ function Footer() {
                     <div className="col-span-6 mt-6 md:col-span-1 md:mt-0">
                         <p className="text-2xl font-bold font-garamond">Products</p>
                         <ul className="font-normal list-none">
-                            <Link to="/Products"><li className="mt-2 cursor-pointer">Decorative Laminates</li></Link>
-                            <Link to="/Products"><li className="mt-2 cursor-pointer">PVC Premium Laminates</li></Link>
-                            <Link to="/Products"><li className="mt-2 cursor-pointer">HD Acrylic Laminates</li></Link>
-                            <Link to="/Products"><li className="mt-2 cursor-pointer">WPC PVC Board</li></Link>
+                            <li className="mt-2 cursor-pointer"><Link to="/Products">Decorative Laminates</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/Products">PVC Premium Laminates</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/Products">HD Acrylic Laminates</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/Products">WPC PVC Board</Link></li>
                         </ul>
                     </div>
                     <div className="col-span-6 mt-6 md:mt-0 md:col-span-1">
                         <p className="text-2xl font-bold font-garamond">Company</p>
                         <ul className="font-normal list-none">
-                            <Link to="/"><li className="mt-2 cursor-pointer">Home</li></Link>
-                            <Link to="/About"><li className="mt-2 cursor-pointer">About Us</li></Link>
-                            <Link to="/Products"><li className="mt-2 cursor-pointer">Products</li></Link>
-                            <Link to="/Catalogues"><li className="mt-2 cursor-pointer">Catalogues</li></Link>
-                            <Link to="/Contact"><li className="mt-2 cursor-pointer">Contact Us</li></Link>
+                            <li className="mt-2 cursor-pointer"><Link to="/">Home</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/About">About Us</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/Products">Products</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/Catalogues">Catalogues</Link></li>
+                            <li className="mt-2 cursor-pointer"><Link to="/Contact">Contact Us</Link></li>
                         </ul>
                     </div>
                     <div className="col-span-6 mx-auto mt-6 md:mt-0 md:col-span-2">
