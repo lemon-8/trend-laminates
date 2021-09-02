@@ -5,7 +5,7 @@ import Content from './Content';
 
 function Hero() {
     return (
-        <div>
+        <div className="overflow-hidden">
             <div className="slide-container" />
             <div className="flex flex-col justify-end w-full h-screen px-10 pb-40 xl:px-44">
                 <p className="text-4xl text-white md:text-7xl font-garamond title"></p>

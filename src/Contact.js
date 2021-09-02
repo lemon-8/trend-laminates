@@ -86,7 +86,7 @@ function Contact() {
     return (
         <div>
             <div className="flex items-end pb-12 contact">
-                <p className="px-10 text-white xl:px-44 text-7xl font-garamond">Get in Touch</p>
+                <p className="px-10 text-5xl text-white xl:px-44 md:text-7xl font-garamond">Get in Touch</p>
             </div>
 
             <div className="px-10 mt-12 xl:px-44">
@@ -156,7 +156,7 @@ function Contact() {
                     </div>
                 </div>
 
-                <div className={contactForm ? "block bg-blue-300 my-10 text-center p-4 text-lg lg:p-6 lg:text-xl" : "hidden"}>
+                <div className={contactForm ? "block bg-black text-white my-10 text-center p-4 text-lg lg:p-6 lg:text-xl" : "hidden"}>
                     <p>Thank you for contacting. We will reach out to you soon.</p>
                 </div>
 

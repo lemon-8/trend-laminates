@@ -56,8 +56,8 @@ function Catalogues() {
                     <p className="font-garamond text-7xl">Catalogues</p>
                     <p className="mt-6 text-xl font-light">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                         Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
-                    <div className="grid grid-cols-12 my-10 md:gap-20">
-                        <div className="col-span-12 md:col-span-4">
+                    <div className="grid grid-cols-12 my-10 lg:gap-20">
+                        <div className="col-span-12 lg:col-span-4">
                             <a href={trend1file} download>
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 1MM 2021</p>
                                 <div className="w-full overflow-hidden rounded-lg h-96">
@@ -65,7 +65,7 @@ function Catalogues() {
                                 </div>
                             </a>
                         </div>
-                        <div className="col-span-12 md:col-span-8">
+                        <div className="col-span-12 mt-6 lg:mt-0 lg:col-span-8">
                             <a href={trend8file} download>
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 0.8MM 2021</p>
                                 <div className="w-full overflow-hidden rounded-lg h-96">
@@ -77,8 +77,8 @@ function Catalogues() {
                 </div>
                 <div>
                     {catalogs.map(({ id, src1, src2, title1, title2, span1, span2, fade, file1, file2 }) => {
-                        return (<div className="grid grid-cols-6 mt-10 overflow-hidden md:gap-20" data-aos={`fade-${fade}`} key={id}>
-                            <div className={`col-span-6 md:col-span-${span1}`} >
+                        return (<div className="grid grid-cols-6 mt-10 overflow-hidden lg:gap-20" data-aos={`fade-${fade}`} key={id}>
+                            <div className={`col-span-6 lg:col-span-${span1}`} >
                                 <a href={file1} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
                                     <div className="w-full overflow-hidden rounded-lg h-96">
@@ -86,7 +86,7 @@ function Catalogues() {
                                     </div>
                                 </a>
                             </div>
-                            <div className={`col-span-6 md:col-span-${span2}`}>
+                            <div className={`col-span-6 mt-6 lg:mt-0 lg:col-span-${span2}`}>
                                 <a href={file2} download>
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
                                     <div className="w-full overflow-hidden rounded-lg h-96">

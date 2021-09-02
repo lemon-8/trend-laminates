@@ -480,9 +480,17 @@ body::after {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
   .custom-image-container,.rooms{
     width: 300px;
     height: 400px;
+    margin: 0;
+  }
+  .carousel{
+    position: relative !important;
+  }
+  .thumbs-wrapper{
+    position: relative !important;
+    left: 5%;
   }
 }
