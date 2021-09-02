@@ -26,10 +26,11 @@
     "web-vitals": "^1.1.2"
   },
   "scripts": {
-    "start": "craco start",
-    "build": "craco build",
+    "start": "npm run watch:css && craco start",
+    "build": "npm run watch:css && craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "watch:css": "postcss src/App.css"
   },
   "eslintConfig": {
     "extends": [
