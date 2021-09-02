@@ -479,3 +479,10 @@ body::after {
     content: "Stunning designs that will give you a taste of the future.";
   }
 }
+
+@media screen and (max-width: 767px) {
+  .custom-image-container,.rooms{
+    width: 300px;
+    height: 400px;
+  }
+}

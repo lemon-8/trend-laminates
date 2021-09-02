@@ -79,31 +79,29 @@ function Content() {
                         <button className="flex items-center justify-center p-4 py-6 mt-20 text-base font-bold text-black duration-700 ease-out bg-white border border-white w-60 shadow-touch hover:text-white hover:shadow-touch1 h-9 rounded-3xl">See our Products <BsArrowRight className="ml-2" size={30} /></button>
                     </Link>
                 </div>
-                <div className="relative grid col-span-2 pr-10 md:col-span-1">
+                <div className="relative grid col-span-2 px-10 pr-10 my-20 mt-36 md:my-0 md:col-span-1">
                     <div className="rounded-md custom-image-container">
                         <div className="custom-image"></div>
                     </div>
-                    <div className="absolute h-auto p-3 bg-white rounded-md right-17 opacity-90 w-44 -top-11">
-                        <img src={leaf} alt="leaf" />
-                        <p className="mt-2 text-xl font-bold font-garamond">Eco Friendly</p>
+                    <div className="absolute w-40 h-auto p-3 bg-white rounded-md -top-28 right-2 md:right-17 opacity-90 md:w-44 md:-top-11">
+                        <img src={leaf} alt="leaf" className="h-5 md:h-auto" />
+                        <p className="mt-2 text-lg font-bold md:text-xl font-garamond">Eco Friendly</p>
                         <p className="mt-2 text-xs font-normal">All our products are made with exceptional care for the environment. We follow the best sustainable practices in the industry to assemble our unique eco-friendly inventory.</p>
                     </div>
-                    <div className="absolute h-auto p-3 bg-white rounded-md left-13 opacity-90 -bottom-11 w-44">
-                        <img src={star} alt="star" />
-                        <p className="mt-2 text-xl font-bold font-garamond">High Quality Panels</p>
+                    <div className="absolute w-40 h-auto p-3 bg-white rounded-md left-2 md:left-13 opacity-90 -bottom-28 md:-bottom-11 md:w-44">
+                        <img src={star} alt="star" className="h-5 md:h-auto" />
+                        <p className="mt-2 text-lg font-bold md:text-xl font-garamond">High Quality Panels</p>
                         <p className="mt-2 text-xs font-normal">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                     </div>
                 </div>
             </div>
 
 
-            <div className="grid items-center grid-cols-2 px-10 mt-20 md:gap-20 xl:pl-28 xl:pr-60">
-                <div className="relative col-span-2 overflow-hidden md:col-span-1 rooms" data-aos="fade-right" data-aos-duration="2000" >
-                    <div className="rounded-md rooms">
-                        <div className="stunning-design room-design"></div>
-                    </div>
+            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-20">
+                <div className="rounded-md rooms" data-aos="fade-right" data-aos-duration="2000">
+                    <div className="stunning-design room-design"></div>
                 </div>
-                <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
+                <div className="col-span-2 my-16 md:pr-20 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Stunning Designs</p>
                     <p className="mt-6 text-xl font-light text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                     <Link className="relative" to="/Catalogues">
@@ -111,8 +109,9 @@ function Content() {
                     </Link>
                 </div>
             </div>
-            <div className="flex flex-col-reverse items-center grid-cols-2 px-10 mt-20 xl:px-44 md:gap-20 md:mt-32 md:grid">
-                <div className="col-span-2 pl-16 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
+            
+            <div className="flex flex-col-reverse grid-cols-2 px-10 mt-20 md:items-center xl:px-44 md:gap-20 md:mt-32 md:grid">
+                <div className="col-span-2 my-16 md:pl-16 md:col-span-1" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold md:text-5xl font-garamond">Finest Textures</p>
                     <p className="mt-6 text-xl font-light text-textColor"><span className="italic">Premium textures right at your fingertips. </span>
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the shiniest, smoothest, and most pleasing textures, which will make your home come alive.
@@ -121,15 +120,16 @@ function Content() {
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </Link>
                 </div>
-                <div className="rounded-md rooms" data-aos="fade-left" data-aos-duration="2000">
+                <div className="col-span-3 rounded-md items-left md:col-span-1 rooms" data-aos="fade-left" data-aos-duration="2000">
                     <div className="finest-texture room-design"></div>
                 </div>
             </div>
-            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-20 md:mb-20 md:mt-32">
+            
+            <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-20 md:mb-20">
                 <div className="rounded-md rooms" data-aos="fade-right" data-aos-duration="2000">
                     <div className="laser-precision room-design"></div>
                 </div>
-                <div className="col-span-2 pr-20 my-16 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
+                <div className="col-span-2 my-16 md:pr-20 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>
                     <p className="mt-6 text-xl font-light text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
                     <Link className="relative" to="/About">
@@ -139,7 +139,7 @@ function Content() {
             </div>
 
 
-            <div className="mt-10 bg-custombg">
+            <div className="mt-20 md:mt-10 bg-custombg">
                 <Slider {...settings1}>
                     <Reviews title="Satisfied Clients" src={bed_room} desc='“Trend PVC Laminates are the best quality laminates. They have designs for all needs”' author="- Vibha Arora  (Bedroom renovation)" />
                     <Reviews title="Satisfied Clients" src={living_room} desc='“Trend PVC Laminates gave my home a very great ambience. Just loved the design.”' author="- Rajesh Chopra  (Home renovation)" />
