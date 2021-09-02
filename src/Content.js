@@ -53,7 +53,7 @@ function Content() {
     return (
 
         <div className="mt-20">
-            <div className="h-screen px-10 xl:px-44" data-aos="fade-up" data-aos-duration="2000">
+            <div className="h-screen px-10 xl:px-44">
                 <p className="text-5xl font-bold text-center font-garamond">Unparalleled Product Quality</p>
                 <p className="mt-4 mb-2 text-base font-normal text-center text-subtitle">Stunning designs that will give you a taste of the future.</p>
                 <div className="relative z-20 flex">
@@ -74,7 +74,7 @@ function Content() {
 
             <Carousel />
 
-            <div className="grid items-center justify-center grid-cols-2 py-20 mt-20 md:gap-10 bg-custombg" data-aos="fade-up" data-aos-duration="2000">
+            <div className="grid items-center justify-center grid-cols-2 py-20 mt-20 md:gap-10 bg-custombg">
                 <div className="col-span-2 px-10 xl:pl-60 md:col-span-1" >
                     <p className="text-4xl font-bold lg:text-5xl font-garamond text-custom">Custom solutions catered to your needs.</p>
                     <p className="mt-6 text-xl font-normal text-customdesc">We bring you a dazzling line-up of laminates and PVC sheets for all your needs. From rugged laminates to glossy attractive panels we have you covered.</p>
@@ -101,10 +101,10 @@ function Content() {
 
 
             <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-10 lg:gap-20">
-                <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:w-100 lg:h-120" data-aos="fade-right" data-aos-duration="2000">
+                <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:w-100 lg:h-120">
                     <img src={room5} alt="Sample of a room design" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
-                <div className="col-span-2 my-16 md:my-10 lg:pr-20 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
+                <div className="col-span-2 my-16 md:my-10 lg:pr-20 md:col-span-1">
                     <p className="text-4xl font-bold lg:text-5xl font-garamond">Stunning Designs</p>
                     <p className="mt-6 text-xl font-light text-textColor">We bring you a dazzling line-up of laminates and PVC sheets with the most illustrious designs from all over the world.</p>
                     <Link className="relative" to="/Catalogues">
@@ -114,7 +114,7 @@ function Content() {
             </div>
 
             <div className="flex flex-col-reverse grid-cols-2 px-10 mt-20 md:items-center xl:px-44 md:gap-10 lg:gap-20 md:mt-32 md:grid">
-                <div className="my-16 lg:pl-16" data-aos="fade-up" data-aos-duration="2000">
+                <div className="my-16 lg:pl-16">
                     <p className="text-4xl font-bold lg:text-5xl font-garamond">Finest Textures</p>
                     <p className="mt-6 text-xl font-light text-textColor"><span className="italic">Premium textures right at your fingertips. </span>
                         We pay close attention to the finishing and feel of every sheet during the production process so that you get the shiniest, smoothest, and most pleasing textures, which will make your home come alive.
@@ -123,16 +123,16 @@ function Content() {
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </Link>
                 </div>
-                <div className="m-0 overflow-hidden rounded-md lg:mx-auto w-72 h-96 lg:w-100 lg:h-120" data-aos="fade-right" data-aos-duration="2000">
+                <div className="m-0 overflow-hidden rounded-md lg:mx-auto w-72 h-96 lg:w-100 lg:h-120">
                     <img src={room6} alt="Sample of a room design" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
             </div>
 
             <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-10 lg:gap-20 md:mb-20">
-                <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:w-100 lg:h-120" data-aos="fade-right" data-aos-duration="2000">
+                <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:w-100 lg:h-120">
                     <img src={room7} alt="Sample of a room design" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
-                <div className="col-span-2 my-16 lg:pr-20 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
+                <div className="col-span-2 my-16 lg:pr-20 md:col-span-1">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>
                     <p className="mt-6 text-xl font-light text-textColor">Our sophisticated manufacturing process uses cutting-edge technology handled by a team of experts. This allows us to ensure remarkable product quality across our entire catalogue.</p>
                     <Link className="relative" to="/About">
