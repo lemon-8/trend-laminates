@@ -1,12 +1,8 @@
 module.exports = {
   purge: {
-    mode: 'all',
-    preserveHtmlElements: false,
-    css: ['./src/App.css'],
     content : ['./src/**/*.{js,jsx}', './public/index.html'],
     options: {
       keyframes: true,
-      blocklist: [/^debug-/],
       fontFace: true,
       variables: true,
     },

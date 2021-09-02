@@ -41,7 +41,7 @@ const App = () => {
             timeout={3000}
           />
         </div>
-        : <div>
+        : <div className="overflow-x-hidden">
           <Cursor />
           <Router>
             <Navbar />
