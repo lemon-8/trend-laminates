@@ -4,13 +4,19 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowRight } from 'react-icons/bs';
 import { Link } from 'react-router-dom';
+import decorative from './images/decorative.webp';
+import pvc_laminates from './images/pvc_laminates.webp';
+import korean from './images/korean.webp';
+import pvc_tape  from './images/pvc_tape.webp';
+import acrylic from './images/acrylic.webp';
+import wpc_board from './images/wpc_board.webp';
 
 function Carousel() {
-    const Products = ({ title, type }) => {
+    const Products = ({ title, src }) => {
         return (
             <div className="relative items-center mx-4 mt-20 overflow-hidden text-center">
-                <div className="rounded-md products">
-                    <div className={"product-list " + type} />
+                <div className="mx-auto overflow-hidden rounded-md w-72 h-96" data-aos="fade-right" data-aos-duration="2000">
+                    <img src={src} alt={`Sample of ${title}`} className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <Link to="/Products"> 
                     <button className="absolute left-0 right-0 w-48 py-2 mx-auto text-center text-black duration-500 bg-white hover:border-black hover:text-white button-slide rounded-3xl bottom-5 product-text">{title}</button>
@@ -56,12 +62,12 @@ function Carousel() {
                 <p className="mt-6 text-base font-normal text-center text-subtitle">We are TrendPVC, a leader in the lamination industry supplying premium flat laminated panels to a diverse clientele.</p>
                 <div className="w-full h-full">
                     <Slider {...settings}>
-                        <Products title="Decorative" type="decorative" />
-                        <Products title="PVC Laminates" type="pvc_laminates" />
-                        <Products title="Korean Charcoal" type="korean" />
-                        <Products title="PVC Tapes" type="pvc_tape" />
-                        <Products title="Acrylic Laminates" type="acrylic" />
-                        <Products title="WPC Board" type="wpc_board" />
+                        <Products title="Decorative" src={decorative} />
+                        <Products title="PVC Laminates" src={pvc_laminates} />
+                        <Products title="Korean Charcoal" src={korean} />
+                        <Products title="PVC Tapes" src={pvc_tape} />
+                        <Products title="Acrylic Laminates" src={acrylic} />
+                        <Products title="WPC Board" src={wpc_board} />
                     </Slider>
                 </div>
                 <Link to="/Products">

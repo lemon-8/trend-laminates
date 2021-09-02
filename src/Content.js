@@ -14,6 +14,10 @@ import office from './images/office.webp';
 import living_room from './images/livingroom.webp';
 import bed_room from './images/bedroom.webp';
 import { Link } from 'react-router-dom';
+import custom from './images/customdec.webp';
+import room5 from './images/room5.webp';
+import room6 from './images/room6.webp';
+import room7 from './images/room7.webp';
 
 function Content() {
 
@@ -79,8 +83,8 @@ function Content() {
                     </Link>
                 </div>
                 <div className="relative grid col-span-2 px-10 pr-10 my-20 mt-36 lg:my-16 xl:my-0 md:col-span-1">
-                    <div className="rounded-md custom-image-container">
-                        <div className="custom-image"></div>
+                    <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:h-100 lg:w-96">
+                        <img src={custom} alt="" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                     </div>
                     <div className="absolute w-40 h-auto p-3 bg-white rounded-md -top-28 right-2 xl:right-17 opacity-90 xl:w-44 xl:-top-11">
                         <img src={leaf} alt="leaf" className="h-5 md:h-auto" />
@@ -97,8 +101,8 @@ function Content() {
 
 
             <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-10 lg:gap-20">
-                <div className="rounded-md rooms" data-aos="fade-right" data-aos-duration="2000">
-                    <div className="stunning-design room-design"></div>
+                <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:w-100 lg:h-120" data-aos="fade-right" data-aos-duration="2000">
+                    <img src={room5} alt="Sample of a room design" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <div className="col-span-2 my-16 md:my-10 lg:pr-20 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-bold lg:text-5xl font-garamond">Stunning Designs</p>
@@ -108,7 +112,7 @@ function Content() {
                     </Link>
                 </div>
             </div>
-            
+
             <div className="flex flex-col-reverse grid-cols-2 px-10 mt-20 md:items-center xl:px-44 md:gap-10 lg:gap-20 md:mt-32 md:grid">
                 <div className="my-16 lg:pl-16" data-aos="fade-up" data-aos-duration="2000">
                     <p className="text-4xl font-bold lg:text-5xl font-garamond">Finest Textures</p>
@@ -119,14 +123,14 @@ function Content() {
                         <button className="absolute flex items-center justify-center p-4 py-6 mt-6 text-base font-bold text-black duration-700 border border-black w-60 hover:text-white hover:border-transparent h-9 rounded-3xl button-slide">Learn About Us <BsArrowRight className="ml-2" size={30} /></button>
                     </Link>
                 </div>
-                <div className="col-span-2 rounded-md rooms md:col-span-1" data-aos="fade-left" data-aos-duration="2000">
-                    <div className="finest-texture room-design"></div>
+                <div className="m-0 overflow-hidden rounded-md lg:mx-auto w-72 h-96 lg:w-100 lg:h-120" data-aos="fade-right" data-aos-duration="2000">
+                    <img src={room6} alt="Sample of a room design" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
             </div>
-            
+
             <div className="grid items-center grid-cols-2 px-10 mt-20 xl:pl-28 xl:pr-60 md:gap-10 lg:gap-20 md:mb-20">
-                <div className="rounded-md rooms" data-aos="fade-right" data-aos-duration="2000">
-                    <div className="laser-precision room-design"></div>
+                <div className="mx-auto overflow-hidden rounded-md w-72 h-96 lg:w-100 lg:h-120" data-aos="fade-right" data-aos-duration="2000">
+                    <img src={room7} alt="Sample of a room design" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                 </div>
                 <div className="col-span-2 my-16 lg:pr-20 md:col-span-1" data-aos="fade-up" data-aos-duration="1000">
                     <p className="text-4xl font-semibold md:text-5xl font-garamond">Laser Precision</p>

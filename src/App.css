@@ -106,103 +106,6 @@ body::after {
   display: none !important;
 }
 
-.rooms{
-  width: 470px;
-  height: 516px;
-  display: block;
-  margin: auto;
-  overflow:hidden;
-}
-
-.custom-image-container{
-  width: 366px;
-  height: 448px;
-  display: block;
-  margin: auto;
-  overflow: hidden;
-}
-
-.custom-image-container:hover .custom-image,.rooms:hover .room-design,.products:hover .product-list{
-  transform: scale(1.25);
-}
-
-.custom-image{
-  background: url('./images/customdec.webp');
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  transition: all 400ms ease-out;
-}
-
-.room-design,.product-list{
-  width: 100%;
-  height: 100%;
-  transition: all 400ms ease-out;
-}
-
-.stunning-design{
-  background: url('./images/room5.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.finest-texture{
-  background: url('./images/room6.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.laser-precision{
-  background: url('./images/room7.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.products{
-  width: 290px;
-  height: 366px;
-  display: block;
-  margin: auto;
-  overflow: hidden;
-}
-
-.decorative{
-  background: url('./images/decorative.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.pvc_laminates{
-  background: url('./images/pvc_laminates.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.korean{
-  background: url('./images/korean.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.pvc_tape{
-  background: url('./images/pvc_tape.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.acrylic{
-  background: url('./images/acrylic.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.wpc_board{
-  background: url('./images/wpc_board.webp');
-  background-size: cover;
-  background-position: center;
-}
-
 .tab-content{
   animation: fade 700ms ease-in-out;
   transform-origin: bottom;
@@ -260,54 +163,6 @@ body::after {
 
 .laminates4:hover~.lam-image4{
   transform: translateY(-96px);
-}
-
-.trend1{
-  background: url('./images/trend_1mm.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.trend8{
-  background: url('./images/trend_8mm.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.magazine1{
-  background: url('./images/magazine1.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.magazine2{
-  background: url('./images/magazine2.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.magazine3{
-  background: url('./images/magazine3.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.magazine4{
-  background: url('./images/magazine4.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.magazine5{
-  background: url('./images/magazine5.webp');
-  background-size: cover;
-  background-position: center;
-}
-
-.magazine6{
-  background: url('./images/magazine6.webp');
-  background-size: cover;
-  background-position: center;
 }
 
 .contact{
@@ -481,16 +336,14 @@ body::after {
 }
 
 @media screen and (max-width: 769px) {
-  .custom-image-container,.rooms{
-    width: 300px;
-    height: 400px;
-    margin: 0;
-  }
   .carousel{
     position: relative !important;
   }
   .thumbs-wrapper{
     position: relative !important;
     left: 5%;
+  }
+  .mainCursor,.secondaryCursor{
+    display: none;
   }
 }
