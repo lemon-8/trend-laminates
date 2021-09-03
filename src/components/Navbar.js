@@ -19,12 +19,18 @@ export default function Navbar() {
         }
         else {
             setActive(false);
+            if(navbarOpen === true){                               
+                setActive(true);
+            }
+            else{
+                setActive(false);
+            }
             window.addEventListener('scroll', changeBackground);
         }
         return () => {
             window.removeEventListener('scroll', changeBackground);
         }
-    }, [setActive, location])
+    }, [setActive, location, navbarOpen])
 
     const changeBackground = () => {
         if (window.scrollY >= 100) {
@@ -49,7 +55,9 @@ export default function Navbar() {
                         </Link>
                         <button
                             className={"block text-3xl cursor-pointer lg:hidden " + (active ? "text-black": "text-white")}
-                            onClick={() => setNavbarOpen(!navbarOpen)}
+                            onClick={() => {
+                                setNavbarOpen(!navbarOpen);
+                        }}
                         >
                             {menubtn}
                         </button>
