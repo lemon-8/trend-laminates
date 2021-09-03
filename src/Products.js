@@ -99,7 +99,7 @@ function Products() {
                 <h1 className="text-5xl md:text-7xl font-garamond">Our Products</h1>
                 <p className="w-full mt-6 text-base font-light md:text-lg md:w-3/4">A range of avant-garde products, all created meticulously with the finest raw material available to the world.
                     Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
-                <div className="grid justify-center grid-cols-4 mt-10 md:gap-10 md:max-w-lg">
+                <div className="grid justify-center grid-cols-4 my-10 md:mt-10 md:mb-0 md:gap-10 md:max-w-lg">
                     <div className="col-span-4 md:col-span-2">
                         <Button text="Acrylic Laminates" addClass="laminates1" id={3} />
                         <Button text="PVC Premium" addClass="laminates2" id={2} />
@@ -107,7 +107,7 @@ function Products() {
                         <img src={laminate2} className="absolute z-30 right-32 md:bottom-12 bottom-16 h-80 lg:h-full lg:-bottom-96 lam-image2 lg:right-24" alt="PVC Laminate" />
                     </div>
                     <div className="col-span-4 md:col-span-2 mb-96">
-                        <Button text="WPC PVC Board" addClass="laminates3" id={5} />
+                        <Button text="WPC PVC Board" addClass="laminates3" id={4} />
                         <Button text="Decorative Laminates" addClass="laminates4" id={1} />
                         <img src={laminate3} className="absolute z-40 h-80 lg:h-full md:bottom-12 bottom-16 right-10 lg:-bottom-96 lam-image3 lg:-right-4" alt="MDF Board" />
                         <img src={laminate4} className="absolute z-50 -right-10 h-80 md:bottom-12 bottom-16 lg:h-full lg:-bottom-96 lam-image4 lg:-right-32" alt="Decorative Laminate" />
