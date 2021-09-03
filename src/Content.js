@@ -66,10 +66,12 @@ function Content() {
                         <img className="h-10 -mt-4 lg:h-auto" src={logo} alt="Trend" />
                     </div>
                 </div>
-                <ReactCompareSlider style={{ height: "75vh", width: "100%", objectFit: "contain", marginTop: "20px", borderRadius: "5px" }}
-                    itemOne={<ReactCompareSliderImage src={leftimage} alt="Image one" />}
-                    itemTwo={<ReactCompareSliderImage src={rightimage} alt="Image two" />}
-                />
+                <div className="bg-black">
+                    <ReactCompareSlider className="compare-slider" onlyHandleDraggable={true} style={{ height: "75vh", opacity:"0.8", width: "100%", objectFit: "contain", marginTop: "20px", borderRadius: "5px" }}
+                        itemOne={<ReactCompareSliderImage src={leftimage} alt="Image one" />}
+                        itemTwo={<ReactCompareSliderImage src={rightimage} alt="Image two" />}
+                    />
+                </div>
             </div>
 
             <Carousel />

@@ -7,14 +7,14 @@ import decorative from './images/decorative.webp';
 function About() {
     return (
         <div className="px-10 pt-20 md:pt-28 lg:pt-36 pb-28 xl:px-44">
-            
+
             <div data-aos="fade-right">
                 <p className="text-4xl font-bold md:text-5xl font-garamond">Where it all started</p>
                 <p className="w-full mt-6 text-xl font-light md:w-11/12">
                     The TCS group was founded by <span className="font-bold">Sh. Vinod Goyal</span> in the year 1984. With a very humble beginning in trading just plywood in Delhi and NCR region. Over the years, through hard work and the support of our loyal customers, we have grown into trading an extensive catalogue of Plywoods, Blockboards, Laminates, Venition and Shuttering Ply. Along this journey we developed a network of over 500 trusted partners in the Delhi/NCR region.
                 </p>
             </div>
-            
+
             <div className="grid items-center grid-cols-6 gap-10 mt-20">
                 <div className="col-span-6 overflow-hidden rounded-md lg:col-span-3" data-aos="fade-right">
                     <img src={trend} alt="" className="h-full duration-500 transform rounded-md hover:scale-125" />
@@ -43,9 +43,9 @@ function About() {
                 <div className="overflow-hidden rounded-md">
                     <img src={principle} alt="" className="w-full duration-500 transform rounded-md h-96 lg:h-auto hover:scale-125" />
                 </div>
-                <div className="absolute transform lg:-translate-y-1/2 lg:-translate-x-1/2 top-10 left-10 right-10 lg:top-1/2 lg:left-1/2">
+                <div className="absolute transform lg:-translate-y-1/2 lg:-translate-x-1/2 top-7 left-10 right-10 lg:top-1/2 lg:left-1/2">
                     <p className="text-2xl font-bold md:text-5xl font-garamond">Our Principles</p>
-                    <p className="w-full mt-6 text-base font-light text-center md:mt-6 md:text-lg">
+                    <p className="w-full mt-2 text-base font-light text-center md:mt-6 md:text-lg">
                         Today, we have a network of over 500+ dedicated dealers pan India, with operations in 28 states and repeated business orders from high profile clientele.
                         This exponential growth can only be attributed to our dedication to ensuring customer satisfaction, top quality products and our principles
                     </p>
@@ -78,7 +78,7 @@ function About() {
                     </p>
                 </div>
             </div>
-            
+
         </div>
     )
 }

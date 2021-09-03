@@ -50,7 +50,8 @@ function Carousel() {
             {
                 breakpoint: 500,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 1.05,
+                    autoplay: false,
                 }
             }
         ]
