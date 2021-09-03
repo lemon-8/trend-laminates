@@ -31,7 +31,7 @@ function Footer() {
                             <li className="mt-2 cursor-pointer"><Link to="/Products">WPC PVC Board</Link></li>
                         </ul>
                     </div>
-                    <div className="col-span-6 mt-6 md:mt-0 md:col-span-1">
+                    <div className="hidden col-span-6 mt-6 md:block md:mt-0 md:col-span-1">
                         <p className="text-2xl font-bold font-garamond">Company</p>
                         <ul className="font-normal list-none">
                             <li className="mt-2 cursor-pointer"><Link to="/">Home</Link></li>
