@@ -1,8 +1,12 @@
 import React from 'react';
 import trend from './images/left_compare.webp';
+import trend1 from './images/left_compare.png';
 import mission from './images/mission.webp';
+import mission1 from './images/mission.jpg';
 import principle from './images/principle_bg.webp';
-import decorative from './images/decorative.webp';
+import principle1 from './images/principle_bg.jpg';
+import decorative from './images/decorative-1.webp';
+import decorative1 from './images/decorative-1.jpg';
 
 function About() {
     return (
@@ -17,7 +21,11 @@ function About() {
 
             <div className="grid items-center grid-cols-6 gap-10 mt-20">
                 <div className="col-span-6 overflow-hidden rounded-md lg:col-span-3" data-aos="fade-right">
-                    <img src={trend} alt="" className="h-full duration-500 transform rounded-md hover:scale-125" />
+                    <picture>
+                        <source srcset={trend} type="image/webp" />
+                        <source srcset={trend1} type="image/jpg" />
+                        <img src={trend1} alt="" className="h-full duration-500 transform rounded-md hover:scale-125" />
+                    </picture>
                 </div>
                 <div className="col-span-6 lg:pr-20 lg:col-span-3" data-aos="fade-left">
                     <p className="text-5xl font-bold font-garamond">Trend PVC</p>
@@ -35,13 +43,21 @@ function About() {
                     </p>
                 </div>
                 <div className="col-span-6 overflow-hidden rounded-md lg:col-span-3" data-aos="fade-left">
-                    <img src={mission} alt="" className="w-full duration-500 transform rounded-md hover:scale-125" />
+                    <picture>
+                        <source srcset={mission} type="image/webp" />
+                        <source srcset={mission1} type="image/jpg" />
+                        <img src={mission1} alt="" className="w-full duration-500 transform rounded-md hover:scale-125" />
+                    </picture>
                 </div>
             </div>
 
             <div className="relative z-10 text-center text-white" data-aos="fade-up">
                 <div className="overflow-hidden rounded-md">
-                    <img src={principle} alt="" className="w-full duration-500 transform rounded-md h-96 lg:h-auto hover:scale-125" />
+                    <picture>
+                        <source srcset={principle} type="image/webp" />
+                        <source srcset={principle1} type="image/jpg" />
+                        <img src={principle1} alt="" className="w-full duration-500 transform rounded-md h-96 lg:h-auto hover:scale-125" />
+                    </picture>
                 </div>
                 <div className="absolute transform lg:-translate-y-1/2 lg:-translate-x-1/2 top-7 left-10 right-10 lg:top-1/2 lg:left-1/2">
                     <p className="text-2xl font-bold md:text-5xl font-garamond">Our Principles</p>
@@ -69,7 +85,11 @@ function About() {
 
             <div className="grid items-center grid-cols-6 gap-10 mt-20">
                 <div className="col-span-6 overflow-hidden rounded-md lg:col-span-3" data-aos="fade-right">
-                    <img src={decorative} alt="" className="duration-500 transform rounded-md hover:scale-125" />
+                    <picture>
+                        <source srcset={decorative} type="image/webp" />
+                        <source srcset={decorative1} type="image/jpg" />
+                        <img src={decorative1} alt="" className="duration-500 transform rounded-md hover:scale-125" />
+                    </picture>
                 </div>
                 <div className="col-span-6 lg:col-span-3" data-aos="fade-left">
                     <p className="text-5xl font-bold font-garamond">Our Vision</p>
