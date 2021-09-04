@@ -188,8 +188,8 @@ function Products() {
                     {tabItems.map(({ id, src1, src11, src2, src21, src3, src31, title, subtitle, content }) => {
                         return (
                             index === id ?
-                                <div className="relative grid justify-center grid-cols-3 text-left bg-transparent lg:h-screen lg:overflow-hidden tab-content" key={id}>
-                                    <div className="col-span-3 lg:col-span-2">
+                                <div className="relative grid justify-center grid-cols-2 text-left bg-transparent lg:h-screen lg:overflow-hidden tab-content" key={id}>
+                                    <div className="col-span-2 lg:col-span-1">
                                         <Carousel dynamicHeight={true} thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showThumbs={true} showIndicators={false}>
                                             <picture>
                                                 <source srcset={src1} type="image/webp" />
@@ -208,7 +208,7 @@ function Products() {
                                             </picture>
                                         </Carousel>
                                     </div>
-                                    <div className="relative z-10 w-full col-span-3 px-10 bg-white md:py-20 lg:w-5/12 lg:absolute lg:h-screen lg:z-0 lg:right-10 rounded-18">
+                                    <div className="relative z-10 w-full col-span-2 px-10 bg-white md:py-20 lg:w-1/2 lg:absolute lg:h-screen lg:z-0 lg:right-10 rounded-18">
                                         <p className="text-4xl font-bold md:text-5xl font-garamond">{title}</p>
                                         <p className="mt-2 text-2xl font-normal md:mt-6 md:text-3xl">{subtitle}</p>
                                         <p className="mt-2 mb-6 text-lg font-normal md:mt-6 md:mb-10">{content}</p>
@@ -220,7 +220,7 @@ function Products() {
                         )
                     })}
                 </div>
-                <div className="right-0 z-10 flex flex-wrap justify-start w-full pl-8 mb-5 realtive lg:absolute lg:w-5/12 bottom-16">
+                <div className="right-0 z-10 flex flex-wrap justify-start w-full pl-8 mb-5 realtive lg:absolute lg:pl-0 lg:w-1/2 bottom-16">
                     {tabItems.map(({ id, title }) =>
                         <TabItemComponent
                             key={title}
