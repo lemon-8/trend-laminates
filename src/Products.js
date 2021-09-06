@@ -52,9 +52,9 @@ function Products() {
 
     const [index, setIndex] = React.useState(1);
 
-    const Button = ({ text, addClass, id }) => {
+    const Button = ({ text, id }) => {
         return (
-            <a href="#products-container" className={addClass}><button onClick={() => setIndex(id)} className="flex items-center justify-center w-64 p-4 py-6 mt-6 font-medium text-white duration-700 ease-out border border-white md:mt-10 shadow-get h-9 rounded-3xl laminates1 hover:text-black hover:shadow-get1">{text} <BsArrowRight className="ml-2" size={30} /></button></a>
+            <a href="#products-container"><button onClick={() => setIndex(id)} className="flex items-center justify-center w-64 p-4 py-6 mt-6 font-medium text-white duration-700 ease-out border border-white md:mt-10 shadow-get h-9 rounded-3xl laminates1 hover:text-black hover:shadow-get1">{text} <BsArrowRight className="ml-2" size={30} /></button></a>
         )
     }
 
@@ -153,32 +153,40 @@ function Products() {
                     Open your arms to the smoothest textures and the most stunning designs, created with laser precision just for you.</p>
                 <div className="grid justify-center grid-cols-4 my-10 md:mt-10 md:mb-0 md:gap-10 md:max-w-lg">
                     <div className="col-span-4 md:col-span-2">
-                        <Button text="Acrylic Laminates" addClass="laminates1" id={3} />
-                        <Button text="PVC Premium" addClass="laminates2" id={2} />
-                        <picture>
-                            <source srcset={laminate1} type="image/webp" />
-                            <source srcset={laminate11} type="image/jpg" />
-                            <img src={laminate11} className="absolute z-20 bottom-16 md:bottom-12 right-52 h-80 lg:h-full lg:-bottom-96 lam-image1 lg:right-48" alt="Acrylic Laminate" />
-                        </picture>
-                        <picture>
-                            <source srcset={laminate2} type="image/webp" />
-                            <source srcset={laminate21} type="image/jpg" />
-                            <img src={laminate21} className="absolute z-30 right-32 md:bottom-12 bottom-16 h-80 lg:h-full lg:-bottom-96 lam-image2 lg:right-24" alt="PVC Laminate" />
-                        </picture>
+                        <div className="laminates1">
+                            <Button text="Acrylic Laminates" id={3} />
+                            <picture>
+                                <source srcset={laminate1} type="image/webp" />
+                                <source srcset={laminate11} type="image/jpg" />
+                                <img src={laminate11} className="absolute z-20 bottom-16 lam-image1 md:bottom-12 right-52 h-80 lg:h-full lg:-bottom-96 lg:right-48" alt="Acrylic Laminate" />
+                            </picture>
+                        </div>
+                        <div className="laminates2">
+                            <Button text="PVC Premium" id={2} />
+                            <picture>
+                                <source srcset={laminate2} type="image/webp" />
+                                <source srcset={laminate21} type="image/jpg" />
+                                <img src={laminate21} className="absolute z-30 right-32 md:bottom-12 bottom-16 lam-image2 h-80 lg:h-full lg:-bottom-96 lg:right-24" alt="PVC Premium" />
+                            </picture>
+                        </div>
                     </div>
                     <div className="col-span-4 md:col-span-2 mb-96">
-                        <Button text="WPC PVC Board" addClass="laminates3" id={4} />
-                        <Button text="Decorative Laminates" addClass="laminates4" id={1} />
-                        <picture>
-                            <source srcset={laminate3} type="image/webp" />
-                            <source srcset={laminate31} type="image/jpg" />
-                            <img src={laminate31} className="absolute z-40 h-80 lg:h-full md:bottom-12 bottom-16 right-10 lg:-bottom-96 lam-image3 lg:-right-4" alt="MDF Board" />
-                        </picture>
-                        <picture>
-                            <source srcset={laminate4} type="image/webp" />
-                            <source srcset={laminate41} type="image/jpg" />
-                            <img src={laminate41} className="absolute z-50 -right-10 h-80 md:bottom-12 bottom-16 lg:h-full lg:-bottom-96 lam-image4 lg:-right-32" alt="Decorative Laminate" />
-                        </picture>
+                        <div className="laminates3">
+                            <Button text="WPC PVC Board" id={4} />
+                            <picture>
+                                <source srcset={laminate3} type="image/webp" />
+                                <source srcset={laminate31} type="image/jpg" />
+                                <img src={laminate31} className="absolute z-40 h-80 lg:h-full md:bottom-12 bottom-16 right-10 lam-image3 lg:-bottom-96 lg:-right-4" alt="WPC PVC Board" />
+                            </picture>
+                        </div>
+                        <div className="laminates4">
+                            <Button text="Decorative Laminates" id={1} />
+                            <picture>
+                                <source srcset={laminate4} type="image/webp" />
+                                <source srcset={laminate41} type="image/jpg" />
+                                <img src={laminate41} className="absolute z-50 -right-10 h-80 md:bottom-12 bottom-16 lg:h-full lam-image4 lg:-bottom-96 lg:-right-32" alt="Decorative Laminates" />
+                            </picture>
+                        </div>
                     </div>
                     <a href="#products-container"><p className="absolute flex items-center text-base font-normal bottom-6 md:bottom-20 hover:opacity-75">View All Products <BsArrowDown className="ml-4" size={30} /></p></a>
                 </div>

@@ -149,19 +149,19 @@ body::after {
   transition: transform 500ms ease-in;
 }
 
-.laminates1:hover~.lam-image1{
+.laminates1:hover .lam-image1{
   transform: translateY(-96px);
 }
 
-.laminates2:hover~.lam-image2{
+.laminates2:hover .lam-image2{
   transform: translateY(-96px);
 }
 
-.laminates3:hover~.lam-image3{
+.laminates3:hover .lam-image3{
   transform: translateY(-96px);
 }
 
-.laminates4:hover~.lam-image4{
+.laminates4:hover .lam-image4{
   transform: translateY(-96px);
 }
 

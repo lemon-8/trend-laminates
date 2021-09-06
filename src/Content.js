@@ -55,7 +55,7 @@ function Content() {
                     <picture>
                         <source srcset={src} type="image/webp" />
                         <source srcset={src1} type="image/jpg" />
-                        <img src={src1} className="w-full h-96" alt="" />
+                        <img src={src1} className="w-full h-64 md:h-96" alt="" />
                     </picture>
                 </div>
                 <div className="col-span-5 px-10 lg:px-20 md:col-span-3">
