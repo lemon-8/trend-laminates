@@ -11,9 +11,9 @@ function Footer() {
             <div className="flex px-10 py-5 text-white xl:px-32 bg-textColor">
                 <p className="mr-auto text-xl">Get Connected:</p>
                 <div className="flex ml-auto">
-                    <a href="https://www.facebook.com/trendpvc/" target="_blank" rel="noreferrer noopener" className="px-3"><RiFacebookFill size={25} /></a>
-                    <a href="/" className="px-3"><RiTwitterFill size={25} /></a>
-                    <a href="/" className="px-3"><FiInstagram size={25} /></a>
+                    <a aria-label="Connect to our Facebook Community" href="https://www.facebook.com/trendpvc/" target="_blank" rel="noreferrer noopener" className="px-3"><RiFacebookFill size={25} /></a>
+                    <a aria-label="Connect to our Twitter Community" href="/" className="px-3"><RiTwitterFill size={25} /></a>
+                    <a aria-label="Connect to our Instagram Community" href="/" className="px-3"><FiInstagram size={25} /></a>
                 </div>
             </div>
             <footer className="px-10 text-black md:pr-16 md:pb-10 xl:px-32">

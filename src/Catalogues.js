@@ -77,8 +77,8 @@ function Catalogues() {
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 1MM 2021</p>
                                 <div className="w-full mx-auto overflow-hidden rounded-md h-96" data-aos="fade-right" data-aos-duration="2000">
                                     <picture>
-                                        <source srcset={trend1} type="image/webp" />
-                                        <source srcset={trend11} type="image/jpg" />
+                                        <source srcSet={trend1} type="image/webp" />
+                                        <source srcSet={trend11} type="image/jpg" />
                                         <img src={trend11} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                     </picture>
                                 </div>
@@ -89,8 +89,8 @@ function Catalogues() {
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 0.8MM 2021</p>
                                 <div className="w-full mx-auto overflow-hidden rounded-md h-96" data-aos="fade-right" data-aos-duration="2000">
                                     <picture>
-                                        <source srcset={trend8} type="image/webp" />
-                                        <source srcset={trend81} type="image/jpg" />
+                                        <source srcSet={trend8} type="image/webp" />
+                                        <source srcSet={trend81} type="image/jpg" />
                                         <img src={trend81} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                     </picture>
                                 </div>
@@ -101,25 +101,25 @@ function Catalogues() {
                 <div>
                     {catalogs.map(({ id, src1, src11, src2, src21, title1, title2, span1, span2, fade, file1, file2 }) => {
                         return (<div className="grid grid-cols-6 mt-10 overflow-hidden lg:gap-20" data-aos={`fade-${fade}`} data-aos-duration="2000" key={id}>
-                            <div className={`col-span-6 lg:col-span-${span1}`} >
+                            <div className={`lg:col-span-${span1} col-span-6`} >
                                 <a href={file1} target="_blank" rel="noreferrer noopener">
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
                                     <div className="w-full mx-auto overflow-hidden rounded-md h-96">
                                         <picture>
-                                            <source srcset={src1} type="image/webp" />
-                                            <source srcset={src11} type="image/jpg" />
+                                            <source srcSet={src1} type="image/webp" />
+                                            <source srcSet={src11} type="image/jpg" />
                                             <img src={src11} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                         </picture>
                                     </div>
                                 </a>
                             </div>
-                            <div className={`col-span-6 mt-6 lg:mt-0 lg:col-span-${span2}`}>
+                            <div className={`lg:col-span-${span2} lg:mt-0 mt-6 col-span-6`}>
                                 <a href={file2} target="_blank" rel="noreferrer noopener">
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
                                     <div className="w-full mx-auto overflow-hidden rounded-md h-96">
                                         <picture>
-                                            <source srcset={src2} type="image/webp" />
-                                            <source srcset={src21} type="image/jpg" />
+                                            <source srcSet={src2} type="image/webp" />
+                                            <source srcSet={src21} type="image/jpg" />
                                             <img src={src21} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                         </picture>
                                     </div>

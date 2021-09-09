@@ -18,13 +18,13 @@ export default function Navbar() {
             setActive(true);
         }
         else {
+            setActive(false);
             if(navbarOpen === true){                               
                 setActive(true);
             }
             else{
                 setActive(false);
             }
-            setActive(false);
             window.addEventListener('scroll', changeBackground);
         }
         return () => {
