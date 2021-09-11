@@ -341,8 +341,7 @@ body::after {
   }
   .thumbs-wrapper{
     position: relative !important;
-    left: 0%;
-    overflow: hidden;
+    left: 0;
   }
   .mainCursor,.secondaryCursor{
     display: none;
