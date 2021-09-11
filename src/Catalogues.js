@@ -100,8 +100,8 @@ function Catalogues() {
                 </div>
                 <div>
                     {catalogs.map(({ id, src1, src11, src2, src21, title1, title2, span1, span2, fade, file1, file2 }) => {
-                        return (<div className="grid grid-cols-8 mt-10 overflow-hidden lg:gap-20" data-aos={`fade-${fade}`} data-aos-duration="2000" key={id}>
-                            <div className={`lg:col-span-${span1} col-span-8`} >
+                        return (<div className="flex flex-col grid-cols-8 mt-10 overflow-hidden lg:grid lg:gap-20" data-aos={`fade-${fade}`} data-aos-duration="2000" key={id}>
+                            <div className={`lg:col-span-${span1}`} >
                                 <a href={file1} target="_blank" rel="noreferrer noopener">
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
                                     <div className="w-full mx-auto overflow-hidden rounded-md h-96">
@@ -113,7 +113,7 @@ function Catalogues() {
                                     </div>
                                 </a>
                             </div>
-                            <div className={`lg:col-span-${span2} lg:mt-0 mt-6 col-span-8`}>
+                            <div className={`lg:col-span-${span2} lg:mt-0 mt-6`}>
                                 <a href={file2} target="_blank" rel="noreferrer noopener">
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
                                     <div className="w-full mx-auto overflow-hidden rounded-md h-96">
