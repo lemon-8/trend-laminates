@@ -77,8 +77,8 @@ function Catalogues() {
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 1MM 2021</p>
                                 <div className="w-full mx-auto overflow-hidden rounded-md h-96" data-aos="fade-right" data-aos-duration="2000">
                                     <picture>
-                                        <source srcSet={trend1} type="image/webp" />
-                                        <source srcSet={trend11} type="image/jpg" />
+                                        <source srcset={trend1} type="image/webp" />
+                                        <source srcset={trend11} type="image/jpg" />
                                         <img src={trend11} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                     </picture>
                                 </div>
@@ -89,8 +89,8 @@ function Catalogues() {
                                 <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">Trend 0.8MM 2021</p>
                                 <div className="w-full mx-auto overflow-hidden rounded-md h-96" data-aos="fade-right" data-aos-duration="2000">
                                     <picture>
-                                        <source srcSet={trend8} type="image/webp" />
-                                        <source srcSet={trend81} type="image/jpg" />
+                                        <source srcset={trend8} type="image/webp" />
+                                        <source srcset={trend81} type="image/jpg" />
                                         <img src={trend81} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                     </picture>
                                 </div>
@@ -106,8 +106,8 @@ function Catalogues() {
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title1}</p>
                                     <div className="w-full mx-auto overflow-hidden rounded-md h-96">
                                         <picture>
-                                            <source srcSet={src1} type="image/webp" />
-                                            <source srcSet={src11} type="image/jpg" />
+                                            <source srcset={src1} type="image/webp" />
+                                            <source srcset={src11} type="image/jpg" />
                                             <img src={src11} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                         </picture>
                                     </div>
@@ -118,8 +118,8 @@ function Catalogues() {
                                     <p className="mb-4 text-2xl font-medium cursor-pointer text-trend">{title2}</p>
                                     <div className="w-full mx-auto overflow-hidden rounded-md h-96">
                                         <picture>
-                                            <source srcSet={src2} type="image/webp" />
-                                            <source srcSet={src21} type="image/jpg" />
+                                            <source srcset={src2} type="image/webp" />
+                                            <source srcset={src21} type="image/jpg" />
                                             <img src={src21} alt="Download the catalog here" className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                                         </picture>
                                     </div>

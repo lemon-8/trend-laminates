@@ -156,16 +156,16 @@ function Products() {
                         <div className="laminates1">
                             <Button text="Acrylic Laminates" id={3} />
                             <picture>
-                                <source srcSet={laminate1} type="image/webp" />
-                                <source srcSet={laminate11} type="image/jpg" />
+                                <source srcset={laminate1} type="image/webp" />
+                                <source srcset={laminate11} type="image/jpg" />
                                 <img src={laminate11} className="absolute z-20 bottom-16 lam-image1 md:bottom-12 right-52 h-80 lg:h-full lg:-bottom-96 lg:right-48" alt="Acrylic Laminate" />
                             </picture>
                         </div>
                         <div className="laminates2">
                             <Button text="PVC Premium" id={2} />
                             <picture>
-                                <source srcSet={laminate2} type="image/webp" />
-                                <source srcSet={laminate21} type="image/jpg" />
+                                <source srcset={laminate2} type="image/webp" />
+                                <source srcset={laminate21} type="image/jpg" />
                                 <img src={laminate21} className="absolute z-30 right-32 md:bottom-12 bottom-16 lam-image2 h-80 lg:h-full lg:-bottom-96 lg:right-24" alt="PVC Premium" />
                             </picture>
                         </div>
@@ -174,16 +174,16 @@ function Products() {
                         <div className="laminates3">
                             <Button text="WPC PVC Board" id={4} />
                             <picture>
-                                <source srcSet={laminate3} type="image/webp" />
-                                <source srcSet={laminate31} type="image/jpg" />
+                                <source srcset={laminate3} type="image/webp" />
+                                <source srcset={laminate31} type="image/jpg" />
                                 <img src={laminate31} className="absolute z-40 h-80 lg:h-full md:bottom-12 bottom-16 right-10 lam-image3 lg:-bottom-96 lg:-right-4" alt="WPC PVC Board" />
                             </picture>
                         </div>
                         <div className="laminates4">
                             <Button text="Decorative Laminates" id={1} />
                             <picture>
-                                <source srcSet={laminate4} type="image/webp" />
-                                <source srcSet={laminate41} type="image/jpg" />
+                                <source srcset={laminate4} type="image/webp" />
+                                <source srcset={laminate41} type="image/jpg" />
                                 <img src={laminate41} className="absolute z-50 -right-10 h-80 md:bottom-12 bottom-16 lg:h-full lam-image4 lg:-bottom-96 lg:-right-32" alt="Decorative Laminates" />
                             </picture>
                         </div>
@@ -198,20 +198,20 @@ function Products() {
                             index === id ?
                                 <div className="relative grid justify-center grid-cols-2 text-left bg-transparent lg:h-screen lg:overflow-hidden tab-content" key={id}>
                                     <div className="relative col-span-2 lg:col-span-1">
-                                        <Carousel thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showThumbs={true} showIndicators={false}>
+                                        <Carousel thumbWidth={120} showStatus={false} showArrows={false} infiniteLoop={true} showIndicators={false}>
                                             <picture>
-                                                <source srcSet={src1} type="image/webp" />
-                                                <source srcSet={src11} type="image/jpg" />
+                                                <source srcset={src1} type="image/webp" />
+                                                <source srcset={src11} type="image/jpg" />
                                                 <img src={src11} className="h-96 lg:h-screen" alt={`Sample of ${title}`} />
                                             </picture>
                                             <picture>
-                                                <source srcSet={src2} type="image/webp" />
-                                                <source srcSet={src21} type="image/jpg" />
+                                                <source srcset={src2} type="image/webp" />
+                                                <source srcset={src21} type="image/jpg" />
                                                 <img src={src21} className="h-96 lg:h-screen" alt={`Sample of ${title}`} />
                                             </picture>
                                             <picture>
-                                                <source srcSet={src3} type="image/webp" />
-                                                <source srcSet={src31} type="image/jpg" />
+                                                <source srcset={src3} type="image/webp" />
+                                                <source srcset={src31} type="image/jpg" />
                                                 <img src={src31} className="h-96 lg:h-screen" alt={`Sample of ${title}`} />
                                             </picture>
                                         </Carousel>

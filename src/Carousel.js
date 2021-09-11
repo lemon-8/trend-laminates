@@ -23,8 +23,8 @@ function Carousel() {
             <div className="relative items-center mx-4 mt-20 overflow-hidden text-center">
                 <div className="mx-auto overflow-hidden rounded-md w-72 h-96">
                     <picture>
-                        <source srcSet={src} type="image/webp" />
-                        <source srcSet={src1} type="image/jpg" />
+                        <source srcset={src} type="image/webp" />
+                        <source srcset={src1} type="image/jpg" />
                         <img src={src1} alt={`Sample of ${title}`} className="object-cover w-full h-full duration-500 transform rounded-md hover:scale-125" />
                     </picture>
                 </div>
