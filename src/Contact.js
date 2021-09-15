@@ -97,15 +97,17 @@ function Contact() {
                     <form className="col-span-6 md:col-span-3" onSubmit={handleSubmit}>
                         <label htmlFor="name" className="block">
                             <p className="text-xl font-bold font-garamond">Your Name</p>
-                            <input type="text" placeholder="First and Last Name" name="entry.125067761" className="w-full px-4 py-2 mt-2 border rounded-md placeholder-borderColor h-11 border-borderColor focus:outline-none" value={name}
+                            <input type="text" required placeholder="First and Last Name" name="entry.125067761" className="w-full px-4 py-2 mt-2 border rounded-md placeholder-borderColor h-11 border-borderColor focus:outline-none" value={name}
                                 onChange={(e) => {
                                     setName(e.target.value);
                                     setNameAttr(e.target.getAttribute("name"));
-                                }} />
+                                }}
+                                onKeyPress={(e)=>e.target.value = e.target.value.replace(/[^a-zA-Z, /]/g,"")}
+                                />
                         </label>
                         <label htmlFor="contact" className="block mt-6">
                             <p className="text-xl font-bold font-garamond">How should we contact you?</p>
-                            <input type="text" name="entry.1572957650" placeholder="Leave your address or phone number here" className="w-full px-4 py-2 mt-2 border rounded-md placeholder-borderColor h-11 border-borderColor focus:outline-none" value={email}
+                            <input type="text" required name="entry.1572957650" placeholder="Leave your mail or phone number here" className="w-full px-4 py-2 mt-2 border rounded-md placeholder-borderColor h-11 border-borderColor focus:outline-none" value={email}
                                 onChange={(e) => {
                                     setEmail(e.target.value);
                                     setMailAttr(e.target.getAttribute("name"));
@@ -115,7 +117,7 @@ function Contact() {
                         <label htmlFor="product" className="block mt-6">
                             <p className="text-xl font-bold font-garamond">Any product specific query?</p>
                             <div className="relative">
-                                <select value={product} name="entry.1724307251" className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-white border rounded-md appearance-none text-borderColor border-borderColor focus:outline-none"
+                                <select required value={product} name="entry.1724307251" className="w-full px-4 py-2 mt-2 text-base transition duration-500 ease-in-out transform bg-white border rounded-md appearance-none text-borderColor border-borderColor focus:outline-none"
                                     onChange={(e) => {
                                         setProduct(e.target.value);
                                         setProductAttr(e.target.getAttribute("name"));
