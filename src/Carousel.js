@@ -21,7 +21,7 @@ function Carousel() {
     const Products = ({ title, src, src1 }) => {
         return (
             <div className="relative items-center mx-4 mt-20 overflow-hidden text-center">
-                <div className="mx-auto overflow-hidden rounded-md w-72 h-96">
+                <div className="mx-auto overflow-hidden rounded-md max-w-72 h-96">
                     <picture>
                         <source srcset={src} type="image/webp" />
                         <source srcset={src1} type="image/jpg" />

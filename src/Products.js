@@ -68,7 +68,6 @@ function Products() {
             src3: decorative3,
             src31: decorative31,
             title: 'Decorative Laminates',
-            subtitle: '0.8 laminates',
             content: 'TREND Laminates offer fashionable, appealing, elegant and durable solutions for home and office decor. An effective way to get superior style and elegance in interior surface design.',
         },
         {
@@ -80,7 +79,6 @@ function Products() {
             src3: pvc_laminate3,
             src31: pvc_laminate31,
             title: 'PVC Premium Laminates',
-            subtitle: '0.8 laminates',
             content: 'Lift up the personality of your interiors with some of the widest range of PVC Fabric Premium Laminates. It’s got the texture, feel and impression to delight and inspire spaces. Flexible in application, the PVC Laminates slabs of Trend give you a space make over perfect to enhance the interior.',
         },
         {
@@ -92,7 +90,6 @@ function Products() {
             src3: acrylic3,
             src31: acrylic31,
             title: 'HD Acrylic Lmainates',
-            subtitle: '0.8 laminates',
             content: 'In a league of its own, Acrylic Hi-Gloss panels enhance high-definition design. The acrylic panels are smooth and soft to the touch as a feather and are resistant to fading, aberration and distortion. Anti-scratch and anti-corrosive.',
         },
         {
@@ -104,7 +101,6 @@ function Products() {
             src3: wpc_board3,
             src31: wpc_board31,
             title: 'WPC PVC Boards',
-            subtitle: '0.8 laminates',
             content: 'Trend WPC and PVC boards are life long, environment-friendly, and have excellent performance. They are anti-UV, waterproof, anti-cracking and moth-proof. These high strength, low-cost boards have a low maintenance cost and usually last from 20 to 30 years.',
         },
         {
@@ -116,7 +112,6 @@ function Products() {
             src3: korean3,
             src31: korean31,
             title: 'Korean Charcoal Panels',
-            subtitle: '0.8 laminates',
             content: 'Trend exclusive Korean Charcoal panels arrive in various textures, patterns, styles and colours. The layered material gives an embossed structure to the surface and adds volume and depth. The panels give character to interior spaces, enhancing homes, offices or commercial properties.',
         },
         {
@@ -128,7 +123,6 @@ function Products() {
             src3: pvc_tape3,
             src31: pvc_tape31,
             title: 'PVC Edgeband',
-            subtitle: '0.8 laminates',
             content: 'Trend edge banding tapes are much sought-coveted in shopping malls, residential houses and entertainment houses to decorate and cover fine edges of furniture. The entire range is designed by utilizing the finest grade materials in tune with global market standards',
         },
     ];
@@ -193,7 +187,7 @@ function Products() {
             </div>
             <div id="products-container" className="relative min-h-screen">
                 <div>
-                    {tabItems.map(({ id, src1, src11, src2, src21, src3, src31, title, subtitle, content }) => {
+                    {tabItems.map(({ id, src1, src11, src2, src21, src3, src31, title, content }) => {
                         return (
                             index === id ?
                                 <div className="relative grid justify-center grid-cols-2 text-left bg-transparent lg:h-screen lg:overflow-hidden tab-content" key={id}>
@@ -218,7 +212,6 @@ function Products() {
                                     </div>
                                     <div className="relative z-10 w-full col-span-2 px-10 bg-white lg:col-span-1 md:py-20 lg:w-1/2 lg:absolute lg:h-screen lg:z-0 lg:right-10 rounded-18">
                                         <p className="text-4xl font-bold md:text-5xl font-garamond">{title}</p>
-                                        <p className="mt-2 text-2xl font-normal md:mt-6 md:text-3xl">{subtitle}</p>
                                         <p className="mt-2 mb-6 text-lg font-normal md:mt-6 md:mb-6">{content}</p>
                                         <Link to="/Contact">
                                             <button className="flex items-center justify-center w-40 h-10 mb-2 text-lg font-bold duration-1000 border border-black shadow-touch hover:shadow-touch1 rounded-3xl hover:text-white">Enquire <BsArrowRight className="ml-2" /></button>
