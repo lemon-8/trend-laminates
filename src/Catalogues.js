@@ -61,7 +61,7 @@ function Catalogues() {
 			file2: "https://drive.google.com/file/d/1DzPTe6PSOQtrcm37l8RTkP7EVB5DSu-6/view",
 		},
 	];
-
+	window.open("https://linktr.ee/Trendpvc");
 	return (
 		<div>
 			<div className="px-10 pt-20 md:pt-36 pb-28 xl:px-44">
