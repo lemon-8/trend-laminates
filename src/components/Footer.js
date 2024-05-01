@@ -59,7 +59,8 @@ function Footer() {
                 </div>
             </footer>
             <hr className="px-0 bg-textColor" />
-            <p className="py-5 text-base font-semibold text-center">&#169; All rights reserved 2021, designed and developed by lemon8 🍋</p>
+            <p className="py-5 text-base font-semibold text-center">&#169; All rights reserved @ 2021 by TCS MARKETING, designed and developed by lemon8 🍋</p>
+        
         </div>
     )
 }
